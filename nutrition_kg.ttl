@@ -1,0 +1,2230 @@
+@prefix disease: <http://nutrition-kg.org/disease/> .
+@prefix food: <http://nutrition-kg.org/food/> .
+@prefix nutrient: <http://nutrition-kg.org/nutrient/> .
+@prefix prop: <http://nutrition-kg.org/property/> .
+
+food:Almond_butter_creamy a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Carbohydrate,
+        nutrient:Fat,
+        nutrient:Fiber,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Zinc .
+
+food:Almond_milk_unsweetened_plain_refrigerated a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Vitamin_D .
+
+food:Almond_milk_unsweetened_plain_shelf_stable a prop:Food ;
+    prop:highIn nutrient:Calcium .
+
+food:Anchovies_canned_in_olive_oil_with_salt_drained a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Fat,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Protein,
+        nutrient:Sodium,
+        nutrient:Vitamin_B12 .
+
+food:Apple_juice_with_added_vitamin_C_from_concentrate_shelf_stable a prop:Food ;
+    prop:highIn nutrient:Sugar,
+        nutrient:Vitamin_C .
+
+food:Apples_fuji_with_skin_raw a prop:Food ;
+    prop:highIn nutrient:Sugar .
+
+food:Apples_gala_with_skin_raw a prop:Food ;
+    prop:highIn nutrient:Sugar .
+
+food:Apples_granny_smith_with_skin_raw a prop:Food ;
+    prop:highIn nutrient:Sugar .
+
+food:Apples_honeycrisp_with_skin_raw a prop:Food ;
+    prop:highIn nutrient:Sugar .
+
+food:Apples_red_delicious_with_skin_raw a prop:Food ;
+    prop:highIn nutrient:Sugar .
+
+food:Applesauce_unsweetened_with_added_vitamin_C a prop:Food ;
+    prop:highIn nutrient:Sugar,
+        nutrient:Vitamin_C .
+
+food:Arugula_baby_raw a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Folate,
+        nutrient:Potassium,
+        nutrient:Vitamin_C .
+
+food:Asparagus_green_raw a prop:Food ;
+    prop:highIn nutrient:Folate .
+
+food:Avocado_Hass_peeled_raw a prop:Food ;
+    prop:highIn nutrient:Fat,
+        nutrient:Folate,
+        nutrient:Potassium .
+
+food:Bananas_overripe_raw a prop:Food ;
+    prop:highIn nutrient:Sugar,
+        nutrient:Vitamin_B6 .
+
+food:Bananas_ripe_and_slightly_ripe_raw a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Sugar,
+        nutrient:Vitamin_B6 .
+
+food:Beans_Dry_Black_0_moisture a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Zinc .
+
+food:Beans_Dry_Brown_0_moisture a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Zinc .
+
+food:Beans_Dry_Carioca_0_moisture a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Fiber,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Zinc .
+
+food:Beans_Dry_Cranberry_0_moisture a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Zinc .
+
+food:Beans_Dry_Dark_Red_Kidney_0_moisture a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Zinc .
+
+food:Beans_Dry_Flor_de_Mayo_0_moisture a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Zinc .
+
+food:Beans_Dry_Great_Northern_0_moisture a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Zinc .
+
+food:Beans_Dry_Light_Red_Kidney_0_moisture a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Fiber,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Zinc .
+
+food:Beans_Dry_Light_Tan_0_moisture a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Zinc .
+
+food:Beans_Dry_Medium_Red_0_moisture a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Zinc .
+
+food:Beans_Dry_Navy_0_moisture a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Zinc .
+
+food:Beans_Dry_Pink_0_moisture a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Zinc .
+
+food:Beans_Dry_Pinto_0_moisture a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Zinc .
+
+food:Beans_Dry_Red_0_moisture a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Zinc .
+
+food:Beans_Dry_Small_Red_0_moisture a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Zinc .
+
+food:Beans_Dry_Small_White_0_moisture a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Zinc .
+
+food:Beans_Dry_Tan_0_moisture a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Zinc .
+
+food:Beans_black_canned_sodium_added_drained_and_rinsed a prop:Food ;
+    prop:highIn nutrient:Sodium .
+
+food:Beans_cannellini_canned_sodium_added_drained_and_rinsed a prop:Food ;
+    prop:highIn nutrient:Sodium .
+
+food:Beans_cannellini_dry a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Carbohydrate,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Zinc .
+
+food:Beans_great_northern_canned_sodium_added_drained_and_rinsed a prop:Food ;
+    prop:highIn nutrient:Sodium .
+
+food:Beans_kidney_dark_red_canned_sodium_added_sugar_added_drained_and_rinsed a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Sodium .
+
+food:Beans_kidney_light_red_canned_sodium_added_sugar_added_drained_and_rinsed a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Sodium .
+
+food:Beans_navy_canned_sodium_added_drained_and_rinsed a prop:Food ;
+    prop:highIn nutrient:Sodium .
+
+food:Beans_pinto_canned_sodium_added_drained_and_rinsed a prop:Food ;
+    prop:highIn nutrient:Sodium .
+
+food:Beans_snap_green_canned_regular_pack_drained_solids a prop:Food ;
+    prop:highIn nutrient:Sodium .
+
+food:Beef_chuck_roast_boneless_choice_raw a prop:Food ;
+    prop:highIn nutrient:Fat,
+        nutrient:Protein,
+        nutrient:Zinc .
+
+food:Beef_flank_steak_boneless_choice_raw a prop:Food ;
+    prop:highIn nutrient:Fat,
+        nutrient:Protein,
+        nutrient:Zinc .
+
+food:Beef_ground_80_lean_meat__20_fat_raw a prop:Food ;
+    prop:highIn nutrient:Fat,
+        nutrient:Zinc .
+
+food:Beef_ground_90_lean_meat__10_fat_raw a prop:Food ;
+    prop:highIn nutrient:Fat,
+        nutrient:Zinc .
+
+food:Beef_loin_tenderloin_roast_separable_lean_only_boneless_trimmed_to_0_fat_select_cooked_roasted a prop:Food ;
+    prop:highIn nutrient:Iron,
+        nutrient:Protein,
+        nutrient:Vitamin_B12,
+        nutrient:Vitamin_B6,
+        nutrient:Zinc .
+
+food:Beef_loin_top_loin_steak_boneless_lipon_separable_lean_only_trimmed_to_18_fat_choice_raw a prop:Food ;
+    prop:highIn nutrient:Protein,
+        nutrient:Vitamin_B12,
+        nutrient:Vitamin_B6,
+        nutrient:Zinc .
+
+food:Beef_ribeye_steak_boneless_choice_raw a prop:Food ;
+    prop:highIn nutrient:Fat,
+        nutrient:Protein,
+        nutrient:Zinc .
+
+food:Beef_round_eye_of_round_roast_boneless_separable_lean_only_trimmed_to_0_fat_select_raw a prop:Food ;
+    prop:highIn nutrient:Protein,
+        nutrient:Vitamin_B12,
+        nutrient:Vitamin_B6,
+        nutrient:Zinc .
+
+food:Beef_round_top_round_boneless_choice_raw a prop:Food ;
+    prop:highIn nutrient:Protein,
+        nutrient:Zinc .
+
+food:Beef_round_top_round_roast_boneless_separable_lean_only_trimmed_to_0_fat_select_raw a prop:Food ;
+    prop:highIn nutrient:Iron,
+        nutrient:Protein,
+        nutrient:Vitamin_B6,
+        nutrient:Zinc .
+
+food:Beef_short_loin_NY_strip_steak_raw a prop:Food ;
+    prop:highIn nutrient:Fat,
+        nutrient:Protein,
+        nutrient:Zinc .
+
+food:Beef_short_loin_porterhouse_steak_separable_lean_only_trimmed_to_18_fat_select_raw a prop:Food ;
+    prop:highIn nutrient:Iron,
+        nutrient:Protein,
+        nutrient:Vitamin_B12,
+        nutrient:Vitamin_B6,
+        nutrient:Zinc .
+
+food:Beef_short_loin_tbone_steak_bonein_separable_lean_only_trimmed_to_18_fat_choice_cooked_grilled a prop:Food ;
+    prop:highIn nutrient:Fat,
+        nutrient:Iron,
+        nutrient:Protein,
+        nutrient:Vitamin_B12,
+        nutrient:Vitamin_B6,
+        nutrient:Zinc .
+
+food:Beef_top_sirloin_steak_raw a prop:Food ;
+    prop:highIn nutrient:Iron,
+        nutrient:Protein,
+        nutrient:Zinc .
+
+food:Beeftenderloin_steak_raw a prop:Food ;
+    prop:highIn nutrient:Iron,
+        nutrient:Protein,
+        nutrient:Zinc .
+
+food:Beet_greens_raw a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Folate,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Sodium .
+
+food:Beets_raw a prop:Food ;
+    prop:highIn nutrient:Folate,
+        nutrient:Sodium .
+
+food:Bison_ground_raw a prop:Food ;
+    prop:highIn nutrient:Fat,
+        nutrient:Iron,
+        nutrient:Protein,
+        nutrient:Zinc .
+
+food:Blackberries_raw a prop:Food ;
+    prop:highIn nutrient:Fiber .
+
+food:Blackeye_pea_canned_sodium_added_drained_and_rinsed a prop:Food ;
+    prop:highIn nutrient:Sodium .
+
+food:Blackeye_pea_dry a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Zinc .
+
+food:Blueberries_raw a prop:Food ;
+    prop:highIn nutrient:Sugar .
+
+food:Bread_white_commercially_prepared a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Carbohydrate,
+        nutrient:Iron,
+        nutrient:Sodium .
+
+food:Bread_wholewheat_commercially_prepared a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Carbohydrate,
+        nutrient:Fiber,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Sodium,
+        nutrient:Vitamin_B6 .
+
+food:Broccoli_raw a prop:Food ;
+    prop:highIn nutrient:Folate,
+        nutrient:Vitamin_C .
+
+food:Brussels_sprouts_raw a prop:Food ;
+    prop:highIn nutrient:Fiber,
+        nutrient:Folate,
+        nutrient:Potassium,
+        nutrient:Vitamin_C .
+
+food:Buckwheat_whole_grain a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Vitamin_B6 .
+
+food:Bulgur_dry_raw a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Fiber,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Vitamin_B6 .
+
+food:Butter_stick_salted a prop:Food ;
+    prop:highIn nutrient:Cholesterol,
+        nutrient:Fat,
+        nutrient:Saturated_Fat,
+        nutrient:Sodium .
+
+food:Butter_stick_unsalted a prop:Food ;
+    prop:highIn nutrient:Cholesterol,
+        nutrient:Fat .
+
+food:Buttermilk_low_fat a prop:Food ;
+    prop:highIn nutrient:Calcium .
+
+food:Cabbage_bok_choy_raw a prop:Food ;
+    prop:highIn nutrient:Folate .
+
+food:Cabbage_green_raw a prop:Food ;
+    prop:highIn nutrient:Vitamin_C .
+
+food:Cabbage_red_raw a prop:Food ;
+    prop:highIn nutrient:Vitamin_C .
+
+food:Cauliflower_raw a prop:Food ;
+    prop:highIn nutrient:Folate,
+        nutrient:Vitamin_C .
+
+food:Cheese_American_restaurant a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Fat,
+        nutrient:Saturated_Fat,
+        nutrient:Sodium .
+
+food:Cheese_cheddar a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Cholesterol,
+        nutrient:Fat,
+        nutrient:Protein,
+        nutrient:Saturated_Fat,
+        nutrient:Sodium,
+        nutrient:Zinc .
+
+food:Cheese_cotija_solid a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Fat,
+        nutrient:Protein,
+        nutrient:Saturated_Fat,
+        nutrient:Sodium,
+        nutrient:Zinc .
+
+food:Cheese_cottage_lowfat_2_milkfat a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Sodium .
+
+food:Cheese_dry_white_queso_seco a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Fat,
+        nutrient:Protein,
+        nutrient:Saturated_Fat,
+        nutrient:Sodium,
+        nutrient:Vitamin_B12,
+        nutrient:Vitamin_D,
+        nutrient:Zinc .
+
+food:Cheese_feta_whole_milk_crumbled a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Fat,
+        nutrient:Protein,
+        nutrient:Sodium .
+
+food:Cheese_monterey_jack_solid a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Cholesterol,
+        nutrient:Fat,
+        nutrient:Protein,
+        nutrient:Saturated_Fat,
+        nutrient:Sodium,
+        nutrient:Zinc .
+
+food:Cheese_mozzarella_low_moisture_partskim a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Fat,
+        nutrient:Protein,
+        nutrient:Saturated_Fat,
+        nutrient:Sodium,
+        nutrient:Zinc .
+
+food:Cheese_oaxaca_solid a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Fat,
+        nutrient:Protein,
+        nutrient:Saturated_Fat,
+        nutrient:Sodium,
+        nutrient:Zinc .
+
+food:Cheese_parmesan_grated a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Fat,
+        nutrient:Protein,
+        nutrient:Saturated_Fat,
+        nutrient:Sodium,
+        nutrient:Zinc .
+
+food:Cheese_parmesan_grated_refrigerated a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Fat,
+        nutrient:Protein,
+        nutrient:Saturated_Fat,
+        nutrient:Sodium,
+        nutrient:Zinc .
+
+food:Cheese_pasteurized_process_American_vitamin_D_fortified a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Cholesterol,
+        nutrient:Fat,
+        nutrient:Saturated_Fat,
+        nutrient:Sodium,
+        nutrient:Vitamin_D .
+
+food:Cheese_pasteurized_process_cheese_food_or_product_American_singles a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Fat,
+        nutrient:Saturated_Fat,
+        nutrient:Sodium,
+        nutrient:Vitamin_D .
+
+food:Cheese_provolone_sliced a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Fat,
+        nutrient:Protein,
+        nutrient:Saturated_Fat,
+        nutrient:Sodium,
+        nutrient:Zinc .
+
+food:Cheese_queso_fresco_solid a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Fat,
+        nutrient:Protein,
+        nutrient:Saturated_Fat,
+        nutrient:Sodium,
+        nutrient:Zinc .
+
+food:Cheese_ricotta_whole_milk a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Fat .
+
+food:Cheese_swiss a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Cholesterol,
+        nutrient:Fat,
+        nutrient:Protein,
+        nutrient:Saturated_Fat,
+        nutrient:Sodium,
+        nutrient:Vitamin_B12,
+        nutrient:Zinc .
+
+food:Cherries_sweet_dark_red_raw a prop:Food ;
+    prop:highIn nutrient:Sugar .
+
+food:Chia_seeds_dry_raw a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Carbohydrate,
+        nutrient:Fat,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Vitamin_B6,
+        nutrient:Zinc .
+
+food:Chicken_breast_boneless_skinless_raw a prop:Food ;
+    prop:highIn nutrient:Protein .
+
+food:Chicken_breast_meat_and_skin_raw a prop:Food ;
+    prop:highIn nutrient:Protein .
+
+food:Chicken_broiler_or_fryers_breast_skinless_boneless_meat_only_cooked_braised a prop:Food ;
+    prop:highIn nutrient:Cholesterol,
+        nutrient:Protein,
+        nutrient:Vitamin_B6 .
+
+food:Chicken_broilers_or_fryers_drumstick_meat_only_cooked_braised a prop:Food ;
+    prop:highIn nutrient:Cholesterol,
+        nutrient:Protein,
+        nutrient:Sodium,
+        nutrient:Vitamin_B6 .
+
+food:Chicken_drumstick_meat_and_skin_raw a prop:Food ;
+    prop:highIn nutrient:Cholesterol,
+        nutrient:Protein .
+
+food:Chicken_thigh_boneless_skinless_raw a prop:Food ;
+    prop:highIn nutrient:Fat,
+        nutrient:Protein .
+
+food:Chicken_thigh_meat_and_skin_raw a prop:Food ;
+    prop:highIn nutrient:Cholesterol,
+        nutrient:Fat .
+
+food:Chicken_wing_meat_and_skin_raw a prop:Food ;
+    prop:highIn nutrient:Cholesterol,
+        nutrient:Fat,
+        nutrient:Protein .
+
+food:Chickpeas_garbanzo_beans_bengal_gram_canned_sodium_added_drained_and_rinsed a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Sodium .
+
+food:Chickpeas_garbanzo_beans_bengal_gram_dry a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Carbohydrate,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Zinc .
+
+food:Cod_Pacific_or_Alaskan_frozen_wild_caught a prop:Food ;
+    prop:highIn nutrient:Sodium .
+
+food:Collards_raw a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Folate,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Vitamin_C .
+
+food:Cookies_oatmeal_soft_with_raisins a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Fat,
+        nutrient:Iron,
+        nutrient:Sodium,
+        nutrient:Sugar .
+
+food:Corn_flour_masa_harina_white_or_yellow_dry_raw a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Carbohydrate,
+        nutrient:Fiber,
+        nutrient:Magnesium,
+        nutrient:Vitamin_B6 .
+
+food:Cottage_cheese_full_fat_large_or_small_curd a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Sodium .
+
+food:Cream_cheese_full_fat_block a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Cholesterol,
+        nutrient:Fat,
+        nutrient:Saturated_Fat,
+        nutrient:Sodium .
+
+food:Cream_heavy a prop:Food ;
+    prop:highIn nutrient:Cholesterol,
+        nutrient:Fat,
+        nutrient:Saturated_Fat .
+
+food:Cream_sour_full_fat a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Fat .
+
+food:Crustaceans_crab_blue_swimming_lump_pasteurized_refrigerated a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Cholesterol,
+        nutrient:Protein,
+        nutrient:Sodium,
+        nutrient:Vitamin_B12,
+        nutrient:Zinc .
+
+food:Crustaceans_shrimp_farm_raised_raw a prop:Food ;
+    prop:highIn nutrient:Cholesterol,
+        nutrient:Sodium .
+
+food:Egg_white_dried a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Sodium .
+
+food:Egg_white_raw_frozen_pasteurized a prop:Food ;
+    prop:highIn nutrient:Sodium .
+
+food:Egg_whole_dried a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Cholesterol,
+        nutrient:Fat,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Sodium,
+        nutrient:Vitamin_D,
+        nutrient:Zinc .
+
+food:Egg_whole_raw_frozen_pasteurized a prop:Food ;
+    prop:highIn nutrient:Cholesterol,
+        nutrient:Fat,
+        nutrient:Sodium,
+        nutrient:Vitamin_D .
+
+food:Egg_yolk_dried a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Cholesterol,
+        nutrient:Fat,
+        nutrient:Iron,
+        nutrient:Protein,
+        nutrient:Sodium,
+        nutrient:Vitamin_D,
+        nutrient:Zinc .
+
+food:Egg_yolk_raw_frozen_pasteurized a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Cholesterol,
+        nutrient:Fat,
+        nutrient:Iron,
+        nutrient:Vitamin_D,
+        nutrient:Zinc .
+
+food:Eggs_Grade_A_Large_egg_whole a prop:Food ;
+    prop:highIn nutrient:Cholesterol,
+        nutrient:Fat,
+        nutrient:Folate,
+        nutrient:Sodium,
+        nutrient:Vitamin_D .
+
+food:Eggs_Grade_A_Large_egg_yolk a prop:Food ;
+    prop:highIn nutrient:Fat .
+
+food:Einkorn_grain_dry_raw a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Fiber,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Vitamin_B6,
+        nutrient:Zinc .
+
+food:Farro_pearled_dry_raw a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Fiber,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Vitamin_B6,
+        nutrient:Zinc .
+
+food:Figs_dried_uncooked a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Carbohydrate,
+        nutrient:Fiber,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Sugar .
+
+food:Fish_catfish_farm_raised_raw a prop:Food ;
+    prop:highIn nutrient:Vitamin_B12 .
+
+food:Fish_cod_Atlantic_wild_caught_raw a prop:Food ;
+    prop:highIn nutrient:Sodium .
+
+food:Fish_haddock_raw a prop:Food ;
+    prop:highIn nutrient:Sodium,
+        nutrient:Vitamin_B12,
+        nutrient:Vitamin_B6 .
+
+food:Fish_pollock_raw a prop:Food ;
+    prop:highIn nutrient:Sodium .
+
+food:Fish_salmon_Atlantic_farm_raised_raw a prop:Food ;
+    prop:highIn nutrient:Fat,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Vitamin_B12 .
+
+food:Fish_salmon_sockeye_wild_caught_raw a prop:Food ;
+    prop:highIn nutrient:Protein,
+        nutrient:Vitamin_B12 .
+
+food:Fish_tilapia_farm_raised_raw a prop:Food ;
+    prop:highIn nutrient:Protein .
+
+food:Fish_tuna_light_canned_in_water_drained_solids a prop:Food ;
+    prop:highIn nutrient:Protein,
+        nutrient:Sodium,
+        nutrient:Vitamin_B12,
+        nutrient:Vitamin_B6,
+        nutrient:Vitamin_D .
+
+food:Flaxseed_ground a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Carbohydrate,
+        nutrient:Fat,
+        nutrient:Fiber,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Vitamin_B6,
+        nutrient:Zinc .
+
+food:Flour_00 a prop:Food ;
+    prop:highIn nutrient:Carbohydrate .
+
+food:Flour_almond a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Fat,
+        nutrient:Fiber,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Zinc .
+
+food:Flour_amaranth a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Carbohydrate,
+        nutrient:Fiber,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Vitamin_B6,
+        nutrient:Zinc .
+
+food:Flour_barley a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Fiber,
+        nutrient:Iron,
+        nutrient:Magnesium .
+
+food:Flour_bread_white_enriched_unbleached a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Folate,
+        nutrient:Iron .
+
+food:Flour_buckwheat a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Fiber,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium .
+
+food:Flour_cassava a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Carbohydrate,
+        nutrient:Fiber,
+        nutrient:Iron .
+
+food:Flour_chestnut a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Fiber,
+        nutrient:Magnesium,
+        nutrient:Potassium .
+
+food:Flour_coconut a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Fat,
+        nutrient:Fiber,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Saturated_Fat,
+        nutrient:Zinc .
+
+food:Flour_corn_yellow_fine_meal_enriched a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Folate,
+        nutrient:Iron .
+
+food:Flour_oat_whole_grain a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Fiber,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Zinc .
+
+food:Flour_pastry_unenriched_unbleached a prop:Food ;
+    prop:highIn nutrient:Carbohydrate .
+
+food:Flour_potato a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Fiber,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Vitamin_B6 .
+
+food:Flour_quinoa a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Fiber,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Vitamin_B6,
+        nutrient:Zinc .
+
+food:Flour_rice_brown a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Magnesium .
+
+food:Flour_rice_glutinous a prop:Food ;
+    prop:highIn nutrient:Carbohydrate .
+
+food:Flour_rice_white_unenriched a prop:Food ;
+    prop:highIn nutrient:Carbohydrate .
+
+food:Flour_rye a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Fiber,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium .
+
+food:Flour_semolina_coarse_and_semicoarse a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Folate .
+
+food:Flour_semolina_fine a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Folate,
+        nutrient:Iron,
+        nutrient:Magnesium .
+
+food:Flour_sorghum a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Fiber,
+        nutrient:Iron,
+        nutrient:Magnesium .
+
+food:Flour_soy_defatted a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Carbohydrate,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Vitamin_B6,
+        nutrient:Zinc .
+
+food:Flour_soy_fullfat a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Carbohydrate,
+        nutrient:Fat,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Vitamin_B6,
+        nutrient:Zinc .
+
+food:Flour_spelt_whole_grain a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Fiber,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Vitamin_B6,
+        nutrient:Zinc .
+
+food:Flour_wheat_allpurpose_enriched_bleached a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Folate,
+        nutrient:Iron .
+
+food:Flour_wheat_allpurpose_enriched_unbleached a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Folate,
+        nutrient:Iron .
+
+food:Flour_wheat_allpurpose_unenriched_unbleached a prop:Food ;
+    prop:highIn nutrient:Carbohydrate .
+
+food:Flour_whole_wheat_unenriched a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Fiber,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Vitamin_B6,
+        nutrient:Zinc .
+
+food:Fonio_grain_dry_raw a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Iron .
+
+food:Frankfurter_beef_unheated a prop:Food ;
+    prop:highIn nutrient:Fat,
+        nutrient:Saturated_Fat,
+        nutrient:Sodium .
+
+food:Garlic_raw a prop:Food ;
+    prop:highIn nutrient:Carbohydrate .
+
+food:Grape_juice_purple_with_added_vitamin_C_from_concentrate_shelf_stable a prop:Food ;
+    prop:highIn nutrient:Sugar,
+        nutrient:Vitamin_C .
+
+food:Grape_juice_white_with_added_vitamin_C_from_concentrate_shelf_stable a prop:Food ;
+    prop:highIn nutrient:Sugar,
+        nutrient:Vitamin_C .
+
+food:Grapefruit_juice_white_canned_or_bottled_unsweetened a prop:Food ;
+    prop:highIn nutrient:Vitamin_C .
+
+food:Grapes_green_seedless_raw a prop:Food ;
+    prop:highIn nutrient:Sugar .
+
+food:Grapes_red_seedless_raw a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Sugar .
+
+food:Halibut_frozen_wild_caught a prop:Food ;
+    prop:highIn nutrient:Potassium,
+        nutrient:Protein .
+
+food:Ham_sliced_prepackaged_deli_meat_96fat_free_water_added a prop:Food ;
+    prop:highIn nutrient:Potassium,
+        nutrient:Sodium .
+
+food:Ham_sliced_restaurant a prop:Food ;
+    prop:highIn nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Sodium .
+
+food:Hummus_commercial a prop:Food ;
+    prop:highIn nutrient:Fat,
+        nutrient:Fiber,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Sodium .
+
+food:Juice_pomegranate_from_concentrate_shelfstable a prop:Food ;
+    prop:highIn nutrient:Sugar .
+
+food:Juice_prune_shelfstable a prop:Food ;
+    prop:highIn nutrient:Sugar .
+
+food:Juice_tart_cherry_from_concentrate_shelfstable a prop:Food ;
+    prop:highIn nutrient:Sugar .
+
+food:Kale_frozen_cooked_boiled_drained_without_salt a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Folate .
+
+food:Kale_raw a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Folate,
+        nutrient:Vitamin_C .
+
+food:Ketchup_restaurant a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Sodium,
+        nutrient:Sugar .
+
+food:Khorasan_grain_dry_raw a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Fiber,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Vitamin_B6,
+        nutrient:Zinc .
+
+food:Kiwifruit_green_raw a prop:Food ;
+    prop:highIn nutrient:Sugar,
+        nutrient:Vitamin_C .
+
+food:Kiwifruit_kiwi_green_peeled_raw a prop:Food ;
+    prop:highIn nutrient:Vitamin_C .
+
+food:Lamb_ground_raw a prop:Food ;
+    prop:highIn nutrient:Fat,
+        nutrient:Zinc .
+
+food:Leeks_bulb_and_greens_root_removed_raw a prop:Food ;
+    prop:highIn nutrient:Vitamin_B6 .
+
+food:Lentils_dry a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Zinc .
+
+food:Lobster_tail_only_frozen_wild_caught a prop:Food ;
+    prop:highIn nutrient:Sodium .
+
+food:Mahi_mahi_frozen_wild_caught a prop:Food ;
+    prop:highIn nutrient:Potassium,
+        nutrient:Protein .
+
+food:Mandarin_seedless_peeled_raw a prop:Food ;
+    prop:highIn nutrient:Sugar .
+
+food:Mango_Ataulfo_peeled_raw a prop:Food ;
+    prop:highIn nutrient:Sugar,
+        nutrient:Vitamin_C .
+
+food:Mango_Tommy_Atkins_peeled_raw a prop:Food ;
+    prop:highIn nutrient:Sugar .
+
+food:Milk_lowfat_fluid_1_milkfat_with_added_vitamin_A_and_vitamin_D a prop:Food ;
+    prop:highIn nutrient:Calcium .
+
+food:Milk_nonfat_fluid_with_added_vitamin_A_and_vitamin_D_fat_free_or_skim a prop:Food ;
+    prop:highIn nutrient:Calcium .
+
+food:Milk_reduced_fat_fluid_2_milkfat_with_added_vitamin_A_and_vitamin_D a prop:Food ;
+    prop:highIn nutrient:Calcium .
+
+food:Milk_whole_325_milkfat_with_added_vitamin_D a prop:Food ;
+    prop:highIn nutrient:Calcium .
+
+food:Millet_whole_grain a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Iron,
+        nutrient:Magnesium .
+
+food:Mushroom_beech a prop:Food ;
+    prop:highIn nutrient:Potassium .
+
+food:Mushroom_crimini a prop:Food ;
+    prop:highIn nutrient:Potassium .
+
+food:Mushroom_enoki a prop:Food ;
+    prop:highIn nutrient:Potassium .
+
+food:Mushroom_lions_mane a prop:Food ;
+    prop:highIn nutrient:Potassium .
+
+food:Mushroom_maitake a prop:Food ;
+    prop:highIn nutrient:Vitamin_D .
+
+food:Mushroom_oyster a prop:Food ;
+    prop:highIn nutrient:Folate .
+
+food:Mushroom_pioppini a prop:Food ;
+    prop:highIn nutrient:Potassium .
+
+food:Mustard_prepared_yellow a prop:Food ;
+    prop:highIn nutrient:Magnesium,
+        nutrient:Sodium .
+
+food:Nuts_almonds_dry_roasted_with_salt_added a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Fat,
+        nutrient:Fiber,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Sodium,
+        nutrient:Zinc .
+
+food:Nuts_almonds_whole_raw a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Fat,
+        nutrient:Fiber,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Zinc .
+
+food:Nuts_brazilnuts_raw a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Carbohydrate,
+        nutrient:Fat,
+        nutrient:Fiber,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Zinc .
+
+food:Nuts_cashew_nuts_raw a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Fat,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Zinc .
+
+food:Nuts_hazelnuts_or_filberts_raw a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Carbohydrate,
+        nutrient:Fat,
+        nutrient:Fiber,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium .
+
+food:Nuts_macadamia_nuts_raw a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Fat,
+        nutrient:Fiber,
+        nutrient:Magnesium .
+
+food:Nuts_pecans_halves_raw a prop:Food ;
+    prop:highIn nutrient:Fat,
+        nutrient:Fiber,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Zinc .
+
+food:Nuts_pine_nuts_raw a prop:Food ;
+    prop:highIn nutrient:Fat,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Vitamin_B6,
+        nutrient:Zinc .
+
+food:Nuts_pistachio_nuts_raw a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Carbohydrate,
+        nutrient:Fat,
+        nutrient:Fiber,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Protein .
+
+food:Nuts_walnuts_English_halves_raw a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Fat,
+        nutrient:Fiber,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Vitamin_B6,
+        nutrient:Zinc .
+
+food:Oat_milk_unsweetened_plain_refrigerated a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Vitamin_D .
+
+food:Oats_whole_grain_rolled_old_fashioned a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Zinc .
+
+food:Oats_whole_grain_steel_cut a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Zinc .
+
+food:Oil_coconut a prop:Food ;
+    prop:highIn nutrient:Fat,
+        nutrient:Saturated_Fat .
+
+food:Oil_corn a prop:Food ;
+    prop:highIn nutrient:Saturated_Fat .
+
+food:Oil_olive_extra_light a prop:Food ;
+    prop:highIn nutrient:Saturated_Fat .
+
+food:Oil_olive_extra_virgin a prop:Food ;
+    prop:highIn nutrient:Saturated_Fat .
+
+food:Oil_peanut a prop:Food ;
+    prop:highIn nutrient:Saturated_Fat .
+
+food:Oil_soybean a prop:Food ;
+    prop:highIn nutrient:Saturated_Fat .
+
+food:Olives_green_Manzanilla_stuffed_with_pimiento a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Fat,
+        nutrient:Sodium .
+
+food:Onion_rings_breaded_par_fried_frozen_prepared_heated_in_oven a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Fat,
+        nutrient:Sodium .
+
+food:Oranges_raw_navels a prop:Food ;
+    prop:highIn nutrient:Vitamin_C .
+
+food:Parsnips_raw a prop:Food ;
+    prop:highIn nutrient:Fiber,
+        nutrient:Folate,
+        nutrient:Potassium,
+        nutrient:Sugar .
+
+food:Pawpaw_peeled_seeded_raw a prop:Food ;
+    prop:highIn nutrient:Folate,
+        nutrient:Sugar .
+
+food:Peanut_butter_creamy a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Fat,
+        nutrient:Fiber,
+        nutrient:Folate,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Sodium,
+        nutrient:Vitamin_B6,
+        nutrient:Zinc .
+
+food:Peanuts_raw a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Fat,
+        nutrient:Fiber,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Zinc .
+
+food:Pears_raw_bartlett a prop:Food ;
+    prop:highIn nutrient:Sugar .
+
+food:Peas_green_sweet_canned_sodium_added_sugar_added_drained_and_rinsed a prop:Food ;
+    prop:highIn nutrient:Sodium .
+
+food:Peppers_banana_or_Hungarian_wax_seeded_raw a prop:Food ;
+    prop:highIn nutrient:Vitamin_B6,
+        nutrient:Vitamin_C .
+
+food:Peppers_bell_green_raw a prop:Food ;
+    prop:highIn nutrient:Vitamin_B6,
+        nutrient:Vitamin_C .
+
+food:Peppers_bell_orange_raw a prop:Food ;
+    prop:highIn nutrient:Vitamin_B6,
+        nutrient:Vitamin_C .
+
+food:Peppers_bell_red_raw a prop:Food ;
+    prop:highIn nutrient:Vitamin_B6,
+        nutrient:Vitamin_C .
+
+food:Peppers_bell_yellow_raw a prop:Food ;
+    prop:highIn nutrient:Vitamin_B6,
+        nutrient:Vitamin_C .
+
+food:Peppers_jalapeno_seeded_raw a prop:Food ;
+    prop:highIn nutrient:Vitamin_B6,
+        nutrient:Vitamin_C .
+
+food:Peppers_poblano_seeded_raw a prop:Food ;
+    prop:highIn nutrient:Vitamin_B6,
+        nutrient:Vitamin_C .
+
+food:Peppers_serrano_seeded_raw a prop:Food ;
+    prop:highIn nutrient:Vitamin_B6,
+        nutrient:Vitamin_C .
+
+food:Pickles_cucumber_dill_or_kosher_dill a prop:Food ;
+    prop:highIn nutrient:Sodium .
+
+food:Pineapple_raw a prop:Food ;
+    prop:highIn nutrient:Sugar,
+        nutrient:Vitamin_C .
+
+food:Plantains_overripe_raw a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Potassium,
+        nutrient:Sugar .
+
+food:Plantains_ripe_raw a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Potassium,
+        nutrient:Sugar .
+
+food:Plantains_underripe_raw a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Potassium .
+
+food:Pork_belly_with_skin_raw a prop:Food ;
+    prop:highIn nutrient:Fat .
+
+food:Pork_chop_center_cut_raw a prop:Food ;
+    prop:highIn nutrient:Protein .
+
+food:Pork_cured_bacon_cooked_restaurant a prop:Food ;
+    prop:highIn nutrient:Fat,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Saturated_Fat,
+        nutrient:Sodium,
+        nutrient:Zinc .
+
+food:Pork_ground_raw a prop:Food ;
+    prop:highIn nutrient:Fat .
+
+food:Pork_loin_boneless_raw a prop:Food ;
+    prop:highIn nutrient:Fat,
+        nutrient:Protein .
+
+food:Pork_loin_tenderloin_boneless_raw a prop:Food ;
+    prop:highIn nutrient:Potassium,
+        nutrient:Protein .
+
+food:Potatoes_gold_without_skin_raw a prop:Food ;
+    prop:highIn nutrient:Potassium .
+
+food:Potatoes_red_without_skin_raw a prop:Food ;
+    prop:highIn nutrient:Potassium .
+
+food:Potatoes_russet_without_skin_raw a prop:Food ;
+    prop:highIn nutrient:Potassium .
+
+food:Radicchio_raw a prop:Food ;
+    prop:highIn nutrient:Folate .
+
+food:Radishes_red_raw a prop:Food ;
+    prop:highIn nutrient:Folate .
+
+food:Restaurant_Chinese_fried_rice_without_meat a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Sodium .
+
+food:Restaurant_Chinese_sweet_and_sour_pork a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Fat,
+        nutrient:Iron,
+        nutrient:Sodium,
+        nutrient:Sugar .
+
+food:Restaurant_Latino_pupusas_con_frijoles_pupusas_bean a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Fat,
+        nutrient:Fiber,
+        nutrient:Magnesium,
+        nutrient:Sodium .
+
+food:Restaurant_Latino_tamale_pork a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Fat,
+        nutrient:Sodium .
+
+food:Rice_black_unenriched_raw a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Magnesium,
+        nutrient:Vitamin_B6 .
+
+food:Rice_brown_long_grain_unenriched_raw a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Magnesium .
+
+food:Rice_red_unenriched_dry_raw a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Magnesium .
+
+food:Rice_white_long_grain_unenriched_raw a prop:Food ;
+    prop:highIn nutrient:Carbohydrate .
+
+food:Salt_table_iodized a prop:Food ;
+    prop:highIn nutrient:Sodium .
+
+food:Sauce_pasta_spaghettimarinara_readytoserve a prop:Food ;
+    prop:highIn nutrient:Sodium .
+
+food:Sauce_salsa_readytoserve a prop:Food ;
+    prop:highIn nutrient:Sodium .
+
+food:Sausage_Italian_pork_mild_cooked_panfried a prop:Food ;
+    prop:highIn nutrient:Fat,
+        nutrient:Protein,
+        nutrient:Sodium,
+        nutrient:Vitamin_B6 .
+
+food:Sausage_breakfast_sausage_beef_precooked_unprepared a prop:Food ;
+    prop:highIn nutrient:Fat,
+        nutrient:Saturated_Fat,
+        nutrient:Sodium .
+
+food:Sausage_pork_chorizo_link_or_ground_cooked_panfried a prop:Food ;
+    prop:highIn nutrient:Cholesterol,
+        nutrient:Fat,
+        nutrient:Iron,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Sodium,
+        nutrient:Vitamin_B6 .
+
+food:Sausage_turkey_breakfast_links_mild_raw a prop:Food ;
+    prop:highIn nutrient:Fat,
+        nutrient:Sodium,
+        nutrient:Vitamin_B6 .
+
+food:Scallops_bay_Patagonian_frozen_wild_caught a prop:Food ;
+    prop:highIn nutrient:Magnesium,
+        nutrient:Sodium .
+
+food:Scallops_sea_frozen_wild_caught a prop:Food ;
+    prop:highIn nutrient:Sodium .
+
+food:Sea_bass_Chilean_frozen_wild_caught a prop:Food ;
+    prop:highIn nutrient:Fat .
+
+food:Seeds_pumpkin_seeds_pepitas_raw a prop:Food ;
+    prop:highIn nutrient:Fat,
+        nutrient:Fiber,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Zinc .
+
+food:Seeds_sunflower_seed_kernel_raw a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Carbohydrate,
+        nutrient:Fat,
+        nutrient:Fiber,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Zinc .
+
+food:Seeds_sunflower_seed_kernels_dry_roasted_with_salt_added a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Fat,
+        nutrient:Fiber,
+        nutrient:Folate,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Sodium,
+        nutrient:Vitamin_B6,
+        nutrient:Zinc .
+
+food:Sesame_butter_creamy a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Fat,
+        nutrient:Fiber,
+        nutrient:Folate,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Protein,
+        nutrient:Vitamin_B6,
+        nutrient:Zinc .
+
+food:Snapper_frozen_wild_caught a prop:Food ;
+    prop:highIn nutrient:Protein .
+
+food:Snow_crab_legs_only_frozen__ a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Magnesium,
+        nutrient:Sodium,
+        nutrient:Vitamin_B12,
+        nutrient:Zinc .
+
+food:Sorghum_bran_white_unenriched_dry_raw a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Fat,
+        nutrient:Fiber,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Vitamin_B6,
+        nutrient:Zinc .
+
+food:Sorghum_flour_white_pearled_unenriched_dry_raw a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Iron,
+        nutrient:Magnesium .
+
+food:Sorghum_grain_white_pearled_unenriched_dry_raw a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Magnesium .
+
+food:Sorghum_whole_grain_white_dry_raw a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Fiber,
+        nutrient:Iron,
+        nutrient:Magnesium .
+
+food:Soy_milk_sweetened_plain_refrigerated a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Vitamin_D .
+
+food:Soy_milk_unsweetened_plain_shelf_stable a prop:Food ;
+    prop:highIn nutrient:Calcium .
+
+food:Spinach_baby a prop:Food ;
+    prop:highIn nutrient:Folate,
+        nutrient:Magnesium,
+        nutrient:Potassium .
+
+food:Spinach_mature a prop:Food ;
+    prop:highIn nutrient:Folate,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Vitamin_B6 .
+
+food:Squash_pie_pumpkin_peeled_seeded_raw a prop:Food ;
+    prop:highIn nutrient:Potassium .
+
+food:Squash_summer_green_zucchini_includes_skin_raw a prop:Food ;
+    prop:highIn nutrient:Folate .
+
+food:Squid_calamari_frozen_tubes_only a prop:Food ;
+    prop:highIn nutrient:Sodium .
+
+food:Strawberries_raw a prop:Food ;
+    prop:highIn nutrient:Vitamin_C .
+
+food:Sugars_granulated a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Sugar .
+
+food:Sweet_potatoes_orange_flesh_without_skin_raw a prop:Food ;
+    prop:highIn nutrient:Potassium .
+
+food:Swordfish_frozen_wild_caught a prop:Food ;
+    prop:highIn nutrient:Fat,
+        nutrient:Potassium,
+        nutrient:Protein .
+
+food:Tomato_juice_with_added_ingredients_from_concentrate_shelf_stable a prop:Food ;
+    prop:highIn nutrient:Sodium,
+        nutrient:Vitamin_C .
+
+food:Tomato_paste_canned_without_salt_added a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Fiber,
+        nutrient:Iron,
+        nutrient:Magnesium,
+        nutrient:Potassium,
+        nutrient:Sugar .
+
+food:Tomato_puree_canned a prop:Food ;
+    prop:highIn nutrient:Potassium .
+
+food:Tomato_sauce_canned_with_salt_added a prop:Food ;
+    prop:highIn nutrient:Sodium .
+
+food:Tomatoes_canned_red_ripe_diced a prop:Food ;
+    prop:highIn nutrient:Sodium .
+
+food:Tomatoes_crushed_canned a prop:Food ;
+    prop:highIn nutrient:Iron,
+        nutrient:Sodium .
+
+food:Tomatoes_whole_canned_solids_and_liquids_with_salt_added a prop:Food ;
+    prop:highIn nutrient:Sodium .
+
+food:Tuna_ahi_or_yellowfin_frozen_wild_caught a prop:Food ;
+    prop:highIn nutrient:Potassium,
+        nutrient:Protein .
+
+food:Turkey_ground_93_lean_7_fat_panbroiled_crumbles a prop:Food ;
+    prop:highIn nutrient:Cholesterol,
+        nutrient:Fat,
+        nutrient:Protein,
+        nutrient:Vitamin_B12,
+        nutrient:Vitamin_B6,
+        nutrient:Zinc .
+
+food:Turkey_ground_93_lean_7_fat_raw a prop:Food ;
+    prop:highIn nutrient:Fat,
+        nutrient:Zinc .
+
+food:Turnips_raw a prop:Food ;
+    prop:highIn nutrient:Folate .
+
+food:Wild_rice_dry_raw a prop:Food ;
+    prop:highIn nutrient:Carbohydrate,
+        nutrient:Magnesium,
+        nutrient:Vitamin_B6,
+        nutrient:Zinc .
+
+food:Yogurt_Greek_plain_nonfat a prop:Food ;
+    prop:highIn nutrient:Calcium .
+
+food:Yogurt_Greek_plain_whole_milk a prop:Food ;
+    prop:highIn nutrient:Calcium .
+
+food:Yogurt_Greek_strawberry_nonfat a prop:Food ;
+    prop:highIn nutrient:Calcium,
+        nutrient:Sugar .
+
+food:Yogurt_plain_nonfat a prop:Food ;
+    prop:highIn nutrient:Calcium .
+
+food:Yogurt_plain_whole_milk a prop:Food ;
+    prop:highIn nutrient:Calcium .
+
+disease:Acrodermatitis a prop:Disease .
+
+disease:Alzheimer_Disease a prop:Disease .
+
+disease:Anemia a prop:Disease .
+
+disease:Anemia__Iron_Deficiency a prop:Disease .
+
+disease:Asthma a prop:Disease .
+
+disease:Atherosclerosis a prop:Disease .
+
+disease:Atrial_Fibrillation a prop:Disease .
+
+disease:Basal_Cell_Nevus_Syndrome a prop:Disease .
+
+disease:Bone_Diseases a prop:Disease .
+
+disease:Bone_Diseases__Endocrine a prop:Disease .
+
+disease:Bradycardia a prop:Disease .
+
+disease:Brain_Injuries a prop:Disease .
+
+disease:COVID_19 a prop:Disease .
+
+disease:Carcinoma__Ehrlich_Tumor a prop:Disease .
+
+disease:Carcinoma__Squamous_Cell a prop:Disease .
+
+disease:Cardiotoxicity a prop:Disease .
+
+disease:Cardiovascular_Diseases a prop:Disease .
+
+disease:Cell_Transformation__Neoplastic a prop:Disease .
+
+disease:Cerebrovascular_Disorders a prop:Disease .
+
+disease:Cholestasis a prop:Disease .
+
+disease:Cholestasis__Extrahepatic a prop:Disease .
+
+disease:Cognition_Disorders a prop:Disease .
+
+disease:Colitis a prop:Disease .
+
+disease:Colonic_Neoplasms a prop:Disease .
+
+disease:Coronary_Vasospasm a prop:Disease .
+
+disease:Craniofacial_Abnormalities a prop:Disease .
+
+disease:Developmental_Disabilities a prop:Disease .
+
+disease:Diabetes_Mellitus__Type_2 a prop:Disease .
+
+disease:Diabetic_Cardiomyopathies a prop:Disease .
+
+disease:Diabetic_Ketoacidosis a prop:Disease .
+
+disease:Diarrhea a prop:Disease .
+
+disease:Disease_Models__Animal a prop:Disease .
+
+disease:Disease_Progression a prop:Disease .
+
+disease:Disease_Susceptibility a prop:Disease .
+
+disease:Drug_Overdose a prop:Disease .
+
+disease:Dysgeusia a prop:Disease .
+
+disease:Edema a prop:Disease .
+
+disease:Esophageal_Neoplasms a prop:Disease .
+
+disease:Esophageal_Squamous_Cell_Carcinoma a prop:Disease .
+
+disease:Fasciculation a prop:Disease .
+
+disease:Fever a prop:Disease .
+
+disease:Gastrointestinal_Diseases a prop:Disease .
+
+disease:Glioma a prop:Disease .
+
+disease:Heart_Defects__Congenital a prop:Disease .
+
+disease:Heart_Failure a prop:Disease .
+
+disease:Hemorrhage a prop:Disease .
+
+disease:Hepatolenticular_Degeneration a prop:Disease .
+
+disease:Hepatomegaly a prop:Disease .
+
+disease:Hyperalgesia a prop:Disease .
+
+disease:Hyperemia a prop:Disease .
+
+disease:Hyperkinesis a prop:Disease .
+
+disease:Hyperlipidemias a prop:Disease .
+
+disease:Hyperparathyroidism__Secondary a prop:Disease .
+
+disease:Hyperplasia a prop:Disease .
+
+disease:Hypertrophy a prop:Disease .
+
+disease:Hypocalcemia a prop:Disease .
+
+disease:Hypokalemia a prop:Disease .
+
+disease:Hypokalemic_Periodic_Paralysis a prop:Disease .
+
+disease:Insulin_Resistance a prop:Disease .
+
+disease:Intestinal_Diseases a prop:Disease .
+
+disease:Kidney_Diseases__Cystic a prop:Disease .
+
+disease:Leukemia a prop:Disease .
+
+disease:Leukemia__Myeloid__Acute a prop:Disease .
+
+disease:Liver_Cirrhosis a prop:Disease .
+
+disease:Liver_Diseases a prop:Disease .
+
+disease:Long_QT_Syndrome a prop:Disease .
+
+disease:Magnesium_Deficiency a prop:Disease .
+
+disease:Major_Depressive_Disorder a prop:Disease .
+
+disease:Melanoma a prop:Disease .
+
+disease:Memory_Disorders a prop:Disease .
+
+disease:Mental_Disorders a prop:Disease .
+
+disease:Migraine_Disorders a prop:Disease .
+
+disease:Mobility_Limitation a prop:Disease .
+
+disease:Movement_Disorders a prop:Disease .
+
+disease:Multiple_Myeloma a prop:Disease .
+
+disease:Multiple_Sclerosis a prop:Disease .
+
+disease:Muscle_Cramp a prop:Disease .
+
+disease:Muscular_Diseases a prop:Disease .
+
+disease:Myalgia a prop:Disease .
+
+disease:Necrosis a prop:Disease .
+
+disease:Neoplasms a prop:Disease .
+
+disease:Nephrocalcinosis a prop:Disease .
+
+disease:Nephrolithiasis a prop:Disease .
+
+disease:Nerve_Degeneration a prop:Disease .
+
+disease:Neural_Tube_Defects a prop:Disease .
+
+disease:Paralysis a prop:Disease .
+
+disease:Paranoid_Disorders a prop:Disease .
+
+disease:Parasomnias a prop:Disease .
+
+disease:Peptic_Ulcer a prop:Disease .
+
+disease:Periodontitis a prop:Disease .
+
+disease:Peripheral_Nervous_System_Diseases a prop:Disease .
+
+disease:Polycystic_Ovary_Syndrome a prop:Disease .
+
+disease:Prenatal_Exposure_Delayed_Effects a prop:Disease .
+
+disease:Prenatal_Injuries a prop:Disease .
+
+disease:Protein_Deficiency a prop:Disease .
+
+disease:Proteinuria a prop:Disease .
+
+disease:Pruritus a prop:Disease .
+
+disease:Psychotic_Disorders a prop:Disease .
+
+disease:Pulmonary_Fibrosis a prop:Disease .
+
+disease:Pulpitis a prop:Disease .
+
+disease:Reperfusion_Injury a prop:Disease .
+
+disease:Respiratory_Tract_Diseases a prop:Disease .
+
+disease:Rhabdomyolysis a prop:Disease .
+
+disease:Sinus_Arrest__Cardiac a prop:Disease .
+
+disease:Splenic_Diseases a prop:Disease .
+
+disease:Stomach_Ulcer a prop:Disease .
+
+disease:Substance_Withdrawal_Syndrome a prop:Disease .
+
+disease:Tachycardia__Ectopic_Atrial a prop:Disease .
+
+disease:Tachycardia__Supraventricular a prop:Disease .
+
+disease:Tachycardia__Ventricular a prop:Disease .
+
+disease:Teratozoospermia a prop:Disease .
+
+disease:Testicular_Diseases a prop:Disease .
+
+disease:Torsades_de_Pointes a prop:Disease .
+
+disease:Tremor a prop:Disease .
+
+disease:Vasospasm__Intracranial a prop:Disease .
+
+disease:Ventricular_Dysfunction__Left a prop:Disease .
+
+disease:Vitamin_D_Deficiency a prop:Disease .
+
+disease:Weight_Gain a prop:Disease .
+
+disease:Weight_Loss a prop:Disease .
+
+disease:Wounds_and_Injuries a prop:Disease .
+
+disease:Arthralgia a prop:Disease .
+
+disease:Autistic_Disorder a prop:Disease .
+
+disease:Cardiomyopathies a prop:Disease .
+
+disease:Chemical_and_Drug_Induced_Liver_Injury a prop:Disease .
+
+disease:Diabetes_Mellitus a prop:Disease .
+
+disease:Heart_Diseases a prop:Disease .
+
+disease:Hyperglycemia a prop:Disease .
+
+disease:Hypomagnesemia_primary a prop:Disease .
+
+disease:Hypoparathyroidism a prop:Disease .
+
+disease:Infant_Death a prop:Disease .
+
+disease:Inflammation a prop:Disease .
+
+disease:Lung_Injury a prop:Disease .
+
+disease:Muscle_Weakness a prop:Disease .
+
+disease:Nerve_Compression_Syndromes a prop:Disease .
+
+disease:Neurologic_Manifestations a prop:Disease .
+
+disease:Osteoporosis a prop:Disease .
+
+disease:Osteoporosis__Postmenopausal a prop:Disease .
+
+disease:Pain a prop:Disease .
+
+disease:Polyradiculopathy a prop:Disease .
+
+disease:Prostatic_Neoplasms a prop:Disease .
+
+disease:Renal_Insufficiency a prop:Disease .
+
+disease:Rickets a prop:Disease .
+
+disease:Seizures a prop:Disease .
+
+disease:Tachycardia a prop:Disease .
+
+disease:Urinary_Bladder_Diseases a prop:Disease .
+
+disease:Ventricular_Fibrillation a prop:Disease .
+
+disease:Drug_Related_Side_Effects_and_Adverse_Reactions a prop:Disease .
+
+disease:Hypotension a prop:Disease .
+
+disease:Water_Electrolyte_Imbalance a prop:Disease .
+
+disease:Arrhythmias__Cardiac a prop:Disease .
+
+disease:Hypertension a prop:Disease .
+
+disease:Kidney_Diseases a prop:Disease .
+
+disease:Acute_Kidney_Injury a prop:Disease .
+
+nutrient:Vitamin_D a prop:Nutrient ;
+    prop:treats disease:Acute_Kidney_Injury,
+        disease:Alzheimer_Disease,
+        disease:Arthralgia,
+        disease:Basal_Cell_Nevus_Syndrome,
+        disease:Bone_Diseases__Endocrine,
+        disease:Chemical_and_Drug_Induced_Liver_Injury,
+        disease:Cognition_Disorders,
+        disease:Colonic_Neoplasms,
+        disease:Hyperparathyroidism__Secondary,
+        disease:Hypertension,
+        disease:Hypertrophy,
+        disease:Hypoparathyroidism,
+        disease:Inflammation,
+        disease:Leukemia__Myeloid__Acute,
+        disease:Liver_Cirrhosis,
+        disease:Lung_Injury,
+        disease:Memory_Disorders,
+        disease:Mental_Disorders,
+        disease:Mobility_Limitation,
+        disease:Multiple_Sclerosis,
+        disease:Muscle_Weakness,
+        disease:Myalgia,
+        disease:Nerve_Compression_Syndromes,
+        disease:Neurologic_Manifestations,
+        disease:Osteoporosis,
+        disease:Osteoporosis__Postmenopausal,
+        disease:Pain,
+        disease:Paranoid_Disorders,
+        disease:Polyradiculopathy,
+        disease:Prenatal_Exposure_Delayed_Effects,
+        disease:Prostatic_Neoplasms,
+        disease:Pruritus,
+        disease:Psychotic_Disorders,
+        disease:Pulmonary_Fibrosis,
+        disease:Reperfusion_Injury,
+        disease:Respiratory_Tract_Diseases,
+        disease:Rickets,
+        disease:Urinary_Bladder_Diseases,
+        disease:Vitamin_D_Deficiency,
+        disease:Wounds_and_Injuries .
+
+nutrient:Vitamin_B12 a prop:Nutrient .
+
+nutrient:Cholesterol a prop:Nutrient .
+
+nutrient:Saturated_Fat a prop:Nutrient .
+
+nutrient:Vitamin_C a prop:Nutrient .
+
+nutrient:Folate a prop:Nutrient .
+
+nutrient:Sugar a prop:Nutrient .
+
+nutrient:Fiber a prop:Nutrient ;
+    prop:treats disease:Hyperglycemia .
+
+nutrient:Vitamin_B6 a prop:Nutrient .
+
+nutrient:Carbohydrate a prop:Nutrient .
+
+nutrient:Sodium a prop:Nutrient ;
+    prop:treats disease:Acute_Kidney_Injury,
+        disease:Arrhythmias__Cardiac,
+        disease:Drug_Related_Side_Effects_and_Adverse_Reactions,
+        disease:Heart_Diseases,
+        disease:Hypotension,
+        disease:Kidney_Diseases,
+        disease:Kidney_Diseases__Cystic,
+        disease:Renal_Insufficiency,
+        disease:Tachycardia,
+        disease:Ventricular_Fibrillation,
+        disease:Water_Electrolyte_Imbalance .
+
+nutrient:Fat a prop:Nutrient .
+
+nutrient:Calcium a prop:Nutrient ;
+    prop:treats disease:Acute_Kidney_Injury,
+        disease:Arrhythmias__Cardiac,
+        disease:Bone_Diseases,
+        disease:Bradycardia,
+        disease:Cardiomyopathies,
+        disease:Colitis,
+        disease:Drug_Overdose,
+        disease:Hypertension,
+        disease:Hypocalcemia,
+        disease:Hypoparathyroidism,
+        disease:Hypotension,
+        disease:Kidney_Diseases,
+        disease:Movement_Disorders,
+        disease:Neoplasms,
+        disease:Nephrocalcinosis,
+        disease:Nephrolithiasis,
+        disease:Nerve_Compression_Syndromes,
+        disease:Neurologic_Manifestations,
+        disease:Osteoporosis,
+        disease:Osteoporosis__Postmenopausal,
+        disease:Peptic_Ulcer,
+        disease:Periodontitis,
+        disease:Polyradiculopathy,
+        disease:Pulpitis,
+        disease:Renal_Insufficiency,
+        disease:Rickets,
+        disease:Seizures,
+        disease:Sinus_Arrest__Cardiac,
+        disease:Urinary_Bladder_Diseases,
+        disease:Water_Electrolyte_Imbalance,
+        disease:Weight_Gain .
+
+nutrient:Iron a prop:Nutrient ;
+    prop:treats disease:Anemia,
+        disease:Anemia__Iron_Deficiency,
+        disease:Autistic_Disorder,
+        disease:Cholestasis,
+        disease:Hyperkinesis,
+        disease:Parasomnias .
+
+nutrient:Magnesium a prop:Nutrient ;
+    prop:treats disease:Acute_Kidney_Injury,
+        disease:Arrhythmias__Cardiac,
+        disease:Atrial_Fibrillation,
+        disease:Autistic_Disorder,
+        disease:Cardiovascular_Diseases,
+        disease:Cerebrovascular_Disorders,
+        disease:Coronary_Vasospasm,
+        disease:Developmental_Disabilities,
+        disease:Drug_Related_Side_Effects_and_Adverse_Reactions,
+        disease:Fasciculation,
+        disease:Hemorrhage,
+        disease:Hyperalgesia,
+        disease:Hypertension,
+        disease:Hypomagnesemia_primary,
+        disease:Infant_Death,
+        disease:Kidney_Diseases,
+        disease:Long_QT_Syndrome,
+        disease:Lung_Injury,
+        disease:Magnesium_Deficiency,
+        disease:Migraine_Disorders,
+        disease:Pain,
+        disease:Seizures,
+        disease:Substance_Withdrawal_Syndrome,
+        disease:Tachycardia,
+        disease:Tachycardia__Ectopic_Atrial,
+        disease:Tachycardia__Supraventricular,
+        disease:Tachycardia__Ventricular,
+        disease:Torsades_de_Pointes,
+        disease:Vasospasm__Intracranial,
+        disease:Ventricular_Fibrillation .
+
+nutrient:Protein a prop:Nutrient .
+
+nutrient:Zinc a prop:Nutrient ;
+    prop:treats disease:Acrodermatitis,
+        disease:Acute_Kidney_Injury,
+        disease:Asthma,
+        disease:Atherosclerosis,
+        disease:Brain_Injuries,
+        disease:COVID_19,
+        disease:Carcinoma__Ehrlich_Tumor,
+        disease:Carcinoma__Squamous_Cell,
+        disease:Cardiomyopathies,
+        disease:Cardiotoxicity,
+        disease:Cell_Transformation__Neoplastic,
+        disease:Chemical_and_Drug_Induced_Liver_Injury,
+        disease:Cholestasis__Extrahepatic,
+        disease:Craniofacial_Abnormalities,
+        disease:Diabetes_Mellitus,
+        disease:Diabetes_Mellitus__Type_2,
+        disease:Diabetic_Cardiomyopathies,
+        disease:Diarrhea,
+        disease:Disease_Models__Animal,
+        disease:Disease_Progression,
+        disease:Disease_Susceptibility,
+        disease:Dysgeusia,
+        disease:Edema,
+        disease:Esophageal_Neoplasms,
+        disease:Esophageal_Squamous_Cell_Carcinoma,
+        disease:Fever,
+        disease:Gastrointestinal_Diseases,
+        disease:Glioma,
+        disease:Heart_Defects__Congenital,
+        disease:Hepatolenticular_Degeneration,
+        disease:Hepatomegaly,
+        disease:Hyperemia,
+        disease:Hyperglycemia,
+        disease:Hyperlipidemias,
+        disease:Hyperplasia,
+        disease:Hypotension,
+        disease:Infant_Death,
+        disease:Inflammation,
+        disease:Insulin_Resistance,
+        disease:Intestinal_Diseases,
+        disease:Kidney_Diseases,
+        disease:Leukemia,
+        disease:Liver_Diseases,
+        disease:Major_Depressive_Disorder,
+        disease:Melanoma,
+        disease:Multiple_Myeloma,
+        disease:Necrosis,
+        disease:Neural_Tube_Defects,
+        disease:Peripheral_Nervous_System_Diseases,
+        disease:Polycystic_Ovary_Syndrome,
+        disease:Prenatal_Injuries,
+        disease:Prostatic_Neoplasms,
+        disease:Protein_Deficiency,
+        disease:Proteinuria,
+        disease:Splenic_Diseases,
+        disease:Stomach_Ulcer,
+        disease:Teratozoospermia,
+        disease:Testicular_Diseases,
+        disease:Ventricular_Dysfunction__Left,
+        disease:Weight_Loss .
+
+nutrient:Potassium a prop:Nutrient ;
+    prop:treats disease:Acute_Kidney_Injury,
+        disease:Arrhythmias__Cardiac,
+        disease:Arthralgia,
+        disease:Diabetes_Mellitus,
+        disease:Diabetic_Ketoacidosis,
+        disease:Drug_Related_Side_Effects_and_Adverse_Reactions,
+        disease:Heart_Diseases,
+        disease:Heart_Failure,
+        disease:Hypertension,
+        disease:Hypokalemia,
+        disease:Hypokalemic_Periodic_Paralysis,
+        disease:Hypomagnesemia_primary,
+        disease:Kidney_Diseases,
+        disease:Muscle_Cramp,
+        disease:Muscle_Weakness,
+        disease:Muscular_Diseases,
+        disease:Nerve_Degeneration,
+        disease:Paralysis,
+        disease:Rhabdomyolysis,
+        disease:Tremor,
+        disease:Water_Electrolyte_Imbalance .
+

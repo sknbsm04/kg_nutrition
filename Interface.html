@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Knowledge Graph</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0a0f;
+            --panel: #11111a;
+            --border: #1e1e2e;
+            --food: #f97316;
+            --nutrient: #38bdf8;
+            --disease: #a78bfa;
+            --recommended: #4ade80;
+            --contraindicated: #f43f5e;
+            --highin: #fbbf24;
+            --lowin: #94a3b8;
+            --mediumin: #67e8f9;
+            --type: #6b7280;
+            --text: #e2e8f0;
+            --muted: #64748b;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Space Mono', monospace;
+            background: var(--bg);
+            color: var(--text);
+            overflow: hidden;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        #header {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            height: 52px;
+            background: var(--panel);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            gap: 20px;
+            z-index: 100;
+        }
+
+        #header h1 {
+            font-family: 'Syne', sans-serif;
+            font-weight: 800;
+            font-size: 15px;
+            letter-spacing: 0.05em;
+            color: var(--text);
+            white-space: nowrap;
+        }
+
+        #header .pill {
+            font-size: 10px;
+            padding: 3px 8px;
+            border-radius: 999px;
+            background: var(--border);
+            color: var(--muted);
+            letter-spacing: 0.08em;
+        }
+
+        .controls {
+            margin-left: auto;
+            display: flex;
+            gap: 8px;
+        }
+
+        .btn {
+            font-family: 'Space Mono', monospace;
+            font-size: 11px;
+            padding: 5px 12px;
+            background: var(--border);
+            color: var(--text);
+            border: 1px solid #2a2a3e;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .btn:hover { background: #1e1e2e; border-color: #3a3a5e; }
+
+        #svg-container {
+            position: fixed;
+            top: 52px; left: 0;
+            right: 300px;
+            bottom: 0;
+        }
+
+        #sidebar {
+            position: fixed;
+            top: 52px; right: 0;
+            width: 300px;
+            bottom: 0;
+            background: var(--panel);
+            border-left: 1px solid var(--border);
+            overflow-y: auto;
+            padding: 16px;
+        }
+
+        #sidebar h2 {
+            font-family: 'Syne', sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 12px;
+        }
+
+        #node-details {
+            font-size: 12px;
+            color: var(--muted);
+            line-height: 1.6;
+        }
+
+        .node-card {
+            background: #0e0e18;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 12px;
+            margin-bottom: 10px;
+        }
+
+        .node-card .name {
+            font-family: 'Syne', sans-serif;
+            font-weight: 700;
+            font-size: 13px;
+            color: var(--text);
+            margin-bottom: 4px;
+            word-break: break-word;
+        }
+
+        .node-card .type-badge {
+            display: inline-block;
+            font-size: 9px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 2px 7px;
+            border-radius: 3px;
+            margin-bottom: 10px;
+        }
+
+        .type-food { background: rgba(249,115,22,0.15); color: var(--food); }
+        .type-nutrient { background: rgba(56,189,248,0.15); color: var(--nutrient); }
+        .type-disease { background: rgba(167,139,250,0.15); color: var(--disease); }
+
+        .rel-list { list-style: none; }
+        .rel-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 6px;
+            padding: 5px 0;
+            border-top: 1px solid var(--border);
+            font-size: 11px;
+            line-height: 1.4;
+        }
+
+        .rel-tag {
+            flex-shrink: 0;
+            font-size: 9px;
+            padding: 2px 5px;
+            border-radius: 3px;
+            letter-spacing: 0.05em;
+            margin-top: 1px;
+        }
+
+        .rel-recommendedFor { background: rgba(74,222,128,0.15); color: var(--recommended); }
+        .rel-contraindicatedFor { background: rgba(244,63,94,0.15); color: var(--contraindicated); }
+        .rel-highIn { background: rgba(251,191,36,0.15); color: var(--highin); }
+        .rel-lowIn { background: rgba(148,163,184,0.15); color: var(--lowin); }
+        .rel-mediumIn { background: rgba(103,232,249,0.15); color: var(--mediumin); }
+        .rel-treats { background: rgba(74,222,128,0.15); color: var(--recommended); }
+        .rel-type { background: rgba(107,114,128,0.15); color: var(--type); }
+
+        #legend {
+            margin-top: 20px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+        }
+
+        #legend h2 {
+            font-family: 'Syne', sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 10px;
+        }
+
+        .legend-section { margin-bottom: 12px; }
+        .legend-label {
+            font-size: 10px;
+            color: var(--muted);
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 11px;
+            color: var(--text);
+            padding: 2px 0;
+        }
+
+        .legend-dot {
+            width: 10px; height: 10px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .legend-line {
+            width: 20px; height: 2px;
+            flex-shrink: 0;
+            border-radius: 1px;
+        }
+
+        .node { cursor: pointer; }
+        .node:hover { filter: brightness(1.3); }
+
+        .link { stroke-opacity: 0.5; }
+        .link:hover { stroke-opacity: 1; }
+
+        .node-label {
+            font-family: 'Space Mono', monospace;
+            font-size: 9px;
+            fill: rgba(226,232,240,0.7);
+            pointer-events: none;
+            text-anchor: middle;
+        }
+
+        .tooltip {
+            position: fixed;
+            background: var(--panel);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 6px 10px;
+            font-size: 11px;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.1s;
+            max-width: 200px;
+            word-break: break-word;
+            z-index: 200;
+        }
+    </style>
+</head>
+<body>
+
+<div id="header">
+    <h1>Nutrition Knowledge Graph</h1>
+    <span class="pill" id="stats-pill">Loading…</span>
+    <div class="controls">
+        <button class="btn" id="zoom-in">+ Zoom</button>
+        <button class="btn" id="zoom-out">− Zoom</button>
+        <button class="btn" id="reset-zoom">Reset</button>
+    </div>
+</div>
+
+<div id="svg-container"></div>
+
+<div id="sidebar">
+    <h2>Node Inspector</h2>
+    <div id="node-details">
+        <div style="color:var(--muted);font-size:12px;line-height:1.7;">
+            Click any node to inspect its relationships.<br><br>
+            Drag nodes to rearrange.<br>
+            Scroll to zoom.
+        </div>
+    </div>
+    <div id="legend">
+        <h2>Legend</h2>
+        <div class="legend-section">
+            <div class="legend-label">Node Types</div>
+            <div class="legend-item"><div class="legend-dot" style="background:var(--food)"></div> Food</div>
+            <div class="legend-item"><div class="legend-dot" style="background:var(--nutrient)"></div> Nutrient</div>
+            <div class="legend-item"><div class="legend-dot" style="background:var(--disease)"></div> Disease</div>
+        </div>
+        <div class="legend-section">
+            <div class="legend-label">Relationships</div>
+            <div class="legend-item"><div class="legend-line" style="background:var(--recommended)"></div> recommendedFor / treats</div>
+            <div class="legend-item"><div class="legend-line" style="background:var(--contraindicated)"></div> contraindicatedFor</div>
+            <div class="legend-item"><div class="legend-line" style="background:var(--highin)"></div> highIn</div>
+            <div class="legend-item"><div class="legend-line" style="background:var(--lowin)"></div> lowIn</div>
+            <div class="legend-item"><div class="legend-line" style="background:var(--mediumin)"></div> mediumIn</div>
+        </div>
+    </div>
+</div>
+
+<div class="tooltip" id="tooltip"></div>
+
+<script>
+// ── EMBEDDED DATA ──────────────────────────────────────────────────────────────
+const rawTriples = [
+  ["Khorasan_grain_dry_raw","recommendedFor","Hypertension"],
+  ["Beans_Dry_Great_Northern_0_moisture","recommendedFor","Neural_Tube_Defects"],
+  ["Flaxseed_ground","recommendedFor","Muscle_Weakness"],
+  ["Potatoes_red_without_skin_raw","recommendedFor","Hypokalemia"],
+  ["Beans_Dry_Tan_0_moisture","recommendedFor","Teratozoospermia"],
+  ["Fish_catfish_farm_raised_raw","mediumIn","Protein"],
+  ["Yogurt_plain_nonfat","mediumIn","Zinc"],
+  ["Beans_Dry_Small_Red_0_moisture","recommendedFor","Fasciculation"],
+  ["Anchovies_canned_in_olive_oil_with_salt_drained","highIn","Magnesium"],
+  ["Sorghum_bran_white_unenriched_dry_raw","recommendedFor","Hyperemia"],
+  ["Beef_round_top_round_roast_boneless_separable_lean_only_trimmed_to_0_fat_select_raw","lowIn","Vitamin_D"],
+  ["Beans_cannellini_canned_sodium_added_drained_and_rinsed","recommendedFor","Drug_Related_Side_Effects_and_Adverse_Reactions"],
+  ["Vitamin_D","treats","Nerve_Compression_Syndromes"],
+  ["Ham_sliced_restaurant","mediumIn","Iron"],
+  ["Fish_tuna_light_canned_in_water_drained_solids","contraindicatedFor","Heart_Failure"],
+  ["Lobster_tail_only_frozen_wild_caught","recommendedFor","Drug_Related_Side_Effects_and_Adverse_Reactions"],
+  ["Bulgur_dry_raw","recommendedFor","Substance_Withdrawal_Syndrome"],
+  ["Beans_Dry_Brown_0_moisture","recommendedFor","Colitis"],
+  ["Egg_whole_dried","recommendedFor","Carcinoma__Ehrlich_Tumor"],
+  ["Pork_loin_boneless_raw","highIn","Fat"],
+  ["Beet_greens_raw","mediumIn","Potassium"],
+  ["Beans_Dry_Small_White_0_moisture","recommendedFor","Neoplasms"],
+  ["Beans_Dry_Small_White_0_moisture","recommendedFor","Insulin_Resistance"],
+  ["Flour_coconut","highIn","Potassium"],
+  ["Ham_sliced_prepackaged_deli_meat_96fat_free_water_added","contraindicatedFor","Heart_Failure"],
+  ["Egg_white_dried","recommendedFor","Tachycardia__Supraventricular"],
+  ["Crustaceans_crab_blue_swimming_lump_pasteurized_refrigerated","recommendedFor","Multiple_Myeloma"],
+  ["Chia_seeds_dry_raw","recommendedFor","Tremor"],
+  ["Egg_whole_raw_frozen_pasteurized","recommendedFor","Wounds_and_Injuries"],
+  ["Flour_soy_fullfat","22-rdf-syntax-ns#type","Food"],
+  ["Nuts_almonds_dry_roasted_with_salt_added","recommendedFor","Magnesium_Deficiency"],
+  ["Peanuts_raw","recommendedFor","Neural_Tube_Defects"],
+  ["Cheese_queso_fresco_solid","recommendedFor","Infant_Death"],
+  ["Beans_Dry_Small_White_0_moisture","recommendedFor","Splenic_Diseases"],
+  ["Flour_whole_wheat_unenriched","recommendedFor","Hemorrhage"],
+  ["Sesame_butter_creamy","recommendedFor","Muscle_Weakness"],
+  ["Beans_Dry_Navy_0_moisture","highIn","Calcium"],
+  ["Seeds_pumpkin_seeds_pepitas_raw","recommendedFor","Protein_Deficiency"],
+  ["Seeds_sunflower_seed_kernel_raw","recommendedFor","Bradycardia"],
+  ["Nuts_brazilnuts_raw","recommendedFor","Tachycardia__Ventricular"],
+  ["Buckwheat_whole_grain","recommendedFor","Nerve_Degeneration"],
+  ["Beans_cannellini_dry","recommendedFor","Pulpitis"],
+  ["Cream_cheese_full_fat_block","recommendedFor","Seizures"],
+  ["Pork_cured_bacon_cooked_restaurant","recommendedFor","Craniofacial_Abnormalities"],
+  ["Beef_short_loin_porterhouse_steak_separable_lean_only_trimmed_to_18_fat_select_raw","recommendedFor","Glioma"],
+  ["Beef_ground_90_lean_meat__10_fat_raw","recommendedFor","Prostatic_Neoplasms"],
+  ["Beans_Dry_Small_Red_0_moisture","recommendedFor","Rhabdomyolysis"],
+  ["Beans_Dry_Medium_Red_0_moisture","recommendedFor","Magnesium_Deficiency"],
+  ["Beef_ground_90_lean_meat__10_fat_raw","recommendedFor","Weight_Loss"],
+  ["Beans_Dry_Small_Red_0_moisture","recommendedFor","Stomach_Ulcer"],
+  ["Beans_kidney_light_red_canned_sodium_added_sugar_added_drained_and_rinsed","recommendedFor","Hypotension"],
+  ["Beans_Dry_Small_Red_0_moisture","recommendedFor","Rickets"],
+  ["Restaurant_Latino_pupusas_con_frijoles_pupusas_bean","highIn","Fiber"],
+  ["Plum_black_with_skin_raw","lowIn","Fiber"],
+  ["Nuts_cashew_nuts_raw","recommendedFor","Weight_Loss"],
+  ["Plantains_overripe_raw","recommendedFor","Muscular_Diseases"],
+  ["Crustaceans_crab_blue_swimming_lump_pasteurized_refrigerated","recommendedFor","Edema"],
+  ["Sorghum_bran_white_unenriched_dry_raw","recommendedFor","Cardiomyopathies"],
+  ["Bread_white_commercially_prepared","recommendedFor","Neoplasms"],
+  ["Beans_Dry_Medium_Red_0_moisture","highIn","Calcium"],
+  ["Nuts_almonds_dry_roasted_with_salt_added","recommendedFor","Hypokalemic_Periodic_Paralysis"],
+  ["Frankfurter_beef_unheated","22-rdf-syntax-ns#type","Food"],
+  ["Kale_frozen_cooked_boiled_drained_without_salt","mediumIn","Sodium"],
+  ["Almond_milk_unsweetened_plain_shelf_stable","highIn","Calcium"],
+  ["Cheese_monterey_jack_solid","recommendedFor","Major_Depressive_Disorder"],
+  ["Cream_cheese_full_fat_block","recommendedFor","Water_Electrolyte_Imbalance"],
+  ["Oil_sunflower","22-rdf-syntax-ns#type","Food"],
+  ["Beans_Dry_Tan_0_moisture","recommendedFor","Dysgeusia"],
+  ["Spinach_mature","lowIn","Fiber"],
+  ["Yogurt_plain_whole_milk","lowIn","Magnesium"]
+];
+
+// ── NODE TYPE DETECTION ────────────────────────────────────────────────────────
+const NUTRIENTS = new Set(['vitamin_d','protein','fat','carbohydrate','fiber','calcium','iron',
+  'magnesium','potassium','sodium','zinc','cholesterol','sugar','phosphorus','vitamin_c',
+  'vitamin_b12','folate','selenium','copper','manganese','vitamin_a','vitamin_e','vitamin_k',
+  'thiamin','riboflavin','niacin','vitamin_b6','pantothenic_acid','biotin','choline']);
+
+const DISEASE_SUFFIXES = ['syndrome','disease','deficiency','injury','disorder','neoplasm',
+  'neoplasms','failure','tumor','carcinoma','cancer'];
+
+const DISEASE_KEYWORDS = ['anemia','diabetes','hypertension','obesity','asthma','atherosclerosis',
+  'osteoporosis','alzheimer','inflammation','colitis','seizures','tremor','glioma',
+  'myeloma','edema','hemorrhage','rickets','hypotension','bradycardia','tachycardia',
+  'rhabdomyolysis','pulpitis','fasciculation','hyperemia','cardiomyopathies','neoplasms',
+  'depressive','withdrawal','paralysis','heart_failure','death','abnormalities','injury',
+  'wounds','ulcer','resistance'];
+
+function getNodeType(id) {
+  const lower = id.toLowerCase();
+  if (lower === 'food') return 'type-label';
+  for (const n of NUTRIENTS) { if (lower === n || lower.includes(n)) return 'nutrient'; }
+  for (const s of DISEASE_SUFFIXES) { if (lower.endsWith(s)) return 'disease'; }
+  for (const k of DISEASE_KEYWORDS) { if (lower.includes(k)) return 'disease'; }
+  return 'food';
+}
+
+function formatLabel(id) {
+  return id.replace(/_/g,' ').replace(/\s+/g,' ').trim();
+}
+
+// ── BUILD GRAPH DATA ───────────────────────────────────────────────────────────
+const nodeMap = new Map();
+const nodes = [];
+const links = [];
+
+function ensureNode(id) {
+  if (!nodeMap.has(id)) {
+    const n = { id, type: getNodeType(id), label: formatLabel(id) };
+    nodeMap.set(id, n);
+    nodes.push(n);
+  }
+  return nodeMap.get(id);
+}
+
+rawTriples.forEach(([s, p, o]) => {
+  ensureNode(s);
+  ensureNode(o);
+  links.push({ source: s, target: o, predicate: p });
+});
+
+document.getElementById('stats-pill').textContent =
+  `${nodes.length} nodes · ${links.length} edges`;
+
+// ── COLOR MAP ──────────────────────────────────────────────────────────────────
+const nodeColor = { food: '#f97316', nutrient: '#38bdf8', disease: '#a78bfa', 'type-label': '#6b7280' };
+const linkColor = {
+  recommendedFor: '#4ade80', contraindicatedFor: '#f43f5e',
+  highIn: '#fbbf24', lowIn: '#94a3b8', mediumIn: '#67e8f9',
+  treats: '#4ade80', '22-rdf-syntax-ns#type': '#6b7280'
+};
+
+function getLinkColor(p) { return linkColor[p] || '#64748b'; }
+
+// ── SIMULATION ─────────────────────────────────────────────────────────────────
+const container = document.getElementById('svg-container');
+const W = container.clientWidth, H = container.clientHeight;
+
+const svg = d3.select('#svg-container').append('svg')
+  .attr('width', W).attr('height', H);
+
+const zoom = d3.zoom().scaleExtent([0.05, 8])
+  .on('zoom', e => g.attr('transform', e.transform));
+svg.call(zoom);
+
+const g = svg.append('g');
+
+const simulation = d3.forceSimulation(nodes)
+  .force('link', d3.forceLink(links).id(d => d.id).distance(100).strength(0.4))
+  .force('charge', d3.forceManyBody().strength(-300))
+  .force('center', d3.forceCenter(W / 2, H / 2))
+  .force('collision', d3.forceCollide(28));
+
+// Draw links
+const link = g.append('g').selectAll('line').data(links).join('line')
+  .attr('class', 'link')
+  .attr('stroke', d => getLinkColor(d.predicate))
+  .attr('stroke-width', 1.5);
+
+// Draw nodes
+const node = g.append('g').selectAll('circle').data(nodes).join('circle')
+  .attr('class', 'node')
+  .attr('r', d => d.type === 'nutrient' ? 14 : d.type === 'disease' ? 11 : 9)
+  .attr('fill', d => nodeColor[d.type] || '#888')
+  .attr('stroke', d => nodeColor[d.type] || '#888')
+  .attr('stroke-width', 1)
+  .attr('stroke-opacity', 0.4)
+  .call(d3.drag()
+    .on('start', (e, d) => { if (!e.active) simulation.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
+    .on('drag', (e, d) => { d.fx = e.x; d.fy = e.y; })
+    .on('end', (e, d) => { if (!e.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; }))
+  .on('click', (e, d) => showNodeInfo(d))
+  .on('mouseover', (e, d) => {
+    const tt = document.getElementById('tooltip');
+    tt.textContent = d.label;
+    tt.style.opacity = 1;
+    tt.style.left = (e.clientX + 12) + 'px';
+    tt.style.top = (e.clientY - 8) + 'px';
+  })
+  .on('mousemove', e => {
+    const tt = document.getElementById('tooltip');
+    tt.style.left = (e.clientX + 12) + 'px';
+    tt.style.top = (e.clientY - 8) + 'px';
+  })
+  .on('mouseout', () => { document.getElementById('tooltip').style.opacity = 0; });
+
+// Labels for nutrients (larger nodes)
+const label = g.append('g').selectAll('text').data(nodes.filter(d => d.type === 'nutrient')).join('text')
+  .attr('class', 'node-label')
+  .text(d => d.label.length > 12 ? d.label.slice(0, 12) + '…' : d.label);
+
+simulation.on('tick', () => {
+  link.attr('x1', d => d.source.x).attr('y1', d => d.source.y)
+      .attr('x2', d => d.target.x).attr('y2', d => d.target.y);
+  node.attr('cx', d => d.x).attr('cy', d => d.y);
+  label.attr('x', d => d.x).attr('y', d => d.y + 22);
+});
+
+// ── SIDEBAR ────────────────────────────────────────────────────────────────────
+function showNodeInfo(d) {
+  const rels = links.filter(l => l.source.id === d.id || l.target.id === d.id);
+
+  const typeClass = `type-${d.type}`;
+  let html = `<div class="node-card">
+    <div class="name">${d.label}</div>
+    <div class="type-badge ${typeClass}">${d.type}</div>
+    <div style="font-size:11px;color:var(--muted);margin-bottom:8px">${rels.length} relationship${rels.length !== 1 ? 's' : ''}</div>
+    <ul class="rel-list">`;
+
+  rels.forEach(l => {
+    const other = l.source.id === d.id ? l.target : l.source;
+    const relClass = `rel-${l.predicate.replace(/[^a-zA-Z]/g, '')}`;
+    html += `<li class="rel-item">
+      <span class="rel-tag ${relClass}">${l.predicate.replace('22-rdf-syntax-ns#type', 'type')}</span>
+      <span style="color:var(--text)">${formatLabel(other.id)}</span>
+    </li>`;
+  });
+
+  html += `</ul></div>`;
+  document.getElementById('node-details').innerHTML = html;
+
+  // Highlight
+  link.attr('stroke-opacity', l =>
+    (l.source.id === d.id || l.target.id === d.id) ? 0.9 : 0.08);
+  node.attr('opacity', n => {
+    const connected = rels.some(l => l.source.id === n.id || l.target.id === n.id);
+    return (n.id === d.id || connected) ? 1 : 0.2;
+  });
+}
+
+svg.on('click', e => {
+  if (e.target === svg.node()) {
+    link.attr('stroke-opacity', 0.5);
+    node.attr('opacity', 1);
+    document.getElementById('node-details').innerHTML =
+      '<div style="color:var(--muted);font-size:12px;line-height:1.7;">Click any node to inspect its relationships.<br><br>Drag nodes to rearrange.<br>Scroll to zoom.</div>';
+  }
+});
+
+// ── CONTROLS ───────────────────────────────────────────────────────────────────
+document.getElementById('zoom-in').onclick = () => svg.transition().duration(400).call(zoom.scaleBy, 1.4);
+document.getElementById('zoom-out').onclick = () => svg.transition().duration(400).call(zoom.scaleBy, 0.7);
+document.getElementById('reset-zoom').onclick = () => svg.transition().duration(600).call(zoom.transform, d3.zoomIdentity.translate(W/2, H/2).scale(1));
+</script>
+</body>
+</html>
