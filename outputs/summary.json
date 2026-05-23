@@ -1,0 +1,9 @@
+{
+  "foods": 314,
+  "nutrients": 18,
+  "diseases": 188,
+  "total_triples": 20607,
+  "predicted_for_triples": 494,
+  "mrr": 0.24740394949913025,
+  "hits_at_10": 0.41007194244604317
+}

@@ -2,6 +2,7 @@
 @prefix food: <http://nutrition-kg.org/food/> .
 @prefix nutrient: <http://nutrition-kg.org/nutrient/> .
 @prefix prop: <http://nutrition-kg.org/property/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 food:Almond_butter_creamy a prop:Food ;
     prop:highIn nutrient:Calcium,
@@ -1686,17 +1687,39 @@ food:Yogurt_plain_nonfat a prop:Food ;
 food:Yogurt_plain_whole_milk a prop:Food ;
     prop:highIn nutrient:Calcium .
 
+prop:contraindicatedFor rdfs:label "contraindicated for disease (inferred)" ;
+    rdfs:domain prop:Food ;
+    rdfs:range prop:Disease .
+
+prop:highIn rdfs:label "is high in nutrient" ;
+    rdfs:domain prop:Food ;
+    rdfs:range prop:Nutrient .
+
+prop:predictedFor rdfs:label "embedding-predicted recommendation" ;
+    rdfs:domain prop:Food ;
+    rdfs:range prop:Disease .
+
+prop:recommendedFor rdfs:label "recommended for disease (inferred)" ;
+    rdfs:domain prop:Food ;
+    rdfs:range prop:Disease .
+
+prop:treats rdfs:label "therapeutically treats disease" ;
+    rdfs:domain prop:Nutrient ;
+    rdfs:range prop:Disease .
+
+prop:worsensWith rdfs:label "worsens disease" ;
+    rdfs:domain prop:Nutrient ;
+    rdfs:range prop:Disease .
+
 disease:Acrodermatitis a prop:Disease .
 
 disease:Alzheimer_Disease a prop:Disease .
 
-disease:Anemia a prop:Disease .
+disease:Anemia__Hypochromic a prop:Disease .
 
 disease:Anemia__Iron_Deficiency a prop:Disease .
 
 disease:Asthma a prop:Disease .
-
-disease:Atherosclerosis a prop:Disease .
 
 disease:Atrial_Fibrillation a prop:Disease .
 
@@ -1718,8 +1741,6 @@ disease:Carcinoma__Squamous_Cell a prop:Disease .
 
 disease:Cardiotoxicity a prop:Disease .
 
-disease:Cardiovascular_Diseases a prop:Disease .
-
 disease:Cell_Transformation__Neoplastic a prop:Disease .
 
 disease:Cerebrovascular_Disorders a prop:Disease .
@@ -1730,23 +1751,23 @@ disease:Cholestasis__Extrahepatic a prop:Disease .
 
 disease:Cognition_Disorders a prop:Disease .
 
-disease:Colitis a prop:Disease .
+disease:Colorectal_Neoplasms a prop:Disease .
 
-disease:Colonic_Neoplasms a prop:Disease .
+disease:Constipation a prop:Disease .
+
+disease:Copper_Metabolism_Disorders a prop:Disease .
 
 disease:Coronary_Vasospasm a prop:Disease .
 
 disease:Craniofacial_Abnormalities a prop:Disease .
 
+disease:Crohn_Disease a prop:Disease .
+
 disease:Developmental_Disabilities a prop:Disease .
 
-disease:Diabetes_Mellitus__Type_2 a prop:Disease .
+disease:Diabetes_Mellitus__Type_1 a prop:Disease .
 
 disease:Diabetic_Cardiomyopathies a prop:Disease .
-
-disease:Diabetic_Ketoacidosis a prop:Disease .
-
-disease:Diarrhea a prop:Disease .
 
 disease:Disease_Models__Animal a prop:Disease .
 
@@ -1758,7 +1779,7 @@ disease:Drug_Overdose a prop:Disease .
 
 disease:Dysgeusia a prop:Disease .
 
-disease:Edema a prop:Disease .
+disease:Epilepsy a prop:Disease .
 
 disease:Esophageal_Neoplasms a prop:Disease .
 
@@ -1768,17 +1789,19 @@ disease:Fasciculation a prop:Disease .
 
 disease:Fever a prop:Disease .
 
-disease:Gastrointestinal_Diseases a prop:Disease .
-
 disease:Glioma a prop:Disease .
+
+disease:Gout a prop:Disease .
 
 disease:Heart_Defects__Congenital a prop:Disease .
 
-disease:Heart_Failure a prop:Disease .
+disease:Hemochromatosis a prop:Disease .
 
 disease:Hemorrhage a prop:Disease .
 
-disease:Hepatolenticular_Degeneration a prop:Disease .
+disease:Hemosiderosis a prop:Disease .
+
+disease:Hepatic_Encephalopathy a prop:Disease .
 
 disease:Hepatomegaly a prop:Disease .
 
@@ -1786,13 +1809,17 @@ disease:Hyperalgesia a prop:Disease .
 
 disease:Hyperemia a prop:Disease .
 
+disease:Hyperkalemia a prop:Disease .
+
 disease:Hyperkinesis a prop:Disease .
 
-disease:Hyperlipidemias a prop:Disease .
-
-disease:Hyperparathyroidism__Secondary a prop:Disease .
-
 disease:Hyperplasia a prop:Disease .
+
+disease:Hypertension__Portal a prop:Disease .
+
+disease:Hypertension__Pulmonary a prop:Disease .
+
+disease:Hypertension__Renal a prop:Disease .
 
 disease:Hypertrophy a prop:Disease .
 
@@ -1800,27 +1827,21 @@ disease:Hypocalcemia a prop:Disease .
 
 disease:Hypokalemia a prop:Disease .
 
-disease:Hypokalemic_Periodic_Paralysis a prop:Disease .
+disease:Immune_System_Diseases a prop:Disease .
 
-disease:Insulin_Resistance a prop:Disease .
-
-disease:Intestinal_Diseases a prop:Disease .
-
-disease:Kidney_Diseases__Cystic a prop:Disease .
+disease:Iron_Overload a prop:Disease .
 
 disease:Leukemia a prop:Disease .
 
 disease:Leukemia__Myeloid__Acute a prop:Disease .
-
-disease:Liver_Cirrhosis a prop:Disease .
-
-disease:Liver_Diseases a prop:Disease .
 
 disease:Long_QT_Syndrome a prop:Disease .
 
 disease:Magnesium_Deficiency a prop:Disease .
 
 disease:Major_Depressive_Disorder a prop:Disease .
+
+disease:Malabsorption_Syndromes a prop:Disease .
 
 disease:Melanoma a prop:Disease .
 
@@ -1848,13 +1869,11 @@ disease:Necrosis a prop:Disease .
 
 disease:Neoplasms a prop:Disease .
 
-disease:Nephrocalcinosis a prop:Disease .
-
-disease:Nephrolithiasis a prop:Disease .
-
 disease:Nerve_Degeneration a prop:Disease .
 
 disease:Neural_Tube_Defects a prop:Disease .
+
+disease:Pancreatitis a prop:Disease .
 
 disease:Paralysis a prop:Disease .
 
@@ -1870,13 +1889,13 @@ disease:Peripheral_Nervous_System_Diseases a prop:Disease .
 
 disease:Polycystic_Ovary_Syndrome a prop:Disease .
 
+disease:Pre_Eclampsia a prop:Disease .
+
 disease:Prenatal_Exposure_Delayed_Effects a prop:Disease .
 
 disease:Prenatal_Injuries a prop:Disease .
 
 disease:Protein_Deficiency a prop:Disease .
-
-disease:Proteinuria a prop:Disease .
 
 disease:Pruritus a prop:Disease .
 
@@ -1920,11 +1939,13 @@ disease:Ventricular_Dysfunction__Left a prop:Disease .
 
 disease:Vitamin_D_Deficiency a prop:Disease .
 
-disease:Weight_Gain a prop:Disease .
-
 disease:Weight_Loss a prop:Disease .
 
 disease:Wounds_and_Injuries a prop:Disease .
+
+disease:Acute_Coronary_Syndrome a prop:Disease .
+
+disease:Anemia a prop:Disease .
 
 disease:Arthralgia a prop:Disease .
 
@@ -1934,11 +1955,25 @@ disease:Cardiomyopathies a prop:Disease .
 
 disease:Chemical_and_Drug_Induced_Liver_Injury a prop:Disease .
 
-disease:Diabetes_Mellitus a prop:Disease .
+disease:Colitis a prop:Disease .
 
-disease:Heart_Diseases a prop:Disease .
+disease:Colonic_Neoplasms a prop:Disease .
 
-disease:Hyperglycemia a prop:Disease .
+disease:Diabetic_Ketoacidosis a prop:Disease .
+
+disease:Edema a prop:Disease .
+
+disease:Fatty_Liver a prop:Disease .
+
+disease:Gastrointestinal_Diseases a prop:Disease .
+
+disease:Heart_Failure a prop:Disease .
+
+disease:Hepatolenticular_Degeneration a prop:Disease .
+
+disease:Hypercalcemia a prop:Disease .
+
+disease:Hypokalemic_Periodic_Paralysis a prop:Disease .
 
 disease:Hypomagnesemia_primary a prop:Disease .
 
@@ -1948,17 +1983,23 @@ disease:Infant_Death a prop:Disease .
 
 disease:Inflammation a prop:Disease .
 
+disease:Intestinal_Diseases a prop:Disease .
+
+disease:Kidney_Diseases__Cystic a prop:Disease .
+
+disease:Liver_Cirrhosis a prop:Disease .
+
 disease:Lung_Injury a prop:Disease .
 
 disease:Muscle_Weakness a prop:Disease .
+
+disease:Nephrotic_Syndrome a prop:Disease .
 
 disease:Nerve_Compression_Syndromes a prop:Disease .
 
 disease:Neurologic_Manifestations a prop:Disease .
 
-disease:Osteoporosis a prop:Disease .
-
-disease:Osteoporosis__Postmenopausal a prop:Disease .
+disease:Obesity a prop:Disease .
 
 disease:Pain a prop:Disease .
 
@@ -1966,7 +2007,7 @@ disease:Polyradiculopathy a prop:Disease .
 
 disease:Prostatic_Neoplasms a prop:Disease .
 
-disease:Renal_Insufficiency a prop:Disease .
+disease:Proteinuria a prop:Disease .
 
 disease:Rickets a prop:Disease .
 
@@ -1978,19 +2019,73 @@ disease:Urinary_Bladder_Diseases a prop:Disease .
 
 disease:Ventricular_Fibrillation a prop:Disease .
 
+disease:Weight_Gain a prop:Disease .
+
+disease:Arteriosclerosis a prop:Disease .
+
+disease:Coronary_Disease a prop:Disease .
+
+disease:Diabetes_Mellitus a prop:Disease .
+
+disease:Diabetes_Mellitus__Type_2 a prop:Disease .
+
+disease:Diarrhea a prop:Disease .
+
 disease:Drug_Related_Side_Effects_and_Adverse_Reactions a prop:Disease .
 
+disease:Heart_Diseases a prop:Disease .
+
+disease:Hyperglycemia a prop:Disease .
+
+disease:Hyperparathyroidism__Secondary a prop:Disease .
+
 disease:Hypotension a prop:Disease .
+
+disease:Insulin_Resistance a prop:Disease .
+
+disease:Ischemic_Stroke a prop:Disease .
+
+disease:Metabolic_Syndrome a prop:Disease .
+
+disease:Nephrocalcinosis a prop:Disease .
+
+disease:Osteoporosis a prop:Disease .
+
+disease:Osteoporosis__Postmenopausal a prop:Disease .
+
+disease:Stroke a prop:Disease .
 
 disease:Water_Electrolyte_Imbalance a prop:Disease .
 
 disease:Arrhythmias__Cardiac a prop:Disease .
 
+disease:Atherosclerosis a prop:Disease .
+
+disease:Hyperlipidemias a prop:Disease .
+
+disease:Kidney_Calculi a prop:Disease .
+
+disease:Kidney_Failure__Chronic a prop:Disease .
+
+disease:Liver_Diseases a prop:Disease .
+
+disease:Nephrolithiasis a prop:Disease .
+
+disease:Non_alcoholic_Fatty_Liver_Disease a prop:Disease .
+
+disease:Renal_Insufficiency__Chronic a prop:Disease .
+
 disease:Hypertension a prop:Disease .
 
-disease:Kidney_Diseases a prop:Disease .
+disease:Myocardial_Infarction a prop:Disease .
+
+disease:Renal_Insufficiency a prop:Disease .
+
+disease:Cardiovascular_Diseases a prop:Disease .
 
 disease:Acute_Kidney_Injury a prop:Disease .
+
+disease:Kidney_Diseases a prop:Disease .
 
 nutrient:Vitamin_D a prop:Nutrient ;
     prop:treats disease:Acute_Kidney_Injury,
@@ -2032,22 +2127,79 @@ nutrient:Vitamin_D a prop:Nutrient ;
         disease:Rickets,
         disease:Urinary_Bladder_Diseases,
         disease:Vitamin_D_Deficiency,
-        disease:Wounds_and_Injuries .
+        disease:Wounds_and_Injuries ;
+    prop:worsensWith disease:Hypercalcemia,
+        disease:Hyperparathyroidism__Secondary,
+        disease:Kidney_Calculi,
+        disease:Kidney_Diseases,
+        disease:Nephrocalcinosis,
+        disease:Nephrolithiasis .
 
 nutrient:Vitamin_B12 a prop:Nutrient .
 
-nutrient:Cholesterol a prop:Nutrient .
+nutrient:Cholesterol a prop:Nutrient ;
+    prop:worsensWith disease:Arteriosclerosis,
+        disease:Atherosclerosis,
+        disease:Cardiovascular_Diseases,
+        disease:Coronary_Disease,
+        disease:Hyperlipidemias,
+        disease:Ischemic_Stroke,
+        disease:Metabolic_Syndrome,
+        disease:Myocardial_Infarction,
+        disease:Non_alcoholic_Fatty_Liver_Disease,
+        disease:Stroke .
 
-nutrient:Saturated_Fat a prop:Nutrient .
+nutrient:Saturated_Fat a prop:Nutrient ;
+    prop:worsensWith disease:Acute_Coronary_Syndrome,
+        disease:Arteriosclerosis,
+        disease:Atherosclerosis,
+        disease:Cardiovascular_Diseases,
+        disease:Coronary_Disease,
+        disease:Diabetes_Mellitus__Type_2,
+        disease:Fatty_Liver,
+        disease:Hyperlipidemias,
+        disease:Insulin_Resistance,
+        disease:Ischemic_Stroke,
+        disease:Liver_Diseases,
+        disease:Metabolic_Syndrome,
+        disease:Myocardial_Infarction,
+        disease:Non_alcoholic_Fatty_Liver_Disease,
+        disease:Obesity,
+        disease:Pancreatitis,
+        disease:Stroke .
 
 nutrient:Vitamin_C a prop:Nutrient .
 
 nutrient:Folate a prop:Nutrient .
 
-nutrient:Sugar a prop:Nutrient .
+nutrient:Sugar a prop:Nutrient ;
+    prop:worsensWith disease:Cardiovascular_Diseases,
+        disease:Diabetes_Mellitus,
+        disease:Diabetes_Mellitus__Type_1,
+        disease:Diabetes_Mellitus__Type_2,
+        disease:Diabetic_Ketoacidosis,
+        disease:Epilepsy,
+        disease:Fatty_Liver,
+        disease:Hyperglycemia,
+        disease:Hyperlipidemias,
+        disease:Insulin_Resistance,
+        disease:Liver_Diseases,
+        disease:Metabolic_Syndrome,
+        disease:Myocardial_Infarction,
+        disease:Non_alcoholic_Fatty_Liver_Disease,
+        disease:Obesity,
+        disease:Weight_Gain .
 
 nutrient:Fiber a prop:Nutrient ;
-    prop:treats disease:Hyperglycemia .
+    prop:treats disease:Hyperglycemia ;
+    prop:worsensWith disease:Colitis,
+        disease:Crohn_Disease,
+        disease:Diarrhea,
+        disease:Gastrointestinal_Diseases,
+        disease:Intestinal_Diseases,
+        disease:Kidney_Calculi,
+        disease:Kidney_Diseases,
+        disease:Malabsorption_Syndromes .
 
 nutrient:Vitamin_B6 a prop:Nutrient .
 
@@ -2064,7 +2216,33 @@ nutrient:Sodium a prop:Nutrient ;
         disease:Renal_Insufficiency,
         disease:Tachycardia,
         disease:Ventricular_Fibrillation,
-        disease:Water_Electrolyte_Imbalance .
+        disease:Water_Electrolyte_Imbalance ;
+    prop:worsensWith disease:Acute_Coronary_Syndrome,
+        disease:Arteriosclerosis,
+        disease:Atherosclerosis,
+        disease:Cardiovascular_Diseases,
+        disease:Coronary_Disease,
+        disease:Edema,
+        disease:Heart_Diseases,
+        disease:Heart_Failure,
+        disease:Hypertension,
+        disease:Hypertension__Portal,
+        disease:Hypertension__Pulmonary,
+        disease:Hypertension__Renal,
+        disease:Ischemic_Stroke,
+        disease:Kidney_Calculi,
+        disease:Kidney_Diseases,
+        disease:Kidney_Failure__Chronic,
+        disease:Myocardial_Infarction,
+        disease:Nephrolithiasis,
+        disease:Nephrotic_Syndrome,
+        disease:Osteoporosis,
+        disease:Osteoporosis__Postmenopausal,
+        disease:Pre_Eclampsia,
+        disease:Proteinuria,
+        disease:Renal_Insufficiency,
+        disease:Renal_Insufficiency__Chronic,
+        disease:Stroke .
 
 nutrient:Fat a prop:Nutrient .
 
@@ -2099,7 +2277,15 @@ nutrient:Calcium a prop:Nutrient ;
         disease:Sinus_Arrest__Cardiac,
         disease:Urinary_Bladder_Diseases,
         disease:Water_Electrolyte_Imbalance,
-        disease:Weight_Gain .
+        disease:Weight_Gain ;
+    prop:worsensWith disease:Cardiovascular_Diseases,
+        disease:Constipation,
+        disease:Hypercalcemia,
+        disease:Hyperparathyroidism__Secondary,
+        disease:Kidney_Calculi,
+        disease:Myocardial_Infarction,
+        disease:Nephrocalcinosis,
+        disease:Nephrolithiasis .
 
 nutrient:Iron a prop:Nutrient ;
     prop:treats disease:Anemia,
@@ -2107,7 +2293,17 @@ nutrient:Iron a prop:Nutrient ;
         disease:Autistic_Disorder,
         disease:Cholestasis,
         disease:Hyperkinesis,
-        disease:Parasomnias .
+        disease:Parasomnias ;
+    prop:worsensWith disease:Cardiovascular_Diseases,
+        disease:Colonic_Neoplasms,
+        disease:Colorectal_Neoplasms,
+        disease:Hemochromatosis,
+        disease:Hemosiderosis,
+        disease:Hepatolenticular_Degeneration,
+        disease:Iron_Overload,
+        disease:Liver_Cirrhosis,
+        disease:Liver_Diseases,
+        disease:Non_alcoholic_Fatty_Liver_Disease .
 
 nutrient:Magnesium a prop:Nutrient ;
     prop:treats disease:Acute_Kidney_Injury,
@@ -2139,9 +2335,22 @@ nutrient:Magnesium a prop:Nutrient ;
         disease:Tachycardia__Ventricular,
         disease:Torsades_de_Pointes,
         disease:Vasospasm__Intracranial,
-        disease:Ventricular_Fibrillation .
+        disease:Ventricular_Fibrillation ;
+    prop:worsensWith disease:Diarrhea,
+        disease:Kidney_Diseases,
+        disease:Kidney_Failure__Chronic,
+        disease:Renal_Insufficiency,
+        disease:Renal_Insufficiency__Chronic .
 
-nutrient:Protein a prop:Nutrient .
+nutrient:Protein a prop:Nutrient ;
+    prop:worsensWith disease:Acute_Kidney_Injury,
+        disease:Gout,
+        disease:Hepatic_Encephalopathy,
+        disease:Kidney_Diseases,
+        disease:Kidney_Failure__Chronic,
+        disease:Nephrotic_Syndrome,
+        disease:Renal_Insufficiency,
+        disease:Renal_Insufficiency__Chronic .
 
 nutrient:Zinc a prop:Nutrient ;
     prop:treats disease:Acrodermatitis,
@@ -2203,7 +2412,11 @@ nutrient:Zinc a prop:Nutrient ;
         disease:Teratozoospermia,
         disease:Testicular_Diseases,
         disease:Ventricular_Dysfunction__Left,
-        disease:Weight_Loss .
+        disease:Weight_Loss ;
+    prop:worsensWith disease:Anemia,
+        disease:Anemia__Hypochromic,
+        disease:Copper_Metabolism_Disorders,
+        disease:Immune_System_Diseases .
 
 nutrient:Potassium a prop:Nutrient ;
     prop:treats disease:Acute_Kidney_Injury,
@@ -2226,5 +2439,13 @@ nutrient:Potassium a prop:Nutrient ;
         disease:Paralysis,
         disease:Rhabdomyolysis,
         disease:Tremor,
-        disease:Water_Electrolyte_Imbalance .
+        disease:Water_Electrolyte_Imbalance ;
+    prop:worsensWith disease:Acute_Kidney_Injury,
+        disease:Hyperkalemia,
+        disease:Hypokalemic_Periodic_Paralysis,
+        disease:Kidney_Diseases,
+        disease:Kidney_Diseases__Cystic,
+        disease:Kidney_Failure__Chronic,
+        disease:Renal_Insufficiency,
+        disease:Renal_Insufficiency__Chronic .
 

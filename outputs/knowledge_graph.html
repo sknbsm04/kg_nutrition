@@ -18,6 +18,7 @@
             --contraindicated: #f43f5e;
             --highin: #fbbf24;
             --predictedfor: #e879f9;
+            --worsens: #fb923c;
             --text: #e2e8f0;
             --muted: #64748b;
         }
@@ -144,6 +145,7 @@
         .rel-highIn { background: rgba(251,191,36,0.15); color: var(--highin); }
         .rel-predictedFor { background: rgba(232,121,249,0.15); color: var(--predictedfor); }
         .rel-treats { background: rgba(74,222,128,0.15); color: var(--recommended); }
+        .rel-worsensWith { background: rgba(251,146,60,0.15); color: var(--worsens); }
         .rel-other { background: rgba(100,116,139,0.15); color: var(--muted); }
         #legend { margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--border); }
         #legend h2 {
@@ -254,6 +256,16 @@
             <div class="legend-item"><div class="legend-line" style="background:var(--contraindicated)"></div> contraindicatedFor</div>
             <div class="legend-item"><div class="legend-line" style="background:var(--highin)"></div> highIn</div>
             <div class="legend-item"><div class="legend-line" style="background:var(--predictedfor)"></div> predictedFor</div>
+            <div class="legend-item"><div class="legend-line" style="background:var(--worsens)"></div> worsensWith</div>
+        </div>
+        <div class="legend-section">
+            <div class="legend-label">Data Sources</div>
+            <div class="legend-item" style="flex-direction:column;align-items:flex-start;gap:3px;">
+                <span><span style="color:var(--highin);">highIn</span> — USDA FoodData Central</span>
+                <span><span style="color:var(--recommended);">treats</span> — CTD therapeutic evidence</span>
+                <span><span style="color:var(--worsens);">worsensWith</span> — NIH/WHO/AHA/ADA guidelines</span>
+                <span><span style="color:var(--predictedfor);">predictedFor</span> — RotatE embeddings</span>
+            </div>
         </div>
     </div>
 </div>
@@ -265,7 +277,8 @@ const nodeColor = { food: '#f97316', nutrient: '#38bdf8', disease: '#a78bfa', un
 const linkColor = {
     recommendedFor: '#4ade80', contraindicatedFor: '#f43f5e',
     highIn: '#fbbf24', predictedFor: '#e879f9',
-    treats: '#4ade80'
+    treats: '#4ade80',
+    worsensWith: '#fb923c',
 };
 
 function getLinkColor(p) { return linkColor[p] || '#475569'; }

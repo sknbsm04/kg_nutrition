@@ -1,0 +1,127 @@
+nutrient,disease,source
+Sodium,Hypertension,WHO Global Sodium Guidelines 2023
+Sodium,Hypertension  Renal,WHO Global Sodium Guidelines 2023
+Sodium,Hypertension  Portal,WHO Global Sodium Guidelines 2023
+Sodium,Hypertension  Pulmonary,WHO Global Sodium Guidelines 2023
+Sodium,Heart Failure,ACC/AHA Heart Failure Guidelines 2022
+Sodium,Heart Diseases,ACC/AHA Heart Failure Guidelines 2022
+Sodium,Kidney Diseases,NIH NIDDK Dietary Guidelines for CKD
+Sodium,Kidney Failure  Chronic,NIH NIDDK Dietary Guidelines for CKD
+Sodium,Renal Insufficiency,NIH NIDDK Dietary Guidelines for CKD
+Sodium,Renal Insufficiency  Chronic,NIH NIDDK Dietary Guidelines for CKD
+Sodium,Edema,Clinical Nutrition Guidelines
+Sodium,Stroke,American Heart Association Dietary Guidelines 2021
+Sodium,Ischemic Stroke,American Heart Association Dietary Guidelines 2021
+Sodium,Cardiovascular Diseases,American Heart Association Dietary Guidelines 2021
+Sodium,Myocardial Infarction,American Heart Association Dietary Guidelines 2021
+Sodium,Coronary Disease,American Heart Association Dietary Guidelines 2021
+Sodium,Acute Coronary Syndrome,American Heart Association Dietary Guidelines 2021
+Sodium,Arteriosclerosis,American Heart Association Dietary Guidelines 2021
+Sodium,Atherosclerosis,American Heart Association Dietary Guidelines 2021
+Sodium,Pre Eclampsia,ACOG Dietary Guidelines
+Sodium,Proteinuria,NIH NIDDK Dietary Guidelines for CKD
+Sodium,Nephrotic Syndrome,NIH NIDDK Dietary Guidelines for CKD
+Sodium,Nephrolithiasis,NIH ODS Sodium Fact Sheet
+Sodium,Kidney Calculi,NIH ODS Sodium Fact Sheet
+Sodium,Osteoporosis,NIH ODS Calcium and Bone Health
+Sodium,Osteoporosis  Postmenopausal,NIH ODS Calcium and Bone Health
+Saturated_Fat,Atherosclerosis,American Heart Association Dietary Guidelines 2021
+Saturated_Fat,Arteriosclerosis,American Heart Association Dietary Guidelines 2021
+Saturated_Fat,Cardiovascular Diseases,American Heart Association Dietary Guidelines 2021
+Saturated_Fat,Coronary Disease,American Heart Association Dietary Guidelines 2021
+Saturated_Fat,Myocardial Infarction,American Heart Association Dietary Guidelines 2021
+Saturated_Fat,Acute Coronary Syndrome,American Heart Association Dietary Guidelines 2021
+Saturated_Fat,Stroke,American Heart Association Dietary Guidelines 2021
+Saturated_Fat,Ischemic Stroke,American Heart Association Dietary Guidelines 2021
+Saturated_Fat,Hyperlipidemias,NIH ODS Dietary Fat Guidelines
+Saturated_Fat,Obesity,USDA Dietary Guidelines for Americans 2020-2025
+Saturated_Fat,Metabolic Syndrome,USDA Dietary Guidelines for Americans 2020-2025
+Saturated_Fat,Diabetes Mellitus  Type 2,USDA Dietary Guidelines for Americans 2020-2025
+Saturated_Fat,Insulin Resistance,Clinical Nutrition Evidence
+Saturated_Fat,Non alcoholic Fatty Liver Disease,EASL Clinical Practice Guidelines 2016
+Saturated_Fat,Fatty Liver,EASL Clinical Practice Guidelines 2016
+Saturated_Fat,Liver Diseases,EASL Clinical Practice Guidelines 2016
+Saturated_Fat,Pancreatitis,Clinical Nutrition Evidence
+Cholesterol,Atherosclerosis,American Heart Association Dietary Guidelines 2021
+Cholesterol,Arteriosclerosis,American Heart Association Dietary Guidelines 2021
+Cholesterol,Cardiovascular Diseases,American Heart Association Dietary Guidelines 2021
+Cholesterol,Coronary Disease,American Heart Association Dietary Guidelines 2021
+Cholesterol,Myocardial Infarction,American Heart Association Dietary Guidelines 2021
+Cholesterol,Hyperlipidemias,NIH ODS Dietary Fat Guidelines
+Cholesterol,Stroke,American Heart Association Dietary Guidelines 2021
+Cholesterol,Ischemic Stroke,American Heart Association Dietary Guidelines 2021
+Cholesterol,Metabolic Syndrome,USDA Dietary Guidelines for Americans 2020-2025
+Cholesterol,Non alcoholic Fatty Liver Disease,EASL Clinical Practice Guidelines 2016
+Sugar,Diabetes Mellitus,ADA Nutrition Therapy Guidelines 2023
+Sugar,Diabetes Mellitus  Type 1,ADA Nutrition Therapy Guidelines 2023
+Sugar,Diabetes Mellitus  Type 2,ADA Nutrition Therapy Guidelines 2023
+Sugar,Hyperglycemia,ADA Nutrition Therapy Guidelines 2023
+Sugar,Insulin Resistance,ADA Nutrition Therapy Guidelines 2023
+Sugar,Diabetic Ketoacidosis,ADA Nutrition Therapy Guidelines 2023
+Sugar,Obesity,USDA Dietary Guidelines for Americans 2020-2025
+Sugar,Weight Gain,USDA Dietary Guidelines for Americans 2020-2025
+Sugar,Metabolic Syndrome,USDA Dietary Guidelines for Americans 2020-2025
+Sugar,Non alcoholic Fatty Liver Disease,EASL Clinical Practice Guidelines 2016
+Sugar,Fatty Liver,EASL Clinical Practice Guidelines 2016
+Sugar,Hyperlipidemias,NIH ODS Added Sugars
+Sugar,Cardiovascular Diseases,American Heart Association Added Sugars Statement 2009
+Sugar,Myocardial Infarction,American Heart Association Added Sugars Statement 2009
+Sugar,Liver Diseases,EASL Clinical Practice Guidelines 2016
+Sugar,Epilepsy,Clinical Nutrition Evidence
+Iron,Hemochromatosis,NIH ODS Iron Fact Sheet
+Iron,Iron Overload,NIH ODS Iron Fact Sheet
+Iron,Hemosiderosis,NIH ODS Iron Fact Sheet
+Iron,Liver Diseases,NIH ODS Iron Fact Sheet
+Iron,Liver Cirrhosis,NIH ODS Iron Fact Sheet
+Iron,Cardiovascular Diseases,NIH ODS Iron Fact Sheet - excess iron oxidative stress
+Iron,Colorectal Neoplasms,WCRF Colorectal Cancer Diet Evidence
+Iron,Colonic Neoplasms,WCRF Colorectal Cancer Diet Evidence
+Iron,Non alcoholic Fatty Liver Disease,Clinical Nutrition Evidence
+Iron,Hepatolenticular Degeneration,NIH ODS Iron Fact Sheet
+Calcium,Kidney Calculi,NIH ODS Calcium Fact Sheet
+Calcium,Nephrolithiasis,NIH ODS Calcium Fact Sheet
+Calcium,Hypercalcemia,NIH ODS Calcium Fact Sheet - excess supplemental calcium
+Calcium,Nephrocalcinosis,NIH ODS Calcium Fact Sheet
+Calcium,Cardiovascular Diseases,NIH ODS Calcium Fact Sheet - supplemental calcium risk
+Calcium,Myocardial Infarction,NIH ODS Calcium Fact Sheet - supplemental calcium risk
+Calcium,Constipation,NIH ODS Calcium Fact Sheet
+Calcium,Hyperparathyroidism  Secondary,Clinical Nutrition Evidence
+Potassium,Kidney Diseases,NIH NIDDK Dietary Guidelines for CKD
+Potassium,Kidney Failure  Chronic,NIH NIDDK Dietary Guidelines for CKD
+Potassium,Renal Insufficiency,NIH NIDDK Dietary Guidelines for CKD
+Potassium,Renal Insufficiency  Chronic,NIH NIDDK Dietary Guidelines for CKD
+Potassium,Hyperkalemia,NIH ODS Potassium Fact Sheet
+Potassium,Hypokalemic Periodic Paralysis,NIH ODS Potassium Fact Sheet
+Potassium,Kidney Diseases  Cystic,NIH NIDDK Dietary Guidelines for CKD
+Potassium,Acute Kidney Injury,NIH NIDDK Dietary Guidelines for CKD
+Fiber,Crohn Disease,Academy of Nutrition and Dietetics IBD Guidelines
+Fiber,Gastrointestinal Diseases,Academy of Nutrition and Dietetics IBD Guidelines
+Fiber,Intestinal Diseases,Academy of Nutrition and Dietetics IBD Guidelines
+Fiber,Diarrhea,Clinical Nutrition Evidence - excess insoluble fiber
+Fiber,Malabsorption Syndromes,Clinical Nutrition Evidence
+Fiber,Colitis,Academy of Nutrition and Dietetics IBD Guidelines
+Fiber,Kidney Diseases,NIH NIDDK - high oxalate fiber sources
+Fiber,Kidney Calculi,NIH NIDDK - high oxalate fiber sources
+Vitamin_D,Hypercalcemia,NIH ODS Vitamin D Fact Sheet - toxicity
+Vitamin_D,Kidney Calculi,NIH ODS Vitamin D Fact Sheet - toxicity
+Vitamin_D,Nephrolithiasis,NIH ODS Vitamin D Fact Sheet - toxicity
+Vitamin_D,Nephrocalcinosis,NIH ODS Vitamin D Fact Sheet - toxicity
+Vitamin_D,Kidney Diseases,NIH ODS Vitamin D Fact Sheet - toxicity
+Vitamin_D,Hyperparathyroidism  Secondary,NIH ODS Vitamin D Fact Sheet
+Zinc,Copper Metabolism Disorders,NIH ODS Zinc Fact Sheet - excess zinc inhibits copper absorption
+Zinc,Anemia,NIH ODS Zinc Fact Sheet - excess zinc causes copper deficiency anemia
+Zinc,Anemia  Hypochromic,NIH ODS Zinc Fact Sheet - copper deficiency
+Zinc,Immune System Diseases,NIH ODS Zinc Fact Sheet - excess zinc impairs immunity
+Magnesium,Kidney Diseases,NIH ODS Magnesium Fact Sheet - impaired excretion in CKD
+Magnesium,Kidney Failure  Chronic,NIH ODS Magnesium Fact Sheet - impaired excretion in CKD
+Magnesium,Renal Insufficiency,NIH ODS Magnesium Fact Sheet - impaired excretion in CKD
+Magnesium,Renal Insufficiency  Chronic,NIH ODS Magnesium Fact Sheet - impaired excretion in CKD
+Magnesium,Diarrhea,NIH ODS Magnesium Fact Sheet - excess causes osmotic diarrhea
+Protein,Kidney Diseases,NIH NIDDK Low Protein Diet in CKD
+Protein,Kidney Failure  Chronic,NIH NIDDK Low Protein Diet in CKD
+Protein,Renal Insufficiency,NIH NIDDK Low Protein Diet in CKD
+Protein,Renal Insufficiency  Chronic,NIH NIDDK Low Protein Diet in CKD
+Protein,Acute Kidney Injury,NIH NIDDK Low Protein Diet in CKD
+Protein,Nephrotic Syndrome,NIH NIDDK Low Protein Diet in CKD
+Protein,Hepatic Encephalopathy,EASL Hepatic Encephalopathy Guidelines
+Protein,Gout,ACR Gout Dietary Guidelines - high purine proteins
