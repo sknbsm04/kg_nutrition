@@ -52,8 +52,9 @@ food:Almond_butter_creamy a prop:Food ;
         nutrient:Potassium,
         nutrient:Protein,
         nutrient:Zinc ;
-    prop:predictedFor disease:Anemia__Hypochromic,
-        disease:Hypertension__Portal ;
+    prop:highInPredicted nutrient:Folate,
+        nutrient:Sodium,
+        nutrient:Vitamin_B6 ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -250,6 +251,36 @@ food:Almond_milk_unsweetened_plain_shelf_stable a prop:Food ;
         disease:Nephrocalcinosis,
         disease:Nephrolithiasis ;
     prop:highIn nutrient:Calcium ;
+    prop:highInPredicted nutrient:Vitamin_D ;
+    prop:predictedFor disease:Alzheimer_Disease,
+        disease:Arthralgia,
+        disease:Basal_Cell_Nevus_Syndrome,
+        disease:Bone_Diseases__Endocrine,
+        disease:Chemical_and_Drug_Induced_Liver_Injury,
+        disease:Cognition_Disorders,
+        disease:Colonic_Neoplasms,
+        disease:Hypertrophy,
+        disease:Inflammation,
+        disease:Leukemia__Myeloid__Acute,
+        disease:Liver_Cirrhosis,
+        disease:Lung_Injury,
+        disease:Memory_Disorders,
+        disease:Mental_Disorders,
+        disease:Mobility_Limitation,
+        disease:Multiple_Sclerosis,
+        disease:Muscle_Weakness,
+        disease:Myalgia,
+        disease:Pain,
+        disease:Paranoid_Disorders,
+        disease:Prenatal_Exposure_Delayed_Effects,
+        disease:Prostatic_Neoplasms,
+        disease:Pruritus,
+        disease:Psychotic_Disorders,
+        disease:Pulmonary_Fibrosis,
+        disease:Reperfusion_Injury,
+        disease:Respiratory_Tract_Diseases,
+        disease:Vitamin_D_Deficiency,
+        disease:Wounds_and_Injuries ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Arrhythmias__Cardiac,
         disease:Bone_Diseases,
@@ -331,22 +362,19 @@ food:Anchovies_canned_in_olive_oil_with_salt_drained a prop:Food ;
         nutrient:Protein,
         nutrient:Sodium,
         nutrient:Vitamin_B12 ;
-    prop:predictedFor disease:Acrodermatitis,
-        disease:Bone_Diseases__Endocrine,
-        disease:Brain_Injuries,
-        disease:Carcinoma__Squamous_Cell,
-        disease:Coronary_Disease,
-        disease:Fever,
-        disease:Heart_Defects__Congenital,
-        disease:Hyperplasia,
-        disease:Memory_Disorders,
-        disease:Mental_Disorders,
-        disease:Multiple_Myeloma,
-        disease:Multiple_Sclerosis,
+    prop:highInPredicted nutrient:Potassium ;
+    prop:predictedFor disease:Arthralgia,
+        disease:Diabetes_Mellitus,
+        disease:Diabetic_Ketoacidosis,
+        disease:Hypokalemia,
+        disease:Hypokalemic_Periodic_Paralysis,
+        disease:Muscle_Cramp,
         disease:Muscle_Weakness,
-        disease:Stomach_Ulcer,
-        disease:Teratozoospermia,
-        disease:Testicular_Diseases ;
+        disease:Muscular_Diseases,
+        disease:Nerve_Degeneration,
+        disease:Paralysis,
+        disease:Rhabdomyolysis,
+        disease:Tremor ;
     prop:recommendedFor disease:Anemia,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -557,6 +585,29 @@ food:Arugula_baby_raw a prop:Food ;
         nutrient:Folate,
         nutrient:Potassium,
         nutrient:Vitamin_C ;
+    prop:highInPredicted nutrient:Magnesium ;
+    prop:predictedFor disease:Atrial_Fibrillation,
+        disease:Autistic_Disorder,
+        disease:Cerebrovascular_Disorders,
+        disease:Coronary_Vasospasm,
+        disease:Developmental_Disabilities,
+        disease:Fasciculation,
+        disease:Hemorrhage,
+        disease:Hyperalgesia,
+        disease:Infant_Death,
+        disease:Long_QT_Syndrome,
+        disease:Lung_Injury,
+        disease:Magnesium_Deficiency,
+        disease:Migraine_Disorders,
+        disease:Pain,
+        disease:Substance_Withdrawal_Syndrome,
+        disease:Tachycardia,
+        disease:Tachycardia__Ectopic_Atrial,
+        disease:Tachycardia__Supraventricular,
+        disease:Tachycardia__Ventricular,
+        disease:Torsades_de_Pointes,
+        disease:Vasospasm__Intracranial,
+        disease:Ventricular_Fibrillation ;
     prop:recommendedFor disease:Arrhythmias__Cardiac,
         disease:Arthralgia,
         disease:Bone_Diseases,
@@ -614,9 +665,6 @@ food:Avocado_Hass_peeled_raw a prop:Food ;
     prop:highIn nutrient:Fat,
         nutrient:Folate,
         nutrient:Potassium ;
-    prop:predictedFor disease:Disease_Susceptibility,
-        disease:Leukemia,
-        disease:Stomach_Ulcer ;
     prop:recommendedFor disease:Arrhythmias__Cardiac,
         disease:Arthralgia,
         disease:Diabetes_Mellitus,
@@ -654,7 +702,8 @@ food:Bananas_overripe_raw a prop:Food ;
         disease:Obesity,
         disease:Weight_Gain ;
     prop:highIn nutrient:Sugar,
-        nutrient:Vitamin_B6 .
+        nutrient:Vitamin_B6 ;
+    prop:highInPredicted nutrient:Vitamin_C .
 
 food:Bananas_ripe_and_slightly_ripe_raw a prop:Food ;
     prop:contraindicatedFor disease:Cardiovascular_Diseases,
@@ -675,7 +724,8 @@ food:Bananas_ripe_and_slightly_ripe_raw a prop:Food ;
         disease:Weight_Gain ;
     prop:highIn nutrient:Carbohydrate,
         nutrient:Sugar,
-        nutrient:Vitamin_B6 .
+        nutrient:Vitamin_B6 ;
+    prop:highInPredicted nutrient:Vitamin_C .
 
 food:Beans_Dry_Black_0_moisture a prop:Food ;
     prop:contraindicatedFor disease:Acute_Kidney_Injury,
@@ -717,6 +767,7 @@ food:Beans_Dry_Black_0_moisture a prop:Food ;
         nutrient:Potassium,
         nutrient:Protein,
         nutrient:Zinc ;
+    prop:highInPredicted nutrient:Fat ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -876,6 +927,7 @@ food:Beans_Dry_Brown_0_moisture a prop:Food ;
         nutrient:Potassium,
         nutrient:Protein,
         nutrient:Zinc ;
+    prop:highInPredicted nutrient:Fat ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -1041,11 +1093,6 @@ food:Beans_Dry_Carioca_0_moisture a prop:Food ;
         nutrient:Potassium,
         nutrient:Protein,
         nutrient:Zinc ;
-    prop:predictedFor disease:Hepatolenticular_Degeneration,
-        disease:Myocardial_Infarction,
-        disease:Obesity,
-        disease:Pancreatitis,
-        disease:Psychotic_Disorders ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -1202,6 +1249,7 @@ food:Beans_Dry_Cranberry_0_moisture a prop:Food ;
         nutrient:Potassium,
         nutrient:Protein,
         nutrient:Zinc ;
+    prop:highInPredicted nutrient:Fiber ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -1361,6 +1409,7 @@ food:Beans_Dry_Dark_Red_Kidney_0_moisture a prop:Food ;
         nutrient:Potassium,
         nutrient:Protein,
         nutrient:Zinc ;
+    prop:highInPredicted nutrient:Fiber ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -1520,6 +1569,8 @@ food:Beans_Dry_Flor_de_Mayo_0_moisture a prop:Food ;
         nutrient:Potassium,
         nutrient:Protein,
         nutrient:Zinc ;
+    prop:highInPredicted nutrient:Fat,
+        nutrient:Fiber ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -1844,8 +1895,6 @@ food:Beans_Dry_Light_Red_Kidney_0_moisture a prop:Food ;
         nutrient:Potassium,
         nutrient:Protein,
         nutrient:Zinc ;
-    prop:predictedFor disease:Bone_Diseases__Endocrine,
-        disease:Pruritus ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -2002,7 +2051,6 @@ food:Beans_Dry_Light_Tan_0_moisture a prop:Food ;
         nutrient:Potassium,
         nutrient:Protein,
         nutrient:Zinc ;
-    prop:predictedFor disease:Wounds_and_Injuries ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -2162,18 +2210,6 @@ food:Beans_Dry_Medium_Red_0_moisture a prop:Food ;
         nutrient:Potassium,
         nutrient:Protein,
         nutrient:Zinc ;
-    prop:predictedFor disease:Copper_Metabolism_Disorders,
-        disease:Coronary_Disease,
-        disease:Hepatolenticular_Degeneration,
-        disease:Hypokalemic_Periodic_Paralysis,
-        disease:Memory_Disorders,
-        disease:Myalgia,
-        disease:Pancreatitis,
-        disease:Paranoid_Disorders,
-        disease:Pruritus,
-        disease:Reperfusion_Injury,
-        disease:Respiratory_Tract_Diseases,
-        disease:Wounds_and_Injuries ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -2333,8 +2369,6 @@ food:Beans_Dry_Navy_0_moisture a prop:Food ;
         nutrient:Potassium,
         nutrient:Protein,
         nutrient:Zinc ;
-    prop:predictedFor disease:Myalgia,
-        disease:Paranoid_Disorders ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -2494,8 +2528,7 @@ food:Beans_Dry_Pink_0_moisture a prop:Food ;
         nutrient:Potassium,
         nutrient:Protein,
         nutrient:Zinc ;
-    prop:predictedFor disease:Hypokalemic_Periodic_Paralysis,
-        disease:Liver_Cirrhosis ;
+    prop:highInPredicted nutrient:Fat ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -2655,6 +2688,7 @@ food:Beans_Dry_Pinto_0_moisture a prop:Food ;
         nutrient:Potassium,
         nutrient:Protein,
         nutrient:Zinc ;
+    prop:highInPredicted nutrient:Fiber ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -2973,6 +3007,7 @@ food:Beans_Dry_Small_Red_0_moisture a prop:Food ;
         nutrient:Potassium,
         nutrient:Protein,
         nutrient:Zinc ;
+    prop:highInPredicted nutrient:Fat ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -3132,6 +3167,7 @@ food:Beans_Dry_Small_White_0_moisture a prop:Food ;
         nutrient:Potassium,
         nutrient:Protein,
         nutrient:Zinc ;
+    prop:highInPredicted nutrient:Fiber ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -3291,6 +3327,7 @@ food:Beans_Dry_Tan_0_moisture a prop:Food ;
         nutrient:Potassium,
         nutrient:Protein,
         nutrient:Zinc ;
+    prop:highInPredicted nutrient:Fiber ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -3959,10 +3996,6 @@ food:Beef_flank_steak_boneless_choice_raw a prop:Food ;
     prop:highIn nutrient:Fat,
         nutrient:Protein,
         nutrient:Zinc ;
-    prop:predictedFor disease:Arrhythmias__Cardiac,
-        disease:Pain,
-        disease:Tachycardia,
-        disease:Vasospasm__Intracranial ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Asthma,
         disease:Atherosclerosis,
@@ -4186,7 +4219,32 @@ food:Beef_loin_tenderloin_roast_separable_lean_only_boneless_trimmed_to_0_fat_se
         nutrient:Vitamin_B12,
         nutrient:Vitamin_B6,
         nutrient:Zinc ;
-    prop:predictedFor disease:Drug_Related_Side_Effects_and_Adverse_Reactions ;
+    prop:highInPredicted nutrient:Magnesium ;
+    prop:predictedFor disease:Arrhythmias__Cardiac,
+        disease:Atrial_Fibrillation,
+        disease:Cerebrovascular_Disorders,
+        disease:Coronary_Vasospasm,
+        disease:Developmental_Disabilities,
+        disease:Drug_Related_Side_Effects_and_Adverse_Reactions,
+        disease:Fasciculation,
+        disease:Hemorrhage,
+        disease:Hyperalgesia,
+        disease:Hypertension,
+        disease:Hypomagnesemia_primary,
+        disease:Long_QT_Syndrome,
+        disease:Lung_Injury,
+        disease:Magnesium_Deficiency,
+        disease:Migraine_Disorders,
+        disease:Pain,
+        disease:Seizures,
+        disease:Substance_Withdrawal_Syndrome,
+        disease:Tachycardia,
+        disease:Tachycardia__Ectopic_Atrial,
+        disease:Tachycardia__Supraventricular,
+        disease:Tachycardia__Ventricular,
+        disease:Torsades_de_Pointes,
+        disease:Vasospasm__Intracranial,
+        disease:Ventricular_Fibrillation ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Asthma,
@@ -4577,6 +4635,7 @@ food:Beef_round_top_round_roast_boneless_separable_lean_only_trimmed_to_0_fat_se
         nutrient:Protein,
         nutrient:Vitamin_B6,
         nutrient:Zinc ;
+    prop:highInPredicted nutrient:Vitamin_B12 ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Asthma,
@@ -4833,18 +4892,6 @@ food:Beef_short_loin_tbone_steak_bonein_separable_lean_only_trimmed_to_18_fat_ch
         nutrient:Vitamin_B12,
         nutrient:Vitamin_B6,
         nutrient:Zinc ;
-    prop:predictedFor disease:Arrhythmias__Cardiac,
-        disease:Drug_Related_Side_Effects_and_Adverse_Reactions,
-        disease:Hyperkalemia,
-        disease:Iron_Overload,
-        disease:Kidney_Failure__Chronic,
-        disease:Mobility_Limitation,
-        disease:Muscle_Weakness,
-        disease:Pulpitis,
-        disease:Sinus_Arrest__Cardiac,
-        disease:Tachycardia__Ectopic_Atrial,
-        disease:Ventricular_Fibrillation,
-        disease:Water_Electrolyte_Imbalance ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Asthma,
@@ -5129,6 +5176,20 @@ food:Beet_greens_raw a prop:Food ;
         nutrient:Iron,
         nutrient:Magnesium,
         nutrient:Sodium ;
+    prop:highInPredicted nutrient:Carbohydrate,
+        nutrient:Potassium ;
+    prop:predictedFor disease:Arthralgia,
+        disease:Diabetes_Mellitus,
+        disease:Diabetic_Ketoacidosis,
+        disease:Hypokalemia,
+        disease:Hypokalemic_Periodic_Paralysis,
+        disease:Muscle_Cramp,
+        disease:Muscle_Weakness,
+        disease:Muscular_Diseases,
+        disease:Nerve_Degeneration,
+        disease:Paralysis,
+        disease:Rhabdomyolysis,
+        disease:Tremor ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Anemia,
         disease:Anemia__Iron_Deficiency,
@@ -5393,7 +5454,6 @@ food:Blackeye_pea_dry a prop:Food ;
         nutrient:Potassium,
         nutrient:Protein,
         nutrient:Zinc ;
-    prop:predictedFor disease:Cognition_Disorders ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -5556,6 +5616,29 @@ food:Bread_white_commercially_prepared a prop:Food ;
         nutrient:Carbohydrate,
         nutrient:Iron,
         nutrient:Sodium ;
+    prop:highInPredicted nutrient:Magnesium,
+        nutrient:Saturated_Fat,
+        nutrient:Sugar ;
+    prop:predictedFor disease:Atrial_Fibrillation,
+        disease:Cerebrovascular_Disorders,
+        disease:Coronary_Vasospasm,
+        disease:Developmental_Disabilities,
+        disease:Fasciculation,
+        disease:Hemorrhage,
+        disease:Hyperalgesia,
+        disease:Hypomagnesemia_primary,
+        disease:Infant_Death,
+        disease:Long_QT_Syndrome,
+        disease:Lung_Injury,
+        disease:Magnesium_Deficiency,
+        disease:Migraine_Disorders,
+        disease:Pain,
+        disease:Substance_Withdrawal_Syndrome,
+        disease:Tachycardia__Ectopic_Atrial,
+        disease:Tachycardia__Supraventricular,
+        disease:Tachycardia__Ventricular,
+        disease:Torsades_de_Pointes,
+        disease:Vasospasm__Intracranial ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Anemia,
         disease:Anemia__Iron_Deficiency,
@@ -5644,24 +5727,8 @@ food:Bread_wholewheat_commercially_prepared a prop:Food ;
         nutrient:Magnesium,
         nutrient:Sodium,
         nutrient:Vitamin_B6 ;
-    prop:predictedFor disease:COVID_19,
-        disease:Carcinoma__Squamous_Cell,
-        disease:Diabetes_Mellitus,
-        disease:Disease_Models__Animal,
-        disease:Edema,
-        disease:Fatty_Liver,
-        disease:Hepatic_Encephalopathy,
-        disease:Hypokalemia,
-        disease:Insulin_Resistance,
-        disease:Muscle_Cramp,
-        disease:Nerve_Degeneration,
-        disease:Neural_Tube_Defects,
-        disease:Obesity,
-        disease:Paralysis,
-        disease:Polycystic_Ovary_Syndrome,
-        disease:Prenatal_Injuries,
-        disease:Proteinuria,
-        disease:Ventricular_Dysfunction__Left ;
+    prop:highInPredicted nutrient:Folate,
+        nutrient:Sugar ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Anemia,
         disease:Anemia__Iron_Deficiency,
@@ -5741,6 +5808,31 @@ food:Brussels_sprouts_raw a prop:Food ;
         nutrient:Folate,
         nutrient:Potassium,
         nutrient:Vitamin_C ;
+    prop:highInPredicted nutrient:Magnesium ;
+    prop:predictedFor disease:Atrial_Fibrillation,
+        disease:Autistic_Disorder,
+        disease:Cardiovascular_Diseases,
+        disease:Cerebrovascular_Disorders,
+        disease:Coronary_Vasospasm,
+        disease:Developmental_Disabilities,
+        disease:Fasciculation,
+        disease:Hemorrhage,
+        disease:Hyperalgesia,
+        disease:Infant_Death,
+        disease:Long_QT_Syndrome,
+        disease:Lung_Injury,
+        disease:Magnesium_Deficiency,
+        disease:Migraine_Disorders,
+        disease:Pain,
+        disease:Seizures,
+        disease:Substance_Withdrawal_Syndrome,
+        disease:Tachycardia,
+        disease:Tachycardia__Ectopic_Atrial,
+        disease:Tachycardia__Supraventricular,
+        disease:Tachycardia__Ventricular,
+        disease:Torsades_de_Pointes,
+        disease:Vasospasm__Intracranial,
+        disease:Ventricular_Fibrillation ;
     prop:recommendedFor disease:Arrhythmias__Cardiac,
         disease:Arthralgia,
         disease:Diabetes_Mellitus,
@@ -5786,6 +5878,8 @@ food:Buckwheat_whole_grain a prop:Food ;
         nutrient:Magnesium,
         nutrient:Potassium,
         nutrient:Vitamin_B6 ;
+    prop:highInPredicted nutrient:Fiber ;
+    prop:predictedFor disease:Hyperglycemia ;
     prop:recommendedFor disease:Anemia,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -5935,9 +6029,29 @@ food:Butter_stick_salted a prop:Food ;
         nutrient:Fat,
         nutrient:Saturated_Fat,
         nutrient:Sodium ;
-    prop:predictedFor disease:Anemia__Hypochromic,
-        disease:Melanoma,
-        disease:Migraine_Disorders ;
+    prop:highInPredicted nutrient:Calcium,
+        nutrient:Sugar ;
+    prop:predictedFor disease:Bone_Diseases,
+        disease:Bradycardia,
+        disease:Cardiomyopathies,
+        disease:Colitis,
+        disease:Drug_Overdose,
+        disease:Hypocalcemia,
+        disease:Hypoparathyroidism,
+        disease:Movement_Disorders,
+        disease:Neoplasms,
+        disease:Nephrocalcinosis,
+        disease:Nerve_Compression_Syndromes,
+        disease:Neurologic_Manifestations,
+        disease:Peptic_Ulcer,
+        disease:Periodontitis,
+        disease:Polyradiculopathy,
+        disease:Pulpitis,
+        disease:Rickets,
+        disease:Seizures,
+        disease:Sinus_Arrest__Cardiac,
+        disease:Urinary_Bladder_Diseases,
+        disease:Weight_Gain ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Arrhythmias__Cardiac,
         disease:Drug_Related_Side_Effects_and_Adverse_Reactions,
@@ -6058,6 +6172,7 @@ food:Cheese_American_restaurant a prop:Food ;
         nutrient:Fat,
         nutrient:Saturated_Fat,
         nutrient:Sodium ;
+    prop:highInPredicted nutrient:Sugar ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Arrhythmias__Cardiac,
         disease:Bone_Diseases,
@@ -6141,9 +6256,7 @@ food:Cheese_cheddar a prop:Food ;
         nutrient:Saturated_Fat,
         nutrient:Sodium,
         nutrient:Zinc ;
-    prop:predictedFor disease:Colorectal_Neoplasms,
-        disease:Lung_Injury,
-        disease:Pain ;
+    prop:highInPredicted nutrient:Vitamin_B12 ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Arrhythmias__Cardiac,
         disease:Asthma,
@@ -6274,7 +6387,34 @@ food:Cheese_cotija_solid a prop:Food ;
         nutrient:Saturated_Fat,
         nutrient:Sodium,
         nutrient:Zinc ;
-    prop:predictedFor disease:Diabetes_Mellitus__Type_2 ;
+    prop:highInPredicted nutrient:Cholesterol,
+        nutrient:Vitamin_D ;
+    prop:predictedFor disease:Alzheimer_Disease,
+        disease:Arthralgia,
+        disease:Basal_Cell_Nevus_Syndrome,
+        disease:Bone_Diseases__Endocrine,
+        disease:Cognition_Disorders,
+        disease:Colonic_Neoplasms,
+        disease:Hypertrophy,
+        disease:Leukemia__Myeloid__Acute,
+        disease:Liver_Cirrhosis,
+        disease:Lung_Injury,
+        disease:Memory_Disorders,
+        disease:Mental_Disorders,
+        disease:Mobility_Limitation,
+        disease:Multiple_Sclerosis,
+        disease:Muscle_Weakness,
+        disease:Myalgia,
+        disease:Pain,
+        disease:Paranoid_Disorders,
+        disease:Prenatal_Exposure_Delayed_Effects,
+        disease:Pruritus,
+        disease:Psychotic_Disorders,
+        disease:Pulmonary_Fibrosis,
+        disease:Reperfusion_Injury,
+        disease:Respiratory_Tract_Diseases,
+        disease:Vitamin_D_Deficiency,
+        disease:Wounds_and_Injuries ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Arrhythmias__Cardiac,
         disease:Asthma,
@@ -6469,28 +6609,14 @@ food:Cheese_dry_white_queso_seco a prop:Food ;
         nutrient:Vitamin_B12,
         nutrient:Vitamin_D,
         nutrient:Zinc ;
-    prop:predictedFor disease:Atrial_Fibrillation,
+    prop:highInPredicted nutrient:Cholesterol,
+        nutrient:Iron,
+        nutrient:Vitamin_B6 ;
+    prop:predictedFor disease:Anemia__Iron_Deficiency,
         disease:Autistic_Disorder,
-        disease:Colorectal_Neoplasms,
-        disease:Coronary_Vasospasm,
-        disease:Developmental_Disabilities,
-        disease:Edema,
-        disease:Fasciculation,
-        disease:Gout,
-        disease:Hyperalgesia,
-        disease:Hypokalemia,
-        disease:Hypomagnesemia_primary,
-        disease:Kidney_Diseases,
-        disease:Long_QT_Syndrome,
-        disease:Magnesium_Deficiency,
-        disease:Migraine_Disorders,
-        disease:Muscular_Diseases,
-        disease:Nerve_Degeneration,
-        disease:Non_alcoholic_Fatty_Liver_Disease,
-        disease:Stroke,
-        disease:Tachycardia__Ectopic_Atrial,
-        disease:Torsades_de_Pointes,
-        disease:Vasospasm__Intracranial ;
+        disease:Cholestasis,
+        disease:Hyperkinesis,
+        disease:Parasomnias ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Alzheimer_Disease,
         disease:Arrhythmias__Cardiac,
@@ -6632,19 +6758,36 @@ food:Cheese_feta_whole_milk_crumbled a prop:Food ;
         nutrient:Fat,
         nutrient:Protein,
         nutrient:Sodium ;
-    prop:predictedFor disease:Atrial_Fibrillation,
-        disease:Carcinoma__Ehrlich_Tumor,
-        disease:Cardiotoxicity,
-        disease:Diabetic_Cardiomyopathies,
-        disease:Disease_Models__Animal,
-        disease:Glioma,
-        disease:Heart_Defects__Congenital,
-        disease:Hypomagnesemia_primary,
-        disease:Infant_Death,
-        disease:Muscle_Cramp,
+    prop:highInPredicted nutrient:Vitamin_D ;
+    prop:predictedFor disease:Alzheimer_Disease,
+        disease:Arthralgia,
+        disease:Basal_Cell_Nevus_Syndrome,
+        disease:Bone_Diseases__Endocrine,
+        disease:Chemical_and_Drug_Induced_Liver_Injury,
+        disease:Cognition_Disorders,
+        disease:Colonic_Neoplasms,
+        disease:Hypertrophy,
+        disease:Inflammation,
+        disease:Leukemia__Myeloid__Acute,
+        disease:Liver_Cirrhosis,
+        disease:Lung_Injury,
+        disease:Memory_Disorders,
+        disease:Mental_Disorders,
+        disease:Mobility_Limitation,
+        disease:Multiple_Sclerosis,
+        disease:Muscle_Weakness,
+        disease:Myalgia,
+        disease:Pain,
+        disease:Paranoid_Disorders,
+        disease:Prenatal_Exposure_Delayed_Effects,
         disease:Prostatic_Neoplasms,
-        disease:Ventricular_Dysfunction__Left,
-        disease:Weight_Loss ;
+        disease:Pruritus,
+        disease:Psychotic_Disorders,
+        disease:Pulmonary_Fibrosis,
+        disease:Reperfusion_Injury,
+        disease:Respiratory_Tract_Diseases,
+        disease:Vitamin_D_Deficiency,
+        disease:Wounds_and_Injuries ;
     prop:recommendedFor disease:Arrhythmias__Cardiac,
         disease:Bone_Diseases,
         disease:Bradycardia,
@@ -6727,6 +6870,39 @@ food:Cheese_monterey_jack_solid a prop:Food ;
         nutrient:Saturated_Fat,
         nutrient:Sodium,
         nutrient:Zinc ;
+    prop:highInPredicted nutrient:Iron,
+        nutrient:Vitamin_D ;
+    prop:predictedFor disease:Alzheimer_Disease,
+        disease:Anemia__Iron_Deficiency,
+        disease:Arthralgia,
+        disease:Autistic_Disorder,
+        disease:Basal_Cell_Nevus_Syndrome,
+        disease:Bone_Diseases__Endocrine,
+        disease:Cholestasis,
+        disease:Cognition_Disorders,
+        disease:Colonic_Neoplasms,
+        disease:Hyperkinesis,
+        disease:Hypertrophy,
+        disease:Leukemia__Myeloid__Acute,
+        disease:Liver_Cirrhosis,
+        disease:Lung_Injury,
+        disease:Memory_Disorders,
+        disease:Mental_Disorders,
+        disease:Mobility_Limitation,
+        disease:Multiple_Sclerosis,
+        disease:Muscle_Weakness,
+        disease:Myalgia,
+        disease:Pain,
+        disease:Paranoid_Disorders,
+        disease:Parasomnias,
+        disease:Prenatal_Exposure_Delayed_Effects,
+        disease:Pruritus,
+        disease:Psychotic_Disorders,
+        disease:Pulmonary_Fibrosis,
+        disease:Reperfusion_Injury,
+        disease:Respiratory_Tract_Diseases,
+        disease:Vitamin_D_Deficiency,
+        disease:Wounds_and_Injuries ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Arrhythmias__Cardiac,
         disease:Asthma,
@@ -6857,15 +7033,9 @@ food:Cheese_mozzarella_low_moisture_partskim a prop:Food ;
         nutrient:Saturated_Fat,
         nutrient:Sodium,
         nutrient:Zinc ;
-    prop:predictedFor disease:Colonic_Neoplasms,
-        disease:Hypercalcemia,
-        disease:Hyperlipidemias,
-        disease:Hypomagnesemia_primary,
-        disease:Magnesium_Deficiency,
-        disease:Migraine_Disorders,
-        disease:Muscular_Diseases,
-        disease:Non_alcoholic_Fatty_Liver_Disease,
-        disease:Pain ;
+    prop:highInPredicted nutrient:Cholesterol,
+        nutrient:Sugar,
+        nutrient:Vitamin_B12 ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Arrhythmias__Cardiac,
         disease:Asthma,
@@ -6996,6 +7166,7 @@ food:Cheese_oaxaca_solid a prop:Food ;
         nutrient:Saturated_Fat,
         nutrient:Sodium,
         nutrient:Zinc ;
+    prop:highInPredicted nutrient:Cholesterol ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Arrhythmias__Cardiac,
         disease:Asthma,
@@ -7126,12 +7297,8 @@ food:Cheese_parmesan_grated a prop:Food ;
         nutrient:Saturated_Fat,
         nutrient:Sodium,
         nutrient:Zinc ;
-    prop:predictedFor disease:Atrial_Fibrillation,
-        disease:Constipation,
-        disease:Diabetic_Ketoacidosis,
-        disease:Insulin_Resistance,
-        disease:Torsades_de_Pointes,
-        disease:Vasospasm__Intracranial ;
+    prop:highInPredicted nutrient:Cholesterol,
+        nutrient:Vitamin_B12 ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Arrhythmias__Cardiac,
         disease:Asthma,
@@ -7262,6 +7429,7 @@ food:Cheese_parmesan_grated_refrigerated a prop:Food ;
         nutrient:Saturated_Fat,
         nutrient:Sodium,
         nutrient:Zinc ;
+    prop:highInPredicted nutrient:Cholesterol ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Arrhythmias__Cardiac,
         disease:Asthma,
@@ -7385,8 +7553,55 @@ food:Cheese_pasteurized_process_American_vitamin_D_fortified a prop:Food ;
         nutrient:Saturated_Fat,
         nutrient:Sodium,
         nutrient:Vitamin_D ;
-    prop:predictedFor disease:Edema,
-        disease:Proteinuria ;
+    prop:highInPredicted nutrient:Sugar,
+        nutrient:Vitamin_B12,
+        nutrient:Zinc ;
+    prop:predictedFor disease:Acrodermatitis,
+        disease:Asthma,
+        disease:Brain_Injuries,
+        disease:COVID_19,
+        disease:Carcinoma__Ehrlich_Tumor,
+        disease:Carcinoma__Squamous_Cell,
+        disease:Cardiotoxicity,
+        disease:Cell_Transformation__Neoplastic,
+        disease:Cholestasis__Extrahepatic,
+        disease:Craniofacial_Abnormalities,
+        disease:Diabetes_Mellitus,
+        disease:Diabetic_Cardiomyopathies,
+        disease:Diarrhea,
+        disease:Disease_Models__Animal,
+        disease:Disease_Progression,
+        disease:Disease_Susceptibility,
+        disease:Dysgeusia,
+        disease:Esophageal_Neoplasms,
+        disease:Esophageal_Squamous_Cell_Carcinoma,
+        disease:Fever,
+        disease:Gastrointestinal_Diseases,
+        disease:Glioma,
+        disease:Heart_Defects__Congenital,
+        disease:Hepatolenticular_Degeneration,
+        disease:Hepatomegaly,
+        disease:Hyperemia,
+        disease:Hyperglycemia,
+        disease:Hyperplasia,
+        disease:Infant_Death,
+        disease:Intestinal_Diseases,
+        disease:Leukemia,
+        disease:Major_Depressive_Disorder,
+        disease:Melanoma,
+        disease:Multiple_Myeloma,
+        disease:Necrosis,
+        disease:Neural_Tube_Defects,
+        disease:Peripheral_Nervous_System_Diseases,
+        disease:Polycystic_Ovary_Syndrome,
+        disease:Prenatal_Injuries,
+        disease:Protein_Deficiency,
+        disease:Splenic_Diseases,
+        disease:Stomach_Ulcer,
+        disease:Teratozoospermia,
+        disease:Testicular_Diseases,
+        disease:Ventricular_Dysfunction__Left,
+        disease:Weight_Loss ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Alzheimer_Disease,
         disease:Arrhythmias__Cardiac,
@@ -7490,6 +7705,7 @@ food:Cheese_pasteurized_process_cheese_food_or_product_American_singles a prop:F
         nutrient:Saturated_Fat,
         nutrient:Sodium,
         nutrient:Vitamin_D ;
+    prop:highInPredicted nutrient:Cholesterol ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Alzheimer_Disease,
         disease:Arrhythmias__Cardiac,
@@ -7601,6 +7817,7 @@ food:Cheese_provolone_sliced a prop:Food ;
         nutrient:Saturated_Fat,
         nutrient:Sodium,
         nutrient:Zinc ;
+    prop:highInPredicted nutrient:Cholesterol ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Arrhythmias__Cardiac,
         disease:Asthma,
@@ -7731,6 +7948,7 @@ food:Cheese_queso_fresco_solid a prop:Food ;
         nutrient:Saturated_Fat,
         nutrient:Sodium,
         nutrient:Zinc ;
+    prop:highInPredicted nutrient:Cholesterol ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Arrhythmias__Cardiac,
         disease:Asthma,
@@ -7904,9 +8122,40 @@ food:Cheese_swiss a prop:Food ;
         nutrient:Sodium,
         nutrient:Vitamin_B12,
         nutrient:Zinc ;
-    prop:predictedFor disease:Lung_Injury,
+    prop:highInPredicted nutrient:Iron,
+        nutrient:Sugar,
+        nutrient:Vitamin_D ;
+    prop:predictedFor disease:Alzheimer_Disease,
+        disease:Anemia__Iron_Deficiency,
+        disease:Arthralgia,
+        disease:Autistic_Disorder,
+        disease:Basal_Cell_Nevus_Syndrome,
+        disease:Bone_Diseases__Endocrine,
+        disease:Cholestasis,
+        disease:Cognition_Disorders,
+        disease:Colonic_Neoplasms,
+        disease:Hyperkinesis,
+        disease:Hypertrophy,
+        disease:Leukemia__Myeloid__Acute,
+        disease:Liver_Cirrhosis,
+        disease:Lung_Injury,
+        disease:Memory_Disorders,
+        disease:Mental_Disorders,
+        disease:Mobility_Limitation,
+        disease:Multiple_Sclerosis,
+        disease:Muscle_Weakness,
+        disease:Myalgia,
+        disease:Pain,
+        disease:Paranoid_Disorders,
         disease:Parasomnias,
-        disease:Torsades_de_Pointes ;
+        disease:Prenatal_Exposure_Delayed_Effects,
+        disease:Pruritus,
+        disease:Psychotic_Disorders,
+        disease:Pulmonary_Fibrosis,
+        disease:Reperfusion_Injury,
+        disease:Respiratory_Tract_Diseases,
+        disease:Vitamin_D_Deficiency,
+        disease:Wounds_and_Injuries ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Arrhythmias__Cardiac,
         disease:Asthma,
@@ -8001,7 +8250,8 @@ food:Cherries_sweet_dark_red_raw a prop:Food ;
         disease:Non_alcoholic_Fatty_Liver_Disease,
         disease:Obesity,
         disease:Weight_Gain ;
-    prop:highIn nutrient:Sugar .
+    prop:highIn nutrient:Sugar ;
+    prop:highInPredicted nutrient:Vitamin_C .
 
 food:Chia_seeds_dry_raw a prop:Food ;
     prop:contraindicatedFor disease:Acute_Kidney_Injury,
@@ -8042,11 +8292,7 @@ food:Chia_seeds_dry_raw a prop:Food ;
         nutrient:Potassium,
         nutrient:Vitamin_B6,
         nutrient:Zinc ;
-    prop:predictedFor disease:Cardiovascular_Diseases,
-        disease:Hypertrophy,
-        disease:Mental_Disorders,
-        disease:Pulmonary_Fibrosis,
-        disease:Renal_Insufficiency ;
+    prop:highInPredicted nutrient:Protein ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -8209,7 +8455,65 @@ food:Chicken_broiler_or_fryers_breast_skinless_boneless_meat_only_cooked_braised
         disease:Stroke ;
     prop:highIn nutrient:Cholesterol,
         nutrient:Protein,
-        nutrient:Vitamin_B6 .
+        nutrient:Vitamin_B6 ;
+    prop:highInPredicted nutrient:Saturated_Fat,
+        nutrient:Zinc ;
+    prop:predictedFor disease:Acrodermatitis,
+        disease:Asthma,
+        disease:Brain_Injuries,
+        disease:COVID_19,
+        disease:Carcinoma__Ehrlich_Tumor,
+        disease:Carcinoma__Squamous_Cell,
+        disease:Cardiomyopathies,
+        disease:Cardiotoxicity,
+        disease:Cell_Transformation__Neoplastic,
+        disease:Chemical_and_Drug_Induced_Liver_Injury,
+        disease:Cholestasis__Extrahepatic,
+        disease:Craniofacial_Abnormalities,
+        disease:Diabetes_Mellitus,
+        disease:Diabetes_Mellitus__Type_2,
+        disease:Diabetic_Cardiomyopathies,
+        disease:Diarrhea,
+        disease:Disease_Models__Animal,
+        disease:Disease_Progression,
+        disease:Disease_Susceptibility,
+        disease:Dysgeusia,
+        disease:Edema,
+        disease:Esophageal_Neoplasms,
+        disease:Esophageal_Squamous_Cell_Carcinoma,
+        disease:Fever,
+        disease:Gastrointestinal_Diseases,
+        disease:Glioma,
+        disease:Heart_Defects__Congenital,
+        disease:Hepatolenticular_Degeneration,
+        disease:Hepatomegaly,
+        disease:Hyperemia,
+        disease:Hyperglycemia,
+        disease:Hyperplasia,
+        disease:Hypotension,
+        disease:Infant_Death,
+        disease:Inflammation,
+        disease:Insulin_Resistance,
+        disease:Intestinal_Diseases,
+        disease:Leukemia,
+        disease:Liver_Diseases,
+        disease:Major_Depressive_Disorder,
+        disease:Melanoma,
+        disease:Multiple_Myeloma,
+        disease:Necrosis,
+        disease:Neural_Tube_Defects,
+        disease:Peripheral_Nervous_System_Diseases,
+        disease:Polycystic_Ovary_Syndrome,
+        disease:Prenatal_Injuries,
+        disease:Prostatic_Neoplasms,
+        disease:Protein_Deficiency,
+        disease:Proteinuria,
+        disease:Splenic_Diseases,
+        disease:Stomach_Ulcer,
+        disease:Teratozoospermia,
+        disease:Testicular_Diseases,
+        disease:Ventricular_Dysfunction__Left,
+        disease:Weight_Loss .
 
 food:Chicken_broilers_or_fryers_drumstick_meat_only_cooked_braised a prop:Food ;
     prop:contraindicatedFor disease:Acute_Coronary_Syndrome,
@@ -8248,6 +8552,9 @@ food:Chicken_broilers_or_fryers_drumstick_meat_only_cooked_braised a prop:Food ;
         nutrient:Protein,
         nutrient:Sodium,
         nutrient:Vitamin_B6 ;
+    prop:highInPredicted nutrient:Fat,
+        nutrient:Saturated_Fat,
+        nutrient:Vitamin_B12 ;
     prop:recommendedFor disease:Arrhythmias__Cardiac,
         disease:Drug_Related_Side_Effects_and_Adverse_Reactions,
         disease:Hypotension,
@@ -8276,7 +8583,72 @@ food:Chicken_drumstick_meat_and_skin_raw a prop:Food ;
         disease:Renal_Insufficiency__Chronic,
         disease:Stroke ;
     prop:highIn nutrient:Cholesterol,
-        nutrient:Protein .
+        nutrient:Protein ;
+    prop:highInPredicted nutrient:Sodium,
+        nutrient:Zinc ;
+    prop:predictedFor disease:Acrodermatitis,
+        disease:Arrhythmias__Cardiac,
+        disease:Asthma,
+        disease:Brain_Injuries,
+        disease:COVID_19,
+        disease:Carcinoma__Ehrlich_Tumor,
+        disease:Carcinoma__Squamous_Cell,
+        disease:Cardiomyopathies,
+        disease:Cardiotoxicity,
+        disease:Cell_Transformation__Neoplastic,
+        disease:Chemical_and_Drug_Induced_Liver_Injury,
+        disease:Cholestasis__Extrahepatic,
+        disease:Craniofacial_Abnormalities,
+        disease:Diabetes_Mellitus,
+        disease:Diabetes_Mellitus__Type_2,
+        disease:Diabetic_Cardiomyopathies,
+        disease:Diarrhea,
+        disease:Disease_Models__Animal,
+        disease:Disease_Progression,
+        disease:Disease_Susceptibility,
+        disease:Drug_Related_Side_Effects_and_Adverse_Reactions,
+        disease:Dysgeusia,
+        disease:Edema,
+        disease:Esophageal_Neoplasms,
+        disease:Esophageal_Squamous_Cell_Carcinoma,
+        disease:Fever,
+        disease:Gastrointestinal_Diseases,
+        disease:Glioma,
+        disease:Heart_Defects__Congenital,
+        disease:Heart_Diseases,
+        disease:Hepatolenticular_Degeneration,
+        disease:Hepatomegaly,
+        disease:Hyperemia,
+        disease:Hyperglycemia,
+        disease:Hyperplasia,
+        disease:Hypotension,
+        disease:Infant_Death,
+        disease:Inflammation,
+        disease:Insulin_Resistance,
+        disease:Intestinal_Diseases,
+        disease:Kidney_Diseases__Cystic,
+        disease:Leukemia,
+        disease:Liver_Diseases,
+        disease:Major_Depressive_Disorder,
+        disease:Melanoma,
+        disease:Multiple_Myeloma,
+        disease:Necrosis,
+        disease:Neural_Tube_Defects,
+        disease:Peripheral_Nervous_System_Diseases,
+        disease:Polycystic_Ovary_Syndrome,
+        disease:Prenatal_Injuries,
+        disease:Prostatic_Neoplasms,
+        disease:Protein_Deficiency,
+        disease:Proteinuria,
+        disease:Splenic_Diseases,
+        disease:Stomach_Ulcer,
+        disease:Tachycardia,
+        disease:Teratozoospermia,
+        disease:Testicular_Diseases,
+        disease:Ventricular_Dysfunction__Left,
+        disease:Ventricular_Fibrillation,
+        disease:Water_Electrolyte_Imbalance,
+        disease:Weight_Loss .
 
 food:Chicken_thigh_boneless_skinless_raw a prop:Food ;
     prop:contraindicatedFor disease:Acute_Kidney_Injury,
@@ -8406,9 +8778,7 @@ food:Chickpeas_garbanzo_beans_bengal_gram_dry a prop:Food ;
         nutrient:Potassium,
         nutrient:Protein,
         nutrient:Zinc ;
-    prop:predictedFor disease:Hypokalemic_Periodic_Paralysis,
-        disease:Memory_Disorders,
-        disease:Nephrotic_Syndrome ;
+    prop:highInPredicted nutrient:Sodium ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -8588,13 +8958,12 @@ food:Collards_raw a prop:Food ;
         nutrient:Magnesium,
         nutrient:Potassium,
         nutrient:Vitamin_C ;
-    prop:predictedFor disease:Diabetic_Cardiomyopathies,
-        disease:Disease_Susceptibility,
-        disease:Esophageal_Squamous_Cell_Carcinoma,
-        disease:Leukemia,
-        disease:Multiple_Myeloma,
-        disease:Prenatal_Injuries,
-        disease:Weight_Loss ;
+    prop:highInPredicted nutrient:Iron ;
+    prop:predictedFor disease:Anemia,
+        disease:Anemia__Iron_Deficiency,
+        disease:Cholestasis,
+        disease:Hyperkinesis,
+        disease:Parasomnias ;
     prop:recommendedFor disease:Arrhythmias__Cardiac,
         disease:Arthralgia,
         disease:Atrial_Fibrillation,
@@ -8712,6 +9081,7 @@ food:Cookies_oatmeal_soft_with_raisins a prop:Food ;
         nutrient:Iron,
         nutrient:Sodium,
         nutrient:Sugar ;
+    prop:highInPredicted nutrient:Saturated_Fat ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Anemia,
         disease:Anemia__Iron_Deficiency,
@@ -8751,29 +9121,78 @@ food:Corn_flour_masa_harina_white_or_yellow_dry_raw a prop:Food ;
         nutrient:Fiber,
         nutrient:Magnesium,
         nutrient:Vitamin_B6 ;
-    prop:predictedFor disease:Acute_Coronary_Syndrome,
+    prop:highInPredicted nutrient:Iron,
+        nutrient:Potassium,
+        nutrient:Zinc ;
+    prop:predictedFor disease:Acrodermatitis,
+        disease:Anemia,
+        disease:Anemia__Iron_Deficiency,
         disease:Arthralgia,
         disease:Asthma,
+        disease:Atherosclerosis,
+        disease:Brain_Injuries,
         disease:COVID_19,
         disease:Carcinoma__Ehrlich_Tumor,
+        disease:Carcinoma__Squamous_Cell,
         disease:Cardiotoxicity,
+        disease:Cell_Transformation__Neoplastic,
         disease:Chemical_and_Drug_Induced_Liver_Injury,
+        disease:Cholestasis,
+        disease:Cholestasis__Extrahepatic,
         disease:Craniofacial_Abnormalities,
         disease:Diabetes_Mellitus,
         disease:Diabetes_Mellitus__Type_2,
+        disease:Diabetic_Cardiomyopathies,
+        disease:Diabetic_Ketoacidosis,
+        disease:Disease_Models__Animal,
         disease:Disease_Progression,
+        disease:Disease_Susceptibility,
+        disease:Dysgeusia,
+        disease:Edema,
+        disease:Esophageal_Neoplasms,
+        disease:Esophageal_Squamous_Cell_Carcinoma,
+        disease:Fever,
         disease:Glioma,
+        disease:Heart_Defects__Congenital,
+        disease:Heart_Diseases,
+        disease:Heart_Failure,
+        disease:Hepatolenticular_Degeneration,
+        disease:Hepatomegaly,
         disease:Hyperemia,
+        disease:Hyperkinesis,
+        disease:Hyperlipidemias,
         disease:Hyperplasia,
+        disease:Hypokalemia,
+        disease:Hypokalemic_Periodic_Paralysis,
+        disease:Inflammation,
+        disease:Insulin_Resistance,
+        disease:Leukemia,
+        disease:Liver_Diseases,
+        disease:Major_Depressive_Disorder,
+        disease:Melanoma,
+        disease:Multiple_Myeloma,
+        disease:Muscle_Cramp,
         disease:Muscle_Weakness,
+        disease:Muscular_Diseases,
         disease:Necrosis,
+        disease:Nerve_Degeneration,
+        disease:Neural_Tube_Defects,
         disease:Paralysis,
         disease:Parasomnias,
+        disease:Peripheral_Nervous_System_Diseases,
+        disease:Polycystic_Ovary_Syndrome,
+        disease:Prenatal_Injuries,
         disease:Prostatic_Neoplasms,
         disease:Protein_Deficiency,
+        disease:Proteinuria,
+        disease:Rhabdomyolysis,
+        disease:Splenic_Diseases,
+        disease:Stomach_Ulcer,
         disease:Teratozoospermia,
         disease:Testicular_Diseases,
-        disease:Ventricular_Dysfunction__Left ;
+        disease:Tremor,
+        disease:Ventricular_Dysfunction__Left,
+        disease:Weight_Loss ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Arrhythmias__Cardiac,
         disease:Atrial_Fibrillation,
@@ -8859,6 +9278,7 @@ food:Cottage_cheese_full_fat_large_or_small_curd a prop:Food ;
         disease:Stroke ;
     prop:highIn nutrient:Calcium,
         nutrient:Sodium ;
+    prop:highInPredicted nutrient:Saturated_Fat ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Arrhythmias__Cardiac,
         disease:Bone_Diseases,
@@ -8933,8 +9353,6 @@ food:Cream_cheese_full_fat_block a prop:Food ;
         nutrient:Fat,
         nutrient:Saturated_Fat,
         nutrient:Sodium ;
-    prop:predictedFor disease:Colorectal_Neoplasms,
-        disease:Hyperkinesis ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Arrhythmias__Cardiac,
         disease:Bone_Diseases,
@@ -9074,8 +9492,7 @@ food:Crustaceans_crab_blue_swimming_lump_pasteurized_refrigerated a prop:Food ;
         nutrient:Sodium,
         nutrient:Vitamin_B12,
         nutrient:Zinc ;
-    prop:predictedFor disease:Lung_Injury,
-        disease:Substance_Withdrawal_Syndrome ;
+    prop:highInPredicted nutrient:Fat ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Arrhythmias__Cardiac,
         disease:Asthma,
@@ -9240,22 +9657,6 @@ food:Egg_white_dried a prop:Food ;
         nutrient:Potassium,
         nutrient:Protein,
         nutrient:Sodium ;
-    prop:predictedFor disease:Acrodermatitis,
-        disease:Anemia__Iron_Deficiency,
-        disease:Brain_Injuries,
-        disease:COVID_19,
-        disease:Carcinoma__Ehrlich_Tumor,
-        disease:Cholestasis,
-        disease:Glioma,
-        disease:Hyperemia,
-        disease:Hyperglycemia,
-        disease:Hyperkalemia,
-        disease:Intestinal_Diseases,
-        disease:Liver_Cirrhosis,
-        disease:Multiple_Myeloma,
-        disease:Neural_Tube_Defects,
-        disease:Prostatic_Neoplasms,
-        disease:Weight_Loss ;
     prop:recommendedFor disease:Arrhythmias__Cardiac,
         disease:Arthralgia,
         disease:Atrial_Fibrillation,
@@ -9415,14 +9816,6 @@ food:Egg_whole_dried a prop:Food ;
         nutrient:Sodium,
         nutrient:Vitamin_D,
         nutrient:Zinc ;
-    prop:predictedFor disease:Anemia,
-        disease:Constipation,
-        disease:Diarrhea,
-        disease:Heart_Diseases,
-        disease:Hypercalcemia,
-        disease:Hyperlipidemias,
-        disease:Kidney_Diseases,
-        disease:Renal_Insufficiency ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Alzheimer_Disease,
         disease:Anemia__Iron_Deficiency,
@@ -9590,8 +9983,21 @@ food:Egg_whole_raw_frozen_pasteurized a prop:Food ;
         nutrient:Fat,
         nutrient:Sodium,
         nutrient:Vitamin_D ;
-    prop:predictedFor disease:Neural_Tube_Defects,
-        disease:Seizures ;
+    prop:highInPredicted nutrient:Calcium ;
+    prop:predictedFor disease:Bone_Diseases,
+        disease:Bradycardia,
+        disease:Cardiomyopathies,
+        disease:Colitis,
+        disease:Drug_Overdose,
+        disease:Hypocalcemia,
+        disease:Movement_Disorders,
+        disease:Neoplasms,
+        disease:Peptic_Ulcer,
+        disease:Periodontitis,
+        disease:Pulpitis,
+        disease:Seizures,
+        disease:Sinus_Arrest__Cardiac,
+        disease:Weight_Gain ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Alzheimer_Disease,
         disease:Arrhythmias__Cardiac,
@@ -9693,6 +10099,24 @@ food:Egg_yolk_dried a prop:Food ;
         nutrient:Sodium,
         nutrient:Vitamin_D,
         nutrient:Zinc ;
+    prop:highInPredicted nutrient:Magnesium ;
+    prop:predictedFor disease:Atrial_Fibrillation,
+        disease:Cerebrovascular_Disorders,
+        disease:Coronary_Vasospasm,
+        disease:Developmental_Disabilities,
+        disease:Fasciculation,
+        disease:Hemorrhage,
+        disease:Hyperalgesia,
+        disease:Hypomagnesemia_primary,
+        disease:Long_QT_Syndrome,
+        disease:Magnesium_Deficiency,
+        disease:Migraine_Disorders,
+        disease:Substance_Withdrawal_Syndrome,
+        disease:Tachycardia__Ectopic_Atrial,
+        disease:Tachycardia__Supraventricular,
+        disease:Tachycardia__Ventricular,
+        disease:Torsades_de_Pointes,
+        disease:Vasospasm__Intracranial ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Alzheimer_Disease,
         disease:Anemia__Iron_Deficiency,
@@ -9836,6 +10260,31 @@ food:Egg_yolk_raw_frozen_pasteurized a prop:Food ;
         nutrient:Iron,
         nutrient:Vitamin_D,
         nutrient:Zinc ;
+    prop:highInPredicted nutrient:Magnesium,
+        nutrient:Protein,
+        nutrient:Sodium ;
+    prop:predictedFor disease:Atrial_Fibrillation,
+        disease:Cerebrovascular_Disorders,
+        disease:Coronary_Vasospasm,
+        disease:Developmental_Disabilities,
+        disease:Drug_Related_Side_Effects_and_Adverse_Reactions,
+        disease:Fasciculation,
+        disease:Heart_Diseases,
+        disease:Hemorrhage,
+        disease:Hyperalgesia,
+        disease:Hypomagnesemia_primary,
+        disease:Kidney_Diseases__Cystic,
+        disease:Long_QT_Syndrome,
+        disease:Magnesium_Deficiency,
+        disease:Migraine_Disorders,
+        disease:Substance_Withdrawal_Syndrome,
+        disease:Tachycardia,
+        disease:Tachycardia__Ectopic_Atrial,
+        disease:Tachycardia__Supraventricular,
+        disease:Tachycardia__Ventricular,
+        disease:Torsades_de_Pointes,
+        disease:Vasospasm__Intracranial,
+        disease:Ventricular_Fibrillation ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Acute_Kidney_Injury,
         disease:Alzheimer_Disease,
@@ -9984,13 +10433,23 @@ food:Eggs_Grade_A_Large_egg_whole a prop:Food ;
         nutrient:Folate,
         nutrient:Sodium,
         nutrient:Vitamin_D ;
-    prop:predictedFor disease:Brain_Injuries,
+    prop:highInPredicted nutrient:Calcium,
+        nutrient:Saturated_Fat,
+        nutrient:Vitamin_B12 ;
+    prop:predictedFor disease:Bone_Diseases,
+        disease:Bradycardia,
         disease:Cardiomyopathies,
-        disease:Hyperglycemia,
-        disease:Leukemia,
-        disease:Protein_Deficiency,
-        disease:Rhabdomyolysis,
-        disease:Seizures ;
+        disease:Colitis,
+        disease:Drug_Overdose,
+        disease:Hypocalcemia,
+        disease:Movement_Disorders,
+        disease:Neoplasms,
+        disease:Peptic_Ulcer,
+        disease:Periodontitis,
+        disease:Pulpitis,
+        disease:Seizures,
+        disease:Sinus_Arrest__Cardiac,
+        disease:Weight_Gain ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Alzheimer_Disease,
         disease:Arrhythmias__Cardiac,
@@ -10209,22 +10668,6 @@ food:Farro_pearled_dry_raw a prop:Food ;
         nutrient:Potassium,
         nutrient:Vitamin_B6,
         nutrient:Zinc ;
-    prop:predictedFor disease:Acute_Kidney_Injury,
-        disease:Arteriosclerosis,
-        disease:Drug_Overdose,
-        disease:Epilepsy,
-        disease:Gastrointestinal_Diseases,
-        disease:Hypoparathyroidism,
-        disease:Immune_System_Diseases,
-        disease:Ischemic_Stroke,
-        disease:Metabolic_Syndrome,
-        disease:Movement_Disorders,
-        disease:Nerve_Compression_Syndromes,
-        disease:Osteoporosis,
-        disease:Osteoporosis__Postmenopausal,
-        disease:Rickets,
-        disease:Sinus_Arrest__Cardiac,
-        disease:Weight_Gain ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -10365,10 +10808,14 @@ food:Figs_dried_uncooked a prop:Food ;
         nutrient:Magnesium,
         nutrient:Potassium,
         nutrient:Sugar ;
-    prop:predictedFor disease:Diabetes_Mellitus,
-        disease:Esophageal_Squamous_Cell_Carcinoma,
-        disease:Hypertension__Renal,
-        disease:Prenatal_Injuries ;
+    prop:highInPredicted nutrient:Folate,
+        nutrient:Iron,
+        nutrient:Vitamin_C ;
+    prop:predictedFor disease:Anemia,
+        disease:Anemia__Iron_Deficiency,
+        disease:Cholestasis,
+        disease:Hyperkinesis,
+        disease:Parasomnias ;
     prop:recommendedFor disease:Arrhythmias__Cardiac,
         disease:Arthralgia,
         disease:Atrial_Fibrillation,
@@ -10641,6 +11088,22 @@ food:Fish_tuna_light_canned_in_water_drained_solids a prop:Food ;
         nutrient:Vitamin_B12,
         nutrient:Vitamin_B6,
         nutrient:Vitamin_D ;
+    prop:highInPredicted nutrient:Calcium,
+        nutrient:Cholesterol ;
+    prop:predictedFor disease:Bone_Diseases,
+        disease:Bradycardia,
+        disease:Cardiomyopathies,
+        disease:Colitis,
+        disease:Drug_Overdose,
+        disease:Hypocalcemia,
+        disease:Movement_Disorders,
+        disease:Neoplasms,
+        disease:Peptic_Ulcer,
+        disease:Periodontitis,
+        disease:Pulpitis,
+        disease:Seizures,
+        disease:Sinus_Arrest__Cardiac,
+        disease:Weight_Gain ;
     prop:recommendedFor disease:Alzheimer_Disease,
         disease:Arrhythmias__Cardiac,
         disease:Arthralgia,
@@ -10729,14 +11192,8 @@ food:Flaxseed_ground a prop:Food ;
         nutrient:Potassium,
         nutrient:Vitamin_B6,
         nutrient:Zinc ;
-    prop:predictedFor disease:Anemia,
-        disease:Arteriosclerosis,
-        disease:Diarrhea,
-        disease:Hemochromatosis,
-        disease:Hypertension__Portal,
-        disease:Intestinal_Diseases,
-        disease:Iron_Overload,
-        disease:Multiple_Sclerosis ;
+    prop:highInPredicted nutrient:Folate,
+        nutrient:Protein ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -10903,6 +11360,7 @@ food:Flour_almond a prop:Food ;
         nutrient:Potassium,
         nutrient:Protein,
         nutrient:Zinc ;
+    prop:highInPredicted nutrient:Vitamin_B6 ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -11063,14 +11521,7 @@ food:Flour_amaranth a prop:Food ;
         nutrient:Potassium,
         nutrient:Vitamin_B6,
         nutrient:Zinc ;
-    prop:predictedFor disease:Acute_Coronary_Syndrome,
-        disease:Arteriosclerosis,
-        disease:Cognition_Disorders,
-        disease:Coronary_Disease,
-        disease:Ischemic_Stroke,
-        disease:Kidney_Failure__Chronic,
-        disease:Liver_Diseases,
-        disease:Metabolic_Syndrome ;
+    prop:highInPredicted nutrient:Protein ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -11213,7 +11664,6 @@ food:Flour_barley a prop:Food ;
         nutrient:Fiber,
         nutrient:Iron,
         nutrient:Magnesium ;
-    prop:predictedFor disease:Dysgeusia ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Anemia,
         disease:Anemia__Iron_Deficiency,
@@ -11263,7 +11713,6 @@ food:Flour_bread_white_enriched_unbleached a prop:Food ;
     prop:highIn nutrient:Carbohydrate,
         nutrient:Folate,
         nutrient:Iron ;
-    prop:predictedFor disease:Tachycardia ;
     prop:recommendedFor disease:Anemia,
         disease:Anemia__Iron_Deficiency,
         disease:Autistic_Disorder,
@@ -11302,21 +11751,58 @@ food:Flour_buckwheat a prop:Food ;
         nutrient:Iron,
         nutrient:Magnesium,
         nutrient:Potassium ;
-    prop:predictedFor disease:Asthma,
+    prop:highInPredicted nutrient:Vitamin_B6,
+        nutrient:Zinc ;
+    prop:predictedFor disease:Acrodermatitis,
+        disease:Asthma,
+        disease:Atherosclerosis,
+        disease:Brain_Injuries,
+        disease:COVID_19,
+        disease:Carcinoma__Ehrlich_Tumor,
+        disease:Carcinoma__Squamous_Cell,
+        disease:Cardiomyopathies,
+        disease:Cardiotoxicity,
+        disease:Cell_Transformation__Neoplastic,
         disease:Chemical_and_Drug_Induced_Liver_Injury,
-        disease:Cognition_Disorders,
+        disease:Cholestasis__Extrahepatic,
+        disease:Craniofacial_Abnormalities,
+        disease:Diabetes_Mellitus__Type_2,
+        disease:Diabetic_Cardiomyopathies,
         disease:Disease_Models__Animal,
+        disease:Disease_Progression,
+        disease:Disease_Susceptibility,
+        disease:Dysgeusia,
+        disease:Edema,
         disease:Esophageal_Neoplasms,
+        disease:Esophageal_Squamous_Cell_Carcinoma,
+        disease:Fever,
+        disease:Glioma,
+        disease:Heart_Defects__Congenital,
+        disease:Hepatomegaly,
+        disease:Hyperemia,
+        disease:Hyperlipidemias,
         disease:Hyperplasia,
         disease:Hypotension,
-        disease:Kidney_Diseases__Cystic,
+        disease:Inflammation,
+        disease:Insulin_Resistance,
+        disease:Leukemia,
+        disease:Major_Depressive_Disorder,
         disease:Melanoma,
+        disease:Multiple_Myeloma,
         disease:Necrosis,
-        disease:Periodontitis,
+        disease:Neural_Tube_Defects,
+        disease:Peripheral_Nervous_System_Diseases,
         disease:Polycystic_Ovary_Syndrome,
-        disease:Rickets,
+        disease:Prenatal_Injuries,
+        disease:Prostatic_Neoplasms,
+        disease:Protein_Deficiency,
+        disease:Proteinuria,
+        disease:Splenic_Diseases,
+        disease:Stomach_Ulcer,
         disease:Teratozoospermia,
-        disease:Urinary_Bladder_Diseases ;
+        disease:Testicular_Diseases,
+        disease:Ventricular_Dysfunction__Left,
+        disease:Weight_Loss ;
     prop:recommendedFor disease:Anemia,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -11394,10 +11880,30 @@ food:Flour_cassava a prop:Food ;
         nutrient:Carbohydrate,
         nutrient:Fiber,
         nutrient:Iron ;
-    prop:predictedFor disease:Drug_Related_Side_Effects_and_Adverse_Reactions,
+    prop:highInPredicted nutrient:Magnesium ;
+    prop:predictedFor disease:Atrial_Fibrillation,
+        disease:Cerebrovascular_Disorders,
+        disease:Coronary_Vasospasm,
+        disease:Developmental_Disabilities,
+        disease:Drug_Related_Side_Effects_and_Adverse_Reactions,
         disease:Fasciculation,
-        disease:Hyperemia,
-        disease:Substance_Withdrawal_Syndrome ;
+        disease:Hemorrhage,
+        disease:Hyperalgesia,
+        disease:Hypomagnesemia_primary,
+        disease:Infant_Death,
+        disease:Long_QT_Syndrome,
+        disease:Lung_Injury,
+        disease:Magnesium_Deficiency,
+        disease:Migraine_Disorders,
+        disease:Pain,
+        disease:Substance_Withdrawal_Syndrome,
+        disease:Tachycardia,
+        disease:Tachycardia__Ectopic_Atrial,
+        disease:Tachycardia__Supraventricular,
+        disease:Tachycardia__Ventricular,
+        disease:Torsades_de_Pointes,
+        disease:Vasospasm__Intracranial,
+        disease:Ventricular_Fibrillation ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Anemia,
         disease:Anemia__Iron_Deficiency,
@@ -11549,17 +12055,7 @@ food:Flour_coconut a prop:Food ;
         nutrient:Potassium,
         nutrient:Saturated_Fat,
         nutrient:Zinc ;
-    prop:predictedFor disease:Atherosclerosis,
-        disease:Basal_Cell_Nevus_Syndrome,
-        disease:Colitis,
-        disease:Diabetes_Mellitus__Type_1,
-        disease:Diabetes_Mellitus__Type_2,
-        disease:Hyperlipidemias,
-        disease:Kidney_Diseases__Cystic,
-        disease:Leukemia__Myeloid__Acute,
-        disease:Neoplasms,
-        disease:Neurologic_Manifestations,
-        disease:Stroke ;
+    prop:highInPredicted nutrient:Sodium ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -11705,6 +12201,7 @@ food:Flour_oat_whole_grain a prop:Food ;
         nutrient:Iron,
         nutrient:Magnesium,
         nutrient:Zinc ;
+    prop:highInPredicted nutrient:Vitamin_B6 ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Acute_Kidney_Injury,
         disease:Anemia__Iron_Deficiency,
@@ -11825,10 +12322,58 @@ food:Flour_potato a prop:Food ;
         nutrient:Magnesium,
         nutrient:Potassium,
         nutrient:Vitamin_B6 ;
-    prop:predictedFor disease:Asthma,
+    prop:highInPredicted nutrient:Folate,
+        nutrient:Zinc ;
+    prop:predictedFor disease:Acrodermatitis,
+        disease:Asthma,
+        disease:Atherosclerosis,
+        disease:Brain_Injuries,
+        disease:COVID_19,
+        disease:Carcinoma__Ehrlich_Tumor,
+        disease:Carcinoma__Squamous_Cell,
+        disease:Cardiomyopathies,
+        disease:Cardiotoxicity,
+        disease:Cell_Transformation__Neoplastic,
         disease:Chemical_and_Drug_Induced_Liver_Injury,
-        disease:Gastrointestinal_Diseases,
-        disease:Polycystic_Ovary_Syndrome ;
+        disease:Cholestasis__Extrahepatic,
+        disease:Craniofacial_Abnormalities,
+        disease:Diabetes_Mellitus__Type_2,
+        disease:Diabetic_Cardiomyopathies,
+        disease:Disease_Models__Animal,
+        disease:Disease_Progression,
+        disease:Disease_Susceptibility,
+        disease:Dysgeusia,
+        disease:Edema,
+        disease:Esophageal_Neoplasms,
+        disease:Esophageal_Squamous_Cell_Carcinoma,
+        disease:Fever,
+        disease:Glioma,
+        disease:Heart_Defects__Congenital,
+        disease:Hepatomegaly,
+        disease:Hyperemia,
+        disease:Hyperlipidemias,
+        disease:Hyperplasia,
+        disease:Hypotension,
+        disease:Inflammation,
+        disease:Insulin_Resistance,
+        disease:Leukemia,
+        disease:Major_Depressive_Disorder,
+        disease:Melanoma,
+        disease:Multiple_Myeloma,
+        disease:Necrosis,
+        disease:Neural_Tube_Defects,
+        disease:Peripheral_Nervous_System_Diseases,
+        disease:Polycystic_Ovary_Syndrome,
+        disease:Prenatal_Injuries,
+        disease:Prostatic_Neoplasms,
+        disease:Protein_Deficiency,
+        disease:Proteinuria,
+        disease:Splenic_Diseases,
+        disease:Stomach_Ulcer,
+        disease:Teratozoospermia,
+        disease:Testicular_Diseases,
+        disease:Ventricular_Dysfunction__Left,
+        disease:Weight_Loss ;
     prop:recommendedFor disease:Anemia,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -11914,8 +12459,6 @@ food:Flour_quinoa a prop:Food ;
         nutrient:Potassium,
         nutrient:Vitamin_B6,
         nutrient:Zinc ;
-    prop:predictedFor disease:Psychotic_Disorders,
-        disease:Pulmonary_Fibrosis ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -12220,7 +12763,6 @@ food:Flour_sorghum a prop:Food ;
         nutrient:Fiber,
         nutrient:Iron,
         nutrient:Magnesium ;
-    prop:predictedFor disease:Epilepsy ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Anemia,
         disease:Anemia__Iron_Deficiency,
@@ -12298,17 +12840,8 @@ food:Flour_soy_defatted a prop:Food ;
         nutrient:Protein,
         nutrient:Vitamin_B6,
         nutrient:Zinc ;
-    prop:predictedFor disease:Alzheimer_Disease,
-        disease:Basal_Cell_Nevus_Syndrome,
-        disease:Gout,
-        disease:Hypertrophy,
-        disease:Mental_Disorders,
-        disease:Myalgia,
-        disease:Pre_Eclampsia,
-        disease:Prenatal_Exposure_Delayed_Effects,
-        disease:Reperfusion_Injury,
-        disease:Vitamin_D_Deficiency,
-        disease:Wounds_and_Injuries ;
+    prop:highInPredicted nutrient:Fat,
+        nutrient:Sodium ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -12471,10 +13004,6 @@ food:Flour_soy_fullfat a prop:Food ;
         nutrient:Protein,
         nutrient:Vitamin_B6,
         nutrient:Zinc ;
-    prop:predictedFor disease:Copper_Metabolism_Disorders,
-        disease:Liver_Cirrhosis,
-        disease:Nephrocalcinosis,
-        disease:Prenatal_Exposure_Delayed_Effects ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -12626,8 +13155,6 @@ food:Flour_spelt_whole_grain a prop:Food ;
         nutrient:Magnesium,
         nutrient:Vitamin_B6,
         nutrient:Zinc ;
-    prop:predictedFor disease:Bone_Diseases,
-        disease:Muscular_Diseases ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Acute_Kidney_Injury,
         disease:Anemia__Iron_Deficiency,
@@ -12748,8 +13275,6 @@ food:Flour_wheat_allpurpose_enriched_unbleached a prop:Food ;
     prop:highIn nutrient:Carbohydrate,
         nutrient:Folate,
         nutrient:Iron ;
-    prop:predictedFor disease:Tachycardia,
-        disease:Ventricular_Fibrillation ;
     prop:recommendedFor disease:Anemia,
         disease:Anemia__Iron_Deficiency,
         disease:Autistic_Disorder,
@@ -12797,21 +13322,7 @@ food:Flour_whole_wheat_unenriched a prop:Food ;
         nutrient:Potassium,
         nutrient:Vitamin_B6,
         nutrient:Zinc ;
-    prop:predictedFor disease:Bradycardia,
-        disease:Colitis,
-        disease:Colonic_Neoplasms,
-        disease:Drug_Overdose,
-        disease:Fatty_Liver,
-        disease:Hypoparathyroidism,
-        disease:Kidney_Failure__Chronic,
-        disease:Movement_Disorders,
-        disease:Nephrolithiasis,
-        disease:Neurologic_Manifestations,
-        disease:Osteoporosis,
-        disease:Reperfusion_Injury,
-        disease:Respiratory_Tract_Diseases,
-        disease:Sinus_Arrest__Cardiac,
-        disease:Urinary_Bladder_Diseases ;
+    prop:highInPredicted nutrient:Folate ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -12968,6 +13479,7 @@ food:Frankfurter_beef_unheated a prop:Food ;
     prop:highIn nutrient:Fat,
         nutrient:Saturated_Fat,
         nutrient:Sodium ;
+    prop:highInPredicted nutrient:Sugar ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Arrhythmias__Cardiac,
         disease:Drug_Related_Side_Effects_and_Adverse_Reactions,
@@ -13183,7 +13695,6 @@ food:Ham_sliced_restaurant a prop:Food ;
     prop:highIn nutrient:Potassium,
         nutrient:Protein,
         nutrient:Sodium ;
-    prop:predictedFor disease:Infant_Death ;
     prop:recommendedFor disease:Arrhythmias__Cardiac,
         disease:Arthralgia,
         disease:Diabetes_Mellitus,
@@ -13250,6 +13761,8 @@ food:Hummus_commercial a prop:Food ;
         nutrient:Iron,
         nutrient:Magnesium,
         nutrient:Sodium ;
+    prop:highInPredicted nutrient:Carbohydrate,
+        nutrient:Folate ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Anemia,
         disease:Anemia__Iron_Deficiency,
@@ -13355,6 +13868,7 @@ food:Kale_frozen_cooked_boiled_drained_without_salt a prop:Food ;
         disease:Nephrolithiasis ;
     prop:highIn nutrient:Calcium,
         nutrient:Folate ;
+    prop:highInPredicted nutrient:Vitamin_C ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Arrhythmias__Cardiac,
         disease:Bone_Diseases,
@@ -13471,6 +13985,27 @@ food:Ketchup_restaurant a prop:Food ;
     prop:highIn nutrient:Carbohydrate,
         nutrient:Sodium,
         nutrient:Sugar ;
+    prop:highInPredicted nutrient:Calcium ;
+    prop:predictedFor disease:Bone_Diseases,
+        disease:Bradycardia,
+        disease:Cardiomyopathies,
+        disease:Colitis,
+        disease:Drug_Overdose,
+        disease:Hypocalcemia,
+        disease:Hypoparathyroidism,
+        disease:Movement_Disorders,
+        disease:Neoplasms,
+        disease:Nephrocalcinosis,
+        disease:Nerve_Compression_Syndromes,
+        disease:Neurologic_Manifestations,
+        disease:Peptic_Ulcer,
+        disease:Periodontitis,
+        disease:Polyradiculopathy,
+        disease:Pulpitis,
+        disease:Rickets,
+        disease:Seizures,
+        disease:Sinus_Arrest__Cardiac,
+        disease:Urinary_Bladder_Diseases ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Arrhythmias__Cardiac,
         disease:Drug_Related_Side_Effects_and_Adverse_Reactions,
@@ -13517,7 +14052,6 @@ food:Khorasan_grain_dry_raw a prop:Food ;
         nutrient:Potassium,
         nutrient:Vitamin_B6,
         nutrient:Zinc ;
-    prop:predictedFor disease:Weight_Gain ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -13928,7 +14462,8 @@ food:Mandarin_seedless_peeled_raw a prop:Food ;
         disease:Non_alcoholic_Fatty_Liver_Disease,
         disease:Obesity,
         disease:Weight_Gain ;
-    prop:highIn nutrient:Sugar .
+    prop:highIn nutrient:Sugar ;
+    prop:highInPredicted nutrient:Vitamin_C .
 
 food:Mango_Ataulfo_peeled_raw a prop:Food ;
     prop:contraindicatedFor disease:Cardiovascular_Diseases,
@@ -14059,6 +14594,36 @@ food:Milk_reduced_fat_fluid_2_milkfat_with_added_vitamin_A_and_vitamin_D a prop:
         disease:Nephrocalcinosis,
         disease:Nephrolithiasis ;
     prop:highIn nutrient:Calcium ;
+    prop:highInPredicted nutrient:Vitamin_D ;
+    prop:predictedFor disease:Alzheimer_Disease,
+        disease:Arthralgia,
+        disease:Basal_Cell_Nevus_Syndrome,
+        disease:Bone_Diseases__Endocrine,
+        disease:Chemical_and_Drug_Induced_Liver_Injury,
+        disease:Cognition_Disorders,
+        disease:Colonic_Neoplasms,
+        disease:Hypertrophy,
+        disease:Inflammation,
+        disease:Leukemia__Myeloid__Acute,
+        disease:Liver_Cirrhosis,
+        disease:Lung_Injury,
+        disease:Memory_Disorders,
+        disease:Mental_Disorders,
+        disease:Mobility_Limitation,
+        disease:Multiple_Sclerosis,
+        disease:Muscle_Weakness,
+        disease:Myalgia,
+        disease:Pain,
+        disease:Paranoid_Disorders,
+        disease:Prenatal_Exposure_Delayed_Effects,
+        disease:Prostatic_Neoplasms,
+        disease:Pruritus,
+        disease:Psychotic_Disorders,
+        disease:Pulmonary_Fibrosis,
+        disease:Reperfusion_Injury,
+        disease:Respiratory_Tract_Diseases,
+        disease:Vitamin_D_Deficiency,
+        disease:Wounds_and_Injuries ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Arrhythmias__Cardiac,
         disease:Bone_Diseases,
@@ -14099,6 +14664,36 @@ food:Milk_whole_325_milkfat_with_added_vitamin_D a prop:Food ;
         disease:Nephrocalcinosis,
         disease:Nephrolithiasis ;
     prop:highIn nutrient:Calcium ;
+    prop:highInPredicted nutrient:Vitamin_D ;
+    prop:predictedFor disease:Alzheimer_Disease,
+        disease:Arthralgia,
+        disease:Basal_Cell_Nevus_Syndrome,
+        disease:Bone_Diseases__Endocrine,
+        disease:Chemical_and_Drug_Induced_Liver_Injury,
+        disease:Cognition_Disorders,
+        disease:Colonic_Neoplasms,
+        disease:Hypertrophy,
+        disease:Inflammation,
+        disease:Leukemia__Myeloid__Acute,
+        disease:Liver_Cirrhosis,
+        disease:Lung_Injury,
+        disease:Memory_Disorders,
+        disease:Mental_Disorders,
+        disease:Mobility_Limitation,
+        disease:Multiple_Sclerosis,
+        disease:Muscle_Weakness,
+        disease:Myalgia,
+        disease:Pain,
+        disease:Paranoid_Disorders,
+        disease:Prenatal_Exposure_Delayed_Effects,
+        disease:Prostatic_Neoplasms,
+        disease:Pruritus,
+        disease:Psychotic_Disorders,
+        disease:Pulmonary_Fibrosis,
+        disease:Reperfusion_Injury,
+        disease:Respiratory_Tract_Diseases,
+        disease:Vitamin_D_Deficiency,
+        disease:Wounds_and_Injuries ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Arrhythmias__Cardiac,
         disease:Bone_Diseases,
@@ -14306,6 +14901,25 @@ food:Mushroom_maitake a prop:Food ;
         disease:Nephrocalcinosis,
         disease:Nephrolithiasis ;
     prop:highIn nutrient:Vitamin_D ;
+    prop:highInPredicted nutrient:Calcium ;
+    prop:predictedFor disease:Arrhythmias__Cardiac,
+        disease:Bone_Diseases,
+        disease:Bradycardia,
+        disease:Cardiomyopathies,
+        disease:Colitis,
+        disease:Drug_Overdose,
+        disease:Hypocalcemia,
+        disease:Hypotension,
+        disease:Movement_Disorders,
+        disease:Neoplasms,
+        disease:Peptic_Ulcer,
+        disease:Periodontitis,
+        disease:Pulpitis,
+        disease:Renal_Insufficiency,
+        disease:Seizures,
+        disease:Sinus_Arrest__Cardiac,
+        disease:Water_Electrolyte_Imbalance,
+        disease:Weight_Gain ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Alzheimer_Disease,
         disease:Arthralgia,
@@ -14408,6 +15022,7 @@ food:Mustard_prepared_yellow a prop:Food ;
         disease:Stroke ;
     prop:highIn nutrient:Magnesium,
         nutrient:Sodium ;
+    prop:highInPredicted nutrient:Carbohydrate ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Arrhythmias__Cardiac,
         disease:Atrial_Fibrillation,
@@ -14504,9 +15119,9 @@ food:Nuts_almonds_dry_roasted_with_salt_added a prop:Food ;
         nutrient:Protein,
         nutrient:Sodium,
         nutrient:Zinc ;
-    prop:predictedFor disease:Bone_Diseases__Endocrine,
-        disease:Heart_Diseases,
-        disease:Mobility_Limitation ;
+    prop:highInPredicted nutrient:Carbohydrate,
+        nutrient:Folate,
+        nutrient:Vitamin_B6 ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -14662,10 +15277,8 @@ food:Nuts_almonds_whole_raw a prop:Food ;
         nutrient:Potassium,
         nutrient:Protein,
         nutrient:Zinc ;
-    prop:predictedFor disease:Anemia,
-        disease:Hyperparathyroidism__Secondary,
-        disease:Iron_Overload,
-        disease:Prenatal_Exposure_Delayed_Effects ;
+    prop:highInPredicted nutrient:Carbohydrate,
+        nutrient:Vitamin_B6 ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -14826,13 +15439,8 @@ food:Nuts_brazilnuts_raw a prop:Food ;
         nutrient:Magnesium,
         nutrient:Potassium,
         nutrient:Zinc ;
-    prop:predictedFor disease:Cardiovascular_Diseases,
-        disease:Diabetes_Mellitus__Type_1,
-        disease:Hepatic_Encephalopathy,
-        disease:Hypertension__Renal,
-        disease:Kidney_Diseases__Cystic,
-        disease:Myocardial_Infarction,
-        disease:Vitamin_D_Deficiency ;
+    prop:highInPredicted nutrient:Protein,
+        nutrient:Sodium ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -14979,10 +15587,8 @@ food:Nuts_cashew_nuts_raw a prop:Food ;
         nutrient:Magnesium,
         nutrient:Potassium,
         nutrient:Zinc ;
-    prop:predictedFor disease:Crohn_Disease,
-        disease:Neoplasms,
-        disease:Osteoporosis,
-        disease:Pulpitis ;
+    prop:highInPredicted nutrient:Fiber,
+        nutrient:Protein ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -15121,6 +15727,55 @@ food:Nuts_hazelnuts_or_filberts_raw a prop:Food ;
         nutrient:Iron,
         nutrient:Magnesium,
         nutrient:Potassium ;
+    prop:highInPredicted nutrient:Zinc ;
+    prop:predictedFor disease:Acrodermatitis,
+        disease:Asthma,
+        disease:Atherosclerosis,
+        disease:Brain_Injuries,
+        disease:COVID_19,
+        disease:Carcinoma__Ehrlich_Tumor,
+        disease:Carcinoma__Squamous_Cell,
+        disease:Cardiotoxicity,
+        disease:Cell_Transformation__Neoplastic,
+        disease:Chemical_and_Drug_Induced_Liver_Injury,
+        disease:Cholestasis__Extrahepatic,
+        disease:Craniofacial_Abnormalities,
+        disease:Diabetes_Mellitus__Type_2,
+        disease:Diabetic_Cardiomyopathies,
+        disease:Disease_Models__Animal,
+        disease:Disease_Progression,
+        disease:Disease_Susceptibility,
+        disease:Dysgeusia,
+        disease:Edema,
+        disease:Esophageal_Neoplasms,
+        disease:Esophageal_Squamous_Cell_Carcinoma,
+        disease:Fever,
+        disease:Glioma,
+        disease:Heart_Defects__Congenital,
+        disease:Hepatomegaly,
+        disease:Hyperemia,
+        disease:Hyperlipidemias,
+        disease:Hyperplasia,
+        disease:Inflammation,
+        disease:Insulin_Resistance,
+        disease:Leukemia,
+        disease:Major_Depressive_Disorder,
+        disease:Melanoma,
+        disease:Multiple_Myeloma,
+        disease:Necrosis,
+        disease:Neural_Tube_Defects,
+        disease:Peripheral_Nervous_System_Diseases,
+        disease:Polycystic_Ovary_Syndrome,
+        disease:Prenatal_Injuries,
+        disease:Prostatic_Neoplasms,
+        disease:Protein_Deficiency,
+        disease:Proteinuria,
+        disease:Splenic_Diseases,
+        disease:Stomach_Ulcer,
+        disease:Teratozoospermia,
+        disease:Testicular_Diseases,
+        disease:Ventricular_Dysfunction__Left,
+        disease:Weight_Loss ;
     prop:recommendedFor disease:Anemia,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -15268,8 +15923,23 @@ food:Nuts_pecans_halves_raw a prop:Food ;
         nutrient:Iron,
         nutrient:Magnesium,
         nutrient:Zinc ;
-    prop:predictedFor disease:Hyperparathyroidism__Secondary,
-        disease:Hypoparathyroidism ;
+    prop:highInPredicted nutrient:Carbohydrate,
+        nutrient:Potassium,
+        nutrient:Vitamin_B6 ;
+    prop:predictedFor disease:Arthralgia,
+        disease:Diabetic_Ketoacidosis,
+        disease:Heart_Diseases,
+        disease:Heart_Failure,
+        disease:Hypokalemia,
+        disease:Hypokalemic_Periodic_Paralysis,
+        disease:Muscle_Cramp,
+        disease:Muscle_Weakness,
+        disease:Muscular_Diseases,
+        disease:Nerve_Degeneration,
+        disease:Paralysis,
+        disease:Rhabdomyolysis,
+        disease:Tremor,
+        disease:Water_Electrolyte_Imbalance ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Acute_Kidney_Injury,
         disease:Anemia__Iron_Deficiency,
@@ -15385,8 +16055,7 @@ food:Nuts_pine_nuts_raw a prop:Food ;
         nutrient:Potassium,
         nutrient:Vitamin_B6,
         nutrient:Zinc ;
-    prop:predictedFor disease:Movement_Disorders,
-        disease:Osteoporosis__Postmenopausal ;
+    prop:highInPredicted nutrient:Protein ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -15529,14 +16198,55 @@ food:Nuts_pistachio_nuts_raw a prop:Food ;
         nutrient:Magnesium,
         nutrient:Potassium,
         nutrient:Protein ;
-    prop:predictedFor disease:Diabetic_Cardiomyopathies,
+    prop:highInPredicted nutrient:Zinc ;
+    prop:predictedFor disease:Acrodermatitis,
+        disease:Asthma,
+        disease:Atherosclerosis,
+        disease:Brain_Injuries,
+        disease:COVID_19,
+        disease:Carcinoma__Ehrlich_Tumor,
+        disease:Carcinoma__Squamous_Cell,
+        disease:Cardiotoxicity,
+        disease:Cell_Transformation__Neoplastic,
+        disease:Chemical_and_Drug_Induced_Liver_Injury,
+        disease:Cholestasis__Extrahepatic,
+        disease:Craniofacial_Abnormalities,
+        disease:Diabetes_Mellitus__Type_2,
+        disease:Diabetic_Cardiomyopathies,
+        disease:Disease_Models__Animal,
+        disease:Disease_Progression,
         disease:Disease_Susceptibility,
         disease:Dysgeusia,
+        disease:Edema,
+        disease:Esophageal_Neoplasms,
+        disease:Esophageal_Squamous_Cell_Carcinoma,
         disease:Fever,
+        disease:Glioma,
+        disease:Heart_Defects__Congenital,
+        disease:Hepatomegaly,
+        disease:Hyperemia,
+        disease:Hyperlipidemias,
+        disease:Hyperplasia,
+        disease:Inflammation,
+        disease:Insulin_Resistance,
+        disease:Leukemia,
+        disease:Major_Depressive_Disorder,
         disease:Melanoma,
+        disease:Multiple_Myeloma,
+        disease:Necrosis,
+        disease:Neural_Tube_Defects,
         disease:Peripheral_Nervous_System_Diseases,
+        disease:Polycystic_Ovary_Syndrome,
+        disease:Prenatal_Injuries,
+        disease:Prostatic_Neoplasms,
+        disease:Protein_Deficiency,
+        disease:Proteinuria,
+        disease:Splenic_Diseases,
         disease:Stomach_Ulcer,
-        disease:Testicular_Diseases ;
+        disease:Teratozoospermia,
+        disease:Testicular_Diseases,
+        disease:Ventricular_Dysfunction__Left,
+        disease:Weight_Loss ;
     prop:recommendedFor disease:Anemia,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -15650,6 +16360,7 @@ food:Nuts_walnuts_English_halves_raw a prop:Food ;
         nutrient:Potassium,
         nutrient:Vitamin_B6,
         nutrient:Zinc ;
+    prop:highInPredicted nutrient:Protein ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -15860,7 +16571,7 @@ food:Oats_whole_grain_rolled_old_fashioned a prop:Food ;
         nutrient:Iron,
         nutrient:Magnesium,
         nutrient:Zinc ;
-    prop:predictedFor disease:Pulmonary_Fibrosis ;
+    prop:highInPredicted nutrient:Vitamin_B6 ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Acute_Kidney_Injury,
         disease:Anemia__Iron_Deficiency,
@@ -15977,9 +16688,10 @@ food:Oats_whole_grain_steel_cut a prop:Food ;
         nutrient:Magnesium,
         nutrient:Potassium,
         nutrient:Zinc ;
-    prop:predictedFor disease:Bradycardia,
-        disease:Nerve_Compression_Syndromes,
-        disease:Peptic_Ulcer ;
+    prop:highInPredicted nutrient:Fat,
+        nutrient:Folate,
+        nutrient:Protein,
+        nutrient:Vitamin_B6 ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -16341,14 +17053,30 @@ food:Parsnips_raw a prop:Food ;
         nutrient:Folate,
         nutrient:Potassium,
         nutrient:Sugar ;
-    prop:predictedFor disease:Acrodermatitis,
-        disease:Bone_Diseases,
-        disease:Copper_Metabolism_Disorders,
-        disease:Hypotension,
+    prop:highInPredicted nutrient:Magnesium,
+        nutrient:Vitamin_C ;
+    prop:predictedFor disease:Atrial_Fibrillation,
+        disease:Autistic_Disorder,
+        disease:Cerebrovascular_Disorders,
+        disease:Coronary_Vasospasm,
+        disease:Developmental_Disabilities,
+        disease:Fasciculation,
+        disease:Hemorrhage,
+        disease:Hyperalgesia,
         disease:Infant_Death,
-        disease:Leukemia__Myeloid__Acute,
-        disease:Polyradiculopathy,
-        disease:Protein_Deficiency,
+        disease:Long_QT_Syndrome,
+        disease:Lung_Injury,
+        disease:Magnesium_Deficiency,
+        disease:Migraine_Disorders,
+        disease:Pain,
+        disease:Seizures,
+        disease:Substance_Withdrawal_Syndrome,
+        disease:Tachycardia,
+        disease:Tachycardia__Ectopic_Atrial,
+        disease:Tachycardia__Supraventricular,
+        disease:Tachycardia__Ventricular,
+        disease:Torsades_de_Pointes,
+        disease:Vasospasm__Intracranial,
         disease:Ventricular_Fibrillation ;
     prop:recommendedFor disease:Arrhythmias__Cardiac,
         disease:Arthralgia,
@@ -16440,26 +17168,28 @@ food:Peanut_butter_creamy a prop:Food ;
         nutrient:Sodium,
         nutrient:Vitamin_B6,
         nutrient:Zinc ;
-    prop:predictedFor disease:Acute_Coronary_Syndrome,
-        disease:Atherosclerosis,
-        disease:Colitis,
-        disease:Fatty_Liver,
-        disease:Heart_Diseases,
-        disease:Heart_Failure,
-        disease:Hypercalcemia,
+    prop:highInPredicted nutrient:Calcium,
+        nutrient:Iron ;
+    prop:predictedFor disease:Anemia__Iron_Deficiency,
+        disease:Bone_Diseases,
+        disease:Bradycardia,
+        disease:Cholestasis,
+        disease:Drug_Overdose,
         disease:Hyperkinesis,
-        disease:Hypertension,
-        disease:Hypertension__Pulmonary,
-        disease:Kidney_Calculi,
-        disease:Malabsorption_Syndromes,
-        disease:Nephrolithiasis,
-        disease:Osteoporosis__Postmenopausal,
+        disease:Hypocalcemia,
+        disease:Hypoparathyroidism,
+        disease:Movement_Disorders,
+        disease:Neoplasms,
+        disease:Nephrocalcinosis,
+        disease:Nerve_Compression_Syndromes,
+        disease:Neurologic_Manifestations,
         disease:Parasomnias,
         disease:Peptic_Ulcer,
         disease:Periodontitis,
         disease:Polyradiculopathy,
-        disease:Proteinuria,
-        disease:Respiratory_Tract_Diseases,
+        disease:Pulpitis,
+        disease:Rickets,
+        disease:Sinus_Arrest__Cardiac,
         disease:Urinary_Bladder_Diseases,
         disease:Weight_Gain ;
     prop:recommendedFor disease:Acrodermatitis,
@@ -16581,9 +17311,11 @@ food:Peanuts_raw a prop:Food ;
         nutrient:Potassium,
         nutrient:Protein,
         nutrient:Zinc ;
-    prop:predictedFor disease:Neoplasms,
-        disease:Peptic_Ulcer,
-        disease:Rickets ;
+    prop:highInPredicted nutrient:Iron ;
+    prop:predictedFor disease:Anemia__Iron_Deficiency,
+        disease:Cholestasis,
+        disease:Hyperkinesis,
+        disease:Parasomnias ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Arrhythmias__Cardiac,
         disease:Arthralgia,
@@ -16853,6 +17585,7 @@ food:Plantains_overripe_raw a prop:Food ;
     prop:highIn nutrient:Carbohydrate,
         nutrient:Potassium,
         nutrient:Sugar ;
+    prop:highInPredicted nutrient:Vitamin_C ;
     prop:recommendedFor disease:Arrhythmias__Cardiac,
         disease:Arthralgia,
         disease:Drug_Related_Side_Effects_and_Adverse_Reactions,
@@ -16898,6 +17631,7 @@ food:Plantains_ripe_raw a prop:Food ;
     prop:highIn nutrient:Carbohydrate,
         nutrient:Potassium,
         nutrient:Sugar ;
+    prop:highInPredicted nutrient:Vitamin_C ;
     prop:recommendedFor disease:Arrhythmias__Cardiac,
         disease:Arthralgia,
         disease:Drug_Related_Side_Effects_and_Adverse_Reactions,
@@ -17011,6 +17745,27 @@ food:Pork_cured_bacon_cooked_restaurant a prop:Food ;
         nutrient:Saturated_Fat,
         nutrient:Sodium,
         nutrient:Zinc ;
+    prop:highInPredicted nutrient:Calcium ;
+    prop:predictedFor disease:Bone_Diseases,
+        disease:Bradycardia,
+        disease:Colitis,
+        disease:Drug_Overdose,
+        disease:Hypocalcemia,
+        disease:Hypoparathyroidism,
+        disease:Movement_Disorders,
+        disease:Neoplasms,
+        disease:Nephrocalcinosis,
+        disease:Nerve_Compression_Syndromes,
+        disease:Neurologic_Manifestations,
+        disease:Peptic_Ulcer,
+        disease:Periodontitis,
+        disease:Polyradiculopathy,
+        disease:Pulpitis,
+        disease:Rickets,
+        disease:Seizures,
+        disease:Sinus_Arrest__Cardiac,
+        disease:Urinary_Bladder_Diseases,
+        disease:Weight_Gain ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Arrhythmias__Cardiac,
         disease:Arthralgia,
@@ -17311,15 +18066,7 @@ food:Restaurant_Chinese_sweet_and_sour_pork a prop:Food ;
         nutrient:Iron,
         nutrient:Sodium,
         nutrient:Sugar ;
-    prop:predictedFor disease:Cell_Transformation__Neoplastic,
-        disease:Coronary_Vasospasm,
-        disease:Fasciculation,
-        disease:Insulin_Resistance,
-        disease:Long_QT_Syndrome,
-        disease:Magnesium_Deficiency,
-        disease:Neurologic_Manifestations,
-        disease:Seizures,
-        disease:Substance_Withdrawal_Syndrome ;
+    prop:highInPredicted nutrient:Saturated_Fat ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Anemia,
         disease:Anemia__Iron_Deficiency,
@@ -17373,7 +18120,19 @@ food:Restaurant_Latino_pupusas_con_frijoles_pupusas_bean a prop:Food ;
         nutrient:Fiber,
         nutrient:Magnesium,
         nutrient:Sodium ;
-    prop:predictedFor disease:Muscle_Cramp ;
+    prop:highInPredicted nutrient:Potassium ;
+    prop:predictedFor disease:Arthralgia,
+        disease:Diabetes_Mellitus,
+        disease:Diabetic_Ketoacidosis,
+        disease:Hypokalemia,
+        disease:Hypokalemic_Periodic_Paralysis,
+        disease:Muscle_Cramp,
+        disease:Muscle_Weakness,
+        disease:Muscular_Diseases,
+        disease:Nerve_Degeneration,
+        disease:Paralysis,
+        disease:Rhabdomyolysis,
+        disease:Tremor ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Arrhythmias__Cardiac,
         disease:Atrial_Fibrillation,
@@ -17554,6 +18313,22 @@ food:Rice_red_unenriched_dry_raw a prop:Food ;
         disease:Renal_Insufficiency__Chronic ;
     prop:highIn nutrient:Carbohydrate,
         nutrient:Magnesium ;
+    prop:highInPredicted nutrient:Potassium ;
+    prop:predictedFor disease:Arthralgia,
+        disease:Diabetes_Mellitus,
+        disease:Diabetic_Ketoacidosis,
+        disease:Heart_Diseases,
+        disease:Heart_Failure,
+        disease:Hypokalemia,
+        disease:Hypokalemic_Periodic_Paralysis,
+        disease:Muscle_Cramp,
+        disease:Muscle_Weakness,
+        disease:Muscular_Diseases,
+        disease:Nerve_Degeneration,
+        disease:Paralysis,
+        disease:Rhabdomyolysis,
+        disease:Tremor,
+        disease:Water_Electrolyte_Imbalance ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Arrhythmias__Cardiac,
         disease:Atrial_Fibrillation,
@@ -17615,6 +18390,28 @@ food:Salt_table_iodized a prop:Food ;
         disease:Renal_Insufficiency__Chronic,
         disease:Stroke ;
     prop:highIn nutrient:Sodium ;
+    prop:highInPredicted nutrient:Calcium ;
+    prop:predictedFor disease:Bone_Diseases,
+        disease:Bradycardia,
+        disease:Cardiomyopathies,
+        disease:Colitis,
+        disease:Drug_Overdose,
+        disease:Hypocalcemia,
+        disease:Hypoparathyroidism,
+        disease:Movement_Disorders,
+        disease:Neoplasms,
+        disease:Nephrocalcinosis,
+        disease:Nerve_Compression_Syndromes,
+        disease:Neurologic_Manifestations,
+        disease:Peptic_Ulcer,
+        disease:Periodontitis,
+        disease:Polyradiculopathy,
+        disease:Pulpitis,
+        disease:Rickets,
+        disease:Seizures,
+        disease:Sinus_Arrest__Cardiac,
+        disease:Urinary_Bladder_Diseases,
+        disease:Weight_Gain ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Arrhythmias__Cardiac,
         disease:Drug_Related_Side_Effects_and_Adverse_Reactions,
@@ -17732,16 +18529,7 @@ food:Sausage_Italian_pork_mild_cooked_panfried a prop:Food ;
         nutrient:Protein,
         nutrient:Sodium,
         nutrient:Vitamin_B6 ;
-    prop:predictedFor disease:Bradycardia,
-        disease:Carcinoma__Squamous_Cell,
-        disease:Drug_Overdose,
-        disease:Esophageal_Squamous_Cell_Carcinoma,
-        disease:Fever,
-        disease:Hyperglycemia,
-        disease:Long_QT_Syndrome,
-        disease:Pulpitis,
-        disease:Rhabdomyolysis,
-        disease:Tachycardia__Ectopic_Atrial ;
+    prop:highInPredicted nutrient:Vitamin_B12 ;
     prop:recommendedFor disease:Arrhythmias__Cardiac,
         disease:Drug_Related_Side_Effects_and_Adverse_Reactions,
         disease:Hypotension,
@@ -17789,6 +18577,7 @@ food:Sausage_breakfast_sausage_beef_precooked_unprepared a prop:Food ;
     prop:highIn nutrient:Fat,
         nutrient:Saturated_Fat,
         nutrient:Sodium ;
+    prop:highInPredicted nutrient:Sugar ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Arrhythmias__Cardiac,
         disease:Drug_Related_Side_Effects_and_Adverse_Reactions,
@@ -17849,6 +18638,79 @@ food:Sausage_pork_chorizo_link_or_ground_cooked_panfried a prop:Food ;
         nutrient:Protein,
         nutrient:Sodium,
         nutrient:Vitamin_B6 ;
+    prop:highInPredicted nutrient:Folate,
+        nutrient:Magnesium,
+        nutrient:Vitamin_B12,
+        nutrient:Zinc ;
+    prop:predictedFor disease:Acrodermatitis,
+        disease:Asthma,
+        disease:Atrial_Fibrillation,
+        disease:Brain_Injuries,
+        disease:COVID_19,
+        disease:Carcinoma__Ehrlich_Tumor,
+        disease:Carcinoma__Squamous_Cell,
+        disease:Cardiomyopathies,
+        disease:Cardiotoxicity,
+        disease:Cell_Transformation__Neoplastic,
+        disease:Cerebrovascular_Disorders,
+        disease:Chemical_and_Drug_Induced_Liver_Injury,
+        disease:Cholestasis__Extrahepatic,
+        disease:Coronary_Vasospasm,
+        disease:Craniofacial_Abnormalities,
+        disease:Developmental_Disabilities,
+        disease:Diabetes_Mellitus__Type_2,
+        disease:Diabetic_Cardiomyopathies,
+        disease:Diarrhea,
+        disease:Disease_Models__Animal,
+        disease:Disease_Progression,
+        disease:Disease_Susceptibility,
+        disease:Dysgeusia,
+        disease:Esophageal_Neoplasms,
+        disease:Esophageal_Squamous_Cell_Carcinoma,
+        disease:Fasciculation,
+        disease:Fever,
+        disease:Gastrointestinal_Diseases,
+        disease:Glioma,
+        disease:Heart_Defects__Congenital,
+        disease:Hemorrhage,
+        disease:Hepatomegaly,
+        disease:Hyperalgesia,
+        disease:Hyperemia,
+        disease:Hyperglycemia,
+        disease:Hyperplasia,
+        disease:Infant_Death,
+        disease:Inflammation,
+        disease:Insulin_Resistance,
+        disease:Intestinal_Diseases,
+        disease:Leukemia,
+        disease:Long_QT_Syndrome,
+        disease:Lung_Injury,
+        disease:Magnesium_Deficiency,
+        disease:Major_Depressive_Disorder,
+        disease:Melanoma,
+        disease:Migraine_Disorders,
+        disease:Multiple_Myeloma,
+        disease:Necrosis,
+        disease:Neural_Tube_Defects,
+        disease:Pain,
+        disease:Peripheral_Nervous_System_Diseases,
+        disease:Polycystic_Ovary_Syndrome,
+        disease:Prenatal_Injuries,
+        disease:Prostatic_Neoplasms,
+        disease:Protein_Deficiency,
+        disease:Seizures,
+        disease:Splenic_Diseases,
+        disease:Stomach_Ulcer,
+        disease:Substance_Withdrawal_Syndrome,
+        disease:Tachycardia__Ectopic_Atrial,
+        disease:Tachycardia__Supraventricular,
+        disease:Tachycardia__Ventricular,
+        disease:Teratozoospermia,
+        disease:Testicular_Diseases,
+        disease:Torsades_de_Pointes,
+        disease:Vasospasm__Intracranial,
+        disease:Ventricular_Dysfunction__Left,
+        disease:Weight_Loss ;
     prop:recommendedFor disease:Anemia,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -18054,6 +18916,7 @@ food:Seeds_pumpkin_seeds_pepitas_raw a prop:Food ;
         nutrient:Potassium,
         nutrient:Protein,
         nutrient:Zinc ;
+    prop:highInPredicted nutrient:Carbohydrate ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -18199,15 +19062,6 @@ food:Seeds_sunflower_seed_kernel_raw a prop:Food ;
         nutrient:Potassium,
         nutrient:Protein,
         nutrient:Zinc ;
-    prop:predictedFor disease:Hepatolenticular_Degeneration,
-        disease:Hyperkalemia,
-        disease:Ischemic_Stroke,
-        disease:Metabolic_Syndrome,
-        disease:Myocardial_Infarction,
-        disease:Nephrocalcinosis,
-        disease:Paranoid_Disorders,
-        disease:Psychotic_Disorders,
-        disease:Vitamin_D_Deficiency ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -18391,26 +19245,7 @@ food:Seeds_sunflower_seed_kernels_dry_roasted_with_salt_added a prop:Food ;
         nutrient:Sodium,
         nutrient:Vitamin_B6,
         nutrient:Zinc ;
-    prop:predictedFor disease:Acute_Kidney_Injury,
-        disease:Alzheimer_Disease,
-        disease:Atherosclerosis,
-        disease:Basal_Cell_Nevus_Syndrome,
-        disease:Cardiovascular_Diseases,
-        disease:Colonic_Neoplasms,
-        disease:Crohn_Disease,
-        disease:Diabetes_Mellitus__Type_1,
-        disease:Gastrointestinal_Diseases,
-        disease:Heart_Failure,
-        disease:Hyperparathyroidism__Secondary,
-        disease:Hypertension,
-        disease:Kidney_Diseases,
-        disease:Leukemia__Myeloid__Acute,
-        disease:Liver_Diseases,
-        disease:Multiple_Sclerosis,
-        disease:Nephrotic_Syndrome,
-        disease:Non_alcoholic_Fatty_Liver_Disease,
-        disease:Pancreatitis,
-        disease:Renal_Insufficiency ;
+    prop:highInPredicted nutrient:Saturated_Fat ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -18568,13 +19403,7 @@ food:Sesame_butter_creamy a prop:Food ;
         nutrient:Protein,
         nutrient:Vitamin_B6,
         nutrient:Zinc ;
-    prop:predictedFor disease:Acute_Kidney_Injury,
-        disease:Anemia__Hypochromic,
-        disease:Hypertension__Pulmonary,
-        disease:Intestinal_Diseases,
-        disease:Liver_Diseases,
-        disease:Nephrocalcinosis,
-        disease:Nephrolithiasis ;
+    prop:highInPredicted nutrient:Carbohydrate ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -18743,26 +19572,25 @@ food:Snow_crab_legs_only_frozen__ a prop:Food ;
         nutrient:Sodium,
         nutrient:Vitamin_B12,
         nutrient:Zinc ;
-    prop:predictedFor disease:Alzheimer_Disease,
+    prop:highInPredicted nutrient:Fat,
+        nutrient:Iron,
+        nutrient:Potassium,
+        nutrient:Protein ;
+    prop:predictedFor disease:Anemia__Iron_Deficiency,
         disease:Arthralgia,
-        disease:Constipation,
+        disease:Cholestasis,
         disease:Diabetic_Ketoacidosis,
-        disease:Epilepsy,
-        disease:Gout,
-        disease:Heart_Failure,
-        disease:Hepatic_Encephalopathy,
         disease:Hyperkinesis,
-        disease:Hypertension,
-        disease:Hypertrophy,
         disease:Hypokalemia,
-        disease:Immune_System_Diseases,
-        disease:Kidney_Calculi,
-        disease:Malabsorption_Syndromes,
-        disease:Mobility_Limitation,
+        disease:Hypokalemic_Periodic_Paralysis,
+        disease:Muscle_Cramp,
+        disease:Muscle_Weakness,
+        disease:Muscular_Diseases,
         disease:Nerve_Degeneration,
-        disease:Obesity,
-        disease:Pruritus,
-        disease:Rhabdomyolysis ;
+        disease:Paralysis,
+        disease:Parasomnias,
+        disease:Rhabdomyolysis,
+        disease:Tremor ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Acute_Kidney_Injury,
         disease:Arrhythmias__Cardiac,
@@ -18902,18 +19730,6 @@ food:Sorghum_bran_white_unenriched_dry_raw a prop:Food ;
         nutrient:Potassium,
         nutrient:Vitamin_B6,
         nutrient:Zinc ;
-    prop:predictedFor disease:Bone_Diseases,
-        disease:Crohn_Disease,
-        disease:Diarrhea,
-        disease:Hypertension__Portal,
-        disease:Hypertension__Pulmonary,
-        disease:Hypertension__Renal,
-        disease:Immune_System_Diseases,
-        disease:Kidney_Calculi,
-        disease:Nephrotic_Syndrome,
-        disease:Nerve_Compression_Syndromes,
-        disease:Polyradiculopathy,
-        disease:Stroke ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -19030,7 +19846,23 @@ food:Sorghum_flour_white_pearled_unenriched_dry_raw a prop:Food ;
     prop:highIn nutrient:Carbohydrate,
         nutrient:Iron,
         nutrient:Magnesium ;
-    prop:predictedFor disease:Malabsorption_Syndromes,
+    prop:highInPredicted nutrient:Fiber,
+        nutrient:Potassium ;
+    prop:predictedFor disease:Arthralgia,
+        disease:Diabetes_Mellitus,
+        disease:Diabetic_Ketoacidosis,
+        disease:Heart_Diseases,
+        disease:Heart_Failure,
+        disease:Hyperglycemia,
+        disease:Hypokalemia,
+        disease:Hypokalemic_Periodic_Paralysis,
+        disease:Muscle_Cramp,
+        disease:Muscle_Weakness,
+        disease:Muscular_Diseases,
+        disease:Nerve_Degeneration,
+        disease:Paralysis,
+        disease:Rhabdomyolysis,
+        disease:Tremor,
         disease:Water_Electrolyte_Imbalance ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Anemia,
@@ -19130,6 +19962,75 @@ food:Sorghum_whole_grain_white_dry_raw a prop:Food ;
         nutrient:Fiber,
         nutrient:Iron,
         nutrient:Magnesium ;
+    prop:highInPredicted nutrient:Potassium,
+        nutrient:Sodium,
+        nutrient:Zinc ;
+    prop:predictedFor disease:Acrodermatitis,
+        disease:Arthralgia,
+        disease:Asthma,
+        disease:Atherosclerosis,
+        disease:Brain_Injuries,
+        disease:COVID_19,
+        disease:Carcinoma__Ehrlich_Tumor,
+        disease:Carcinoma__Squamous_Cell,
+        disease:Cardiomyopathies,
+        disease:Cardiotoxicity,
+        disease:Cell_Transformation__Neoplastic,
+        disease:Chemical_and_Drug_Induced_Liver_Injury,
+        disease:Cholestasis__Extrahepatic,
+        disease:Craniofacial_Abnormalities,
+        disease:Diabetes_Mellitus,
+        disease:Diabetes_Mellitus__Type_2,
+        disease:Diabetic_Cardiomyopathies,
+        disease:Diabetic_Ketoacidosis,
+        disease:Disease_Models__Animal,
+        disease:Disease_Progression,
+        disease:Disease_Susceptibility,
+        disease:Dysgeusia,
+        disease:Edema,
+        disease:Esophageal_Neoplasms,
+        disease:Esophageal_Squamous_Cell_Carcinoma,
+        disease:Fever,
+        disease:Glioma,
+        disease:Heart_Defects__Congenital,
+        disease:Heart_Diseases,
+        disease:Heart_Failure,
+        disease:Hepatomegaly,
+        disease:Hyperemia,
+        disease:Hyperlipidemias,
+        disease:Hyperplasia,
+        disease:Hypokalemia,
+        disease:Hypokalemic_Periodic_Paralysis,
+        disease:Hypotension,
+        disease:Inflammation,
+        disease:Insulin_Resistance,
+        disease:Kidney_Diseases__Cystic,
+        disease:Leukemia,
+        disease:Major_Depressive_Disorder,
+        disease:Melanoma,
+        disease:Multiple_Myeloma,
+        disease:Muscle_Cramp,
+        disease:Muscle_Weakness,
+        disease:Muscular_Diseases,
+        disease:Necrosis,
+        disease:Nerve_Degeneration,
+        disease:Neural_Tube_Defects,
+        disease:Paralysis,
+        disease:Peripheral_Nervous_System_Diseases,
+        disease:Polycystic_Ovary_Syndrome,
+        disease:Prenatal_Injuries,
+        disease:Prostatic_Neoplasms,
+        disease:Protein_Deficiency,
+        disease:Proteinuria,
+        disease:Rhabdomyolysis,
+        disease:Splenic_Diseases,
+        disease:Stomach_Ulcer,
+        disease:Teratozoospermia,
+        disease:Testicular_Diseases,
+        disease:Tremor,
+        disease:Ventricular_Dysfunction__Left,
+        disease:Water_Electrolyte_Imbalance,
+        disease:Weight_Loss ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Anemia,
         disease:Anemia__Iron_Deficiency,
@@ -19177,6 +20078,25 @@ food:Soy_milk_sweetened_plain_refrigerated a prop:Food ;
         disease:Nephrolithiasis ;
     prop:highIn nutrient:Calcium,
         nutrient:Vitamin_D ;
+    prop:highInPredicted nutrient:Potassium,
+        nutrient:Sodium ;
+    prop:predictedFor disease:Diabetes_Mellitus,
+        disease:Diabetic_Ketoacidosis,
+        disease:Drug_Related_Side_Effects_and_Adverse_Reactions,
+        disease:Heart_Diseases,
+        disease:Heart_Failure,
+        disease:Hypokalemia,
+        disease:Hypokalemic_Periodic_Paralysis,
+        disease:Hypomagnesemia_primary,
+        disease:Kidney_Diseases__Cystic,
+        disease:Muscle_Cramp,
+        disease:Muscular_Diseases,
+        disease:Nerve_Degeneration,
+        disease:Paralysis,
+        disease:Rhabdomyolysis,
+        disease:Tachycardia,
+        disease:Tremor,
+        disease:Ventricular_Fibrillation ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Alzheimer_Disease,
         disease:Arrhythmias__Cardiac,
@@ -19245,6 +20165,36 @@ food:Soy_milk_unsweetened_plain_shelf_stable a prop:Food ;
         disease:Nephrocalcinosis,
         disease:Nephrolithiasis ;
     prop:highIn nutrient:Calcium ;
+    prop:highInPredicted nutrient:Vitamin_D ;
+    prop:predictedFor disease:Alzheimer_Disease,
+        disease:Arthralgia,
+        disease:Basal_Cell_Nevus_Syndrome,
+        disease:Bone_Diseases__Endocrine,
+        disease:Chemical_and_Drug_Induced_Liver_Injury,
+        disease:Cognition_Disorders,
+        disease:Colonic_Neoplasms,
+        disease:Hypertrophy,
+        disease:Inflammation,
+        disease:Leukemia__Myeloid__Acute,
+        disease:Liver_Cirrhosis,
+        disease:Lung_Injury,
+        disease:Memory_Disorders,
+        disease:Mental_Disorders,
+        disease:Mobility_Limitation,
+        disease:Multiple_Sclerosis,
+        disease:Muscle_Weakness,
+        disease:Myalgia,
+        disease:Pain,
+        disease:Paranoid_Disorders,
+        disease:Prenatal_Exposure_Delayed_Effects,
+        disease:Prostatic_Neoplasms,
+        disease:Pruritus,
+        disease:Psychotic_Disorders,
+        disease:Pulmonary_Fibrosis,
+        disease:Reperfusion_Injury,
+        disease:Respiratory_Tract_Diseases,
+        disease:Vitamin_D_Deficiency,
+        disease:Wounds_and_Injuries ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Arrhythmias__Cardiac,
         disease:Bone_Diseases,
@@ -19288,7 +20238,9 @@ food:Spinach_baby a prop:Food ;
     prop:highIn nutrient:Folate,
         nutrient:Magnesium,
         nutrient:Potassium ;
-    prop:predictedFor disease:Necrosis ;
+    prop:highInPredicted nutrient:Carbohydrate,
+        nutrient:Fiber ;
+    prop:predictedFor disease:Hyperglycemia ;
     prop:recommendedFor disease:Arrhythmias__Cardiac,
         disease:Arthralgia,
         disease:Atrial_Fibrillation,
@@ -19525,6 +20477,7 @@ food:Swordfish_frozen_wild_caught a prop:Food ;
     prop:highIn nutrient:Fat,
         nutrient:Potassium,
         nutrient:Protein ;
+    prop:highInPredicted nutrient:Vitamin_B12 ;
     prop:recommendedFor disease:Arrhythmias__Cardiac,
         disease:Arthralgia,
         disease:Diabetes_Mellitus,
@@ -19573,6 +20526,28 @@ food:Tomato_juice_with_added_ingredients_from_concentrate_shelf_stable a prop:Fo
         disease:Stroke ;
     prop:highIn nutrient:Sodium,
         nutrient:Vitamin_C ;
+    prop:highInPredicted nutrient:Calcium ;
+    prop:predictedFor disease:Bone_Diseases,
+        disease:Bradycardia,
+        disease:Cardiomyopathies,
+        disease:Colitis,
+        disease:Drug_Overdose,
+        disease:Hypocalcemia,
+        disease:Hypoparathyroidism,
+        disease:Movement_Disorders,
+        disease:Neoplasms,
+        disease:Nephrocalcinosis,
+        disease:Nerve_Compression_Syndromes,
+        disease:Neurologic_Manifestations,
+        disease:Peptic_Ulcer,
+        disease:Periodontitis,
+        disease:Polyradiculopathy,
+        disease:Pulpitis,
+        disease:Rickets,
+        disease:Seizures,
+        disease:Sinus_Arrest__Cardiac,
+        disease:Urinary_Bladder_Diseases,
+        disease:Weight_Gain ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Arrhythmias__Cardiac,
         disease:Drug_Related_Side_Effects_and_Adverse_Reactions,
@@ -19627,8 +20602,6 @@ food:Tomato_paste_canned_without_salt_added a prop:Food ;
         nutrient:Magnesium,
         nutrient:Potassium,
         nutrient:Sugar ;
-    prop:predictedFor disease:Hypotension,
-        disease:Periodontitis ;
     prop:recommendedFor disease:Anemia,
         disease:Anemia__Iron_Deficiency,
         disease:Arrhythmias__Cardiac,
@@ -19815,6 +20788,8 @@ food:Tomatoes_crushed_canned a prop:Food ;
         disease:Stroke ;
     prop:highIn nutrient:Iron,
         nutrient:Sodium ;
+    prop:highInPredicted nutrient:Carbohydrate,
+        nutrient:Sugar ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Anemia,
         disease:Anemia__Iron_Deficiency,
@@ -19881,6 +20856,31 @@ food:Tuna_ahi_or_yellowfin_frozen_wild_caught a prop:Food ;
         disease:Renal_Insufficiency__Chronic ;
     prop:highIn nutrient:Potassium,
         nutrient:Protein ;
+    prop:highInPredicted nutrient:Magnesium ;
+    prop:predictedFor disease:Atrial_Fibrillation,
+        disease:Autistic_Disorder,
+        disease:Cardiovascular_Diseases,
+        disease:Cerebrovascular_Disorders,
+        disease:Coronary_Vasospasm,
+        disease:Developmental_Disabilities,
+        disease:Fasciculation,
+        disease:Hemorrhage,
+        disease:Hyperalgesia,
+        disease:Infant_Death,
+        disease:Long_QT_Syndrome,
+        disease:Lung_Injury,
+        disease:Magnesium_Deficiency,
+        disease:Migraine_Disorders,
+        disease:Pain,
+        disease:Seizures,
+        disease:Substance_Withdrawal_Syndrome,
+        disease:Tachycardia,
+        disease:Tachycardia__Ectopic_Atrial,
+        disease:Tachycardia__Supraventricular,
+        disease:Tachycardia__Ventricular,
+        disease:Torsades_de_Pointes,
+        disease:Vasospasm__Intracranial,
+        disease:Ventricular_Fibrillation ;
     prop:recommendedFor disease:Arrhythmias__Cardiac,
         disease:Arthralgia,
         disease:Diabetes_Mellitus,
@@ -19929,9 +20929,14 @@ food:Turkey_ground_93_lean_7_fat_panbroiled_crumbles a prop:Food ;
         nutrient:Vitamin_B12,
         nutrient:Vitamin_B6,
         nutrient:Zinc ;
+    prop:highInPredicted nutrient:Saturated_Fat,
+        nutrient:Sodium ;
     prop:predictedFor disease:Arrhythmias__Cardiac,
-        disease:Coronary_Vasospasm,
-        disease:Hyperalgesia,
+        disease:Drug_Related_Side_Effects_and_Adverse_Reactions,
+        disease:Heart_Diseases,
+        disease:Kidney_Diseases__Cystic,
+        disease:Tachycardia,
+        disease:Ventricular_Fibrillation,
         disease:Water_Electrolyte_Imbalance ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Asthma,
@@ -20075,6 +21080,11 @@ food:Wild_rice_dry_raw a prop:Food ;
         nutrient:Magnesium,
         nutrient:Vitamin_B6,
         nutrient:Zinc ;
+    prop:highInPredicted nutrient:Iron ;
+    prop:predictedFor disease:Anemia__Iron_Deficiency,
+        disease:Cholestasis,
+        disease:Hyperkinesis,
+        disease:Parasomnias ;
     prop:recommendedFor disease:Acrodermatitis,
         disease:Acute_Kidney_Injury,
         disease:Arrhythmias__Cardiac,
@@ -20211,6 +21221,36 @@ food:Yogurt_Greek_plain_whole_milk a prop:Food ;
         disease:Nephrocalcinosis,
         disease:Nephrolithiasis ;
     prop:highIn nutrient:Calcium ;
+    prop:highInPredicted nutrient:Vitamin_D ;
+    prop:predictedFor disease:Alzheimer_Disease,
+        disease:Arthralgia,
+        disease:Basal_Cell_Nevus_Syndrome,
+        disease:Bone_Diseases__Endocrine,
+        disease:Chemical_and_Drug_Induced_Liver_Injury,
+        disease:Cognition_Disorders,
+        disease:Colonic_Neoplasms,
+        disease:Hypertrophy,
+        disease:Inflammation,
+        disease:Leukemia__Myeloid__Acute,
+        disease:Liver_Cirrhosis,
+        disease:Lung_Injury,
+        disease:Memory_Disorders,
+        disease:Mental_Disorders,
+        disease:Mobility_Limitation,
+        disease:Multiple_Sclerosis,
+        disease:Muscle_Weakness,
+        disease:Myalgia,
+        disease:Pain,
+        disease:Paranoid_Disorders,
+        disease:Prenatal_Exposure_Delayed_Effects,
+        disease:Prostatic_Neoplasms,
+        disease:Pruritus,
+        disease:Psychotic_Disorders,
+        disease:Pulmonary_Fibrosis,
+        disease:Reperfusion_Injury,
+        disease:Respiratory_Tract_Diseases,
+        disease:Vitamin_D_Deficiency,
+        disease:Wounds_and_Injuries ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Arrhythmias__Cardiac,
         disease:Bone_Diseases,
@@ -20266,6 +21306,8 @@ food:Yogurt_Greek_strawberry_nonfat a prop:Food ;
         disease:Weight_Gain ;
     prop:highIn nutrient:Calcium,
         nutrient:Sugar ;
+    prop:highInPredicted nutrient:Saturated_Fat,
+        nutrient:Vitamin_C ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Arrhythmias__Cardiac,
         disease:Bone_Diseases,
@@ -20305,6 +21347,36 @@ food:Yogurt_plain_nonfat a prop:Food ;
         disease:Nephrocalcinosis,
         disease:Nephrolithiasis ;
     prop:highIn nutrient:Calcium ;
+    prop:highInPredicted nutrient:Vitamin_D ;
+    prop:predictedFor disease:Alzheimer_Disease,
+        disease:Arthralgia,
+        disease:Basal_Cell_Nevus_Syndrome,
+        disease:Bone_Diseases__Endocrine,
+        disease:Chemical_and_Drug_Induced_Liver_Injury,
+        disease:Cognition_Disorders,
+        disease:Colonic_Neoplasms,
+        disease:Hypertrophy,
+        disease:Inflammation,
+        disease:Leukemia__Myeloid__Acute,
+        disease:Liver_Cirrhosis,
+        disease:Lung_Injury,
+        disease:Memory_Disorders,
+        disease:Mental_Disorders,
+        disease:Mobility_Limitation,
+        disease:Multiple_Sclerosis,
+        disease:Muscle_Weakness,
+        disease:Myalgia,
+        disease:Pain,
+        disease:Paranoid_Disorders,
+        disease:Prenatal_Exposure_Delayed_Effects,
+        disease:Prostatic_Neoplasms,
+        disease:Pruritus,
+        disease:Psychotic_Disorders,
+        disease:Pulmonary_Fibrosis,
+        disease:Reperfusion_Injury,
+        disease:Respiratory_Tract_Diseases,
+        disease:Vitamin_D_Deficiency,
+        disease:Wounds_and_Injuries ;
     prop:recommendedFor disease:Acute_Kidney_Injury,
         disease:Arrhythmias__Cardiac,
         disease:Bone_Diseases,
@@ -20383,6 +21455,10 @@ prop:highIn rdfs:label "is high in nutrient" ;
     rdfs:domain prop:Food ;
     rdfs:range prop:Nutrient .
 
+prop:highInPredicted rdfs:label "embedding-predicted high-in-nutrient edge" ;
+    rdfs:domain prop:Food ;
+    rdfs:range prop:Nutrient .
+
 prop:predictedFor rdfs:label "embedding-predicted recommendation" ;
     rdfs:domain prop:Food ;
     rdfs:range prop:Disease .
@@ -20447,8 +21523,6 @@ nutrient:Vitamin_D a prop:Nutrient ;
         disease:Nephrocalcinosis,
         disease:Nephrolithiasis .
 
-nutrient:Vitamin_B12 a prop:Nutrient .
-
 disease:Alzheimer_Disease a prop:Disease .
 
 disease:Basal_Cell_Nevus_Syndrome a prop:Disease .
@@ -20489,6 +21563,10 @@ disease:Vitamin_D_Deficiency a prop:Disease .
 
 disease:Wounds_and_Injuries a prop:Disease .
 
+nutrient:Vitamin_B12 a prop:Nutrient .
+
+disease:Pancreatitis a prop:Disease .
+
 nutrient:Cholesterol a prop:Nutrient ;
     prop:worsensWith disease:Arteriosclerosis,
         disease:Atherosclerosis,
@@ -20500,6 +21578,10 @@ nutrient:Cholesterol a prop:Nutrient ;
         disease:Myocardial_Infarction,
         disease:Non_alcoholic_Fatty_Liver_Disease,
         disease:Stroke .
+
+disease:Diabetes_Mellitus__Type_1 a prop:Disease .
+
+disease:Epilepsy a prop:Disease .
 
 nutrient:Saturated_Fat a prop:Nutrient ;
     prop:worsensWith disease:Acute_Coronary_Syndrome,
@@ -20522,8 +21604,6 @@ nutrient:Saturated_Fat a prop:Nutrient ;
 
 nutrient:Vitamin_C a prop:Nutrient .
 
-disease:Pancreatitis a prop:Disease .
-
 nutrient:Folate a prop:Nutrient .
 
 nutrient:Sugar a prop:Nutrient ;
@@ -20544,9 +21624,9 @@ nutrient:Sugar a prop:Nutrient ;
         disease:Obesity,
         disease:Weight_Gain .
 
-disease:Diabetes_Mellitus__Type_1 a prop:Disease .
+disease:Crohn_Disease a prop:Disease .
 
-disease:Epilepsy a prop:Disease .
+disease:Malabsorption_Syndromes a prop:Disease .
 
 nutrient:Fiber a prop:Nutrient ;
     prop:treats disease:Hyperglycemia ;
@@ -20561,17 +21641,45 @@ nutrient:Fiber a prop:Nutrient ;
 
 nutrient:Vitamin_B6 a prop:Nutrient .
 
-disease:Crohn_Disease a prop:Disease .
-
-disease:Malabsorption_Syndromes a prop:Disease .
-
 disease:Fatty_Liver a prop:Disease .
 
 disease:Obesity a prop:Disease .
 
+disease:Metabolic_Syndrome a prop:Disease .
+
+disease:Hypertension__Portal a prop:Disease .
+
+disease:Hypertension__Pulmonary a prop:Disease .
+
+disease:Hypertension__Renal a prop:Disease .
+
+disease:Pre_Eclampsia a prop:Disease .
+
+disease:Anemia__Hypochromic a prop:Disease .
+
+disease:Colorectal_Neoplasms a prop:Disease .
+
+disease:Constipation a prop:Disease .
+
+disease:Copper_Metabolism_Disorders a prop:Disease .
+
+disease:Gout a prop:Disease .
+
+disease:Hemochromatosis a prop:Disease .
+
+disease:Hemosiderosis a prop:Disease .
+
+disease:Hepatic_Encephalopathy a prop:Disease .
+
+disease:Immune_System_Diseases a prop:Disease .
+
+disease:Iron_Overload a prop:Disease .
+
+disease:Hyperkalemia a prop:Disease .
+
 nutrient:Carbohydrate a prop:Nutrient .
 
-disease:Metabolic_Syndrome a prop:Disease .
+disease:Acute_Coronary_Syndrome a prop:Disease .
 
 nutrient:Sodium a prop:Nutrient ;
     prop:treats disease:Acute_Kidney_Injury,
@@ -20612,15 +21720,11 @@ nutrient:Sodium a prop:Nutrient ;
         disease:Renal_Insufficiency__Chronic,
         disease:Stroke .
 
-disease:Pre_Eclampsia a prop:Disease .
+disease:Hypercalcemia a prop:Disease .
+
+disease:Hyperparathyroidism__Secondary a prop:Disease .
 
 nutrient:Fat a prop:Nutrient .
-
-disease:Hypertension__Portal a prop:Disease .
-
-disease:Hypertension__Pulmonary a prop:Disease .
-
-disease:Hypertension__Renal a prop:Disease .
 
 nutrient:Calcium a prop:Nutrient ;
     prop:treats disease:Acute_Kidney_Injury,
@@ -20794,25 +21898,143 @@ nutrient:Zinc a prop:Nutrient ;
         disease:Copper_Metabolism_Disorders,
         disease:Immune_System_Diseases .
 
+disease:Acrodermatitis a prop:Disease .
+
+disease:Anemia__Iron_Deficiency a prop:Disease .
+
+disease:Asthma a prop:Disease .
+
+disease:Atrial_Fibrillation a prop:Disease .
+
+disease:Bone_Diseases a prop:Disease .
+
+disease:Bradycardia a prop:Disease .
+
+disease:Brain_Injuries a prop:Disease .
+
+disease:COVID_19 a prop:Disease .
+
+disease:Carcinoma__Ehrlich_Tumor a prop:Disease .
+
+disease:Carcinoma__Squamous_Cell a prop:Disease .
+
+disease:Cardiotoxicity a prop:Disease .
+
+disease:Cell_Transformation__Neoplastic a prop:Disease .
+
 disease:Cerebrovascular_Disorders a prop:Disease .
+
+disease:Cholestasis a prop:Disease .
 
 disease:Cholestasis__Extrahepatic a prop:Disease .
 
-disease:Hemorrhage a prop:Disease .
+disease:Coronary_Vasospasm a prop:Disease .
 
-disease:Hemosiderosis a prop:Disease .
+disease:Craniofacial_Abnormalities a prop:Disease .
+
+disease:Developmental_Disabilities a prop:Disease .
+
+disease:Diabetic_Cardiomyopathies a prop:Disease .
+
+disease:Disease_Models__Animal a prop:Disease .
+
+disease:Disease_Progression a prop:Disease .
+
+disease:Disease_Susceptibility a prop:Disease .
+
+disease:Drug_Overdose a prop:Disease .
+
+disease:Dysgeusia a prop:Disease .
+
+disease:Esophageal_Neoplasms a prop:Disease .
+
+disease:Esophageal_Squamous_Cell_Carcinoma a prop:Disease .
+
+disease:Fasciculation a prop:Disease .
+
+disease:Fever a prop:Disease .
+
+disease:Glioma a prop:Disease .
+
+disease:Heart_Defects__Congenital a prop:Disease .
+
+disease:Hemorrhage a prop:Disease .
 
 disease:Hepatomegaly a prop:Disease .
 
+disease:Hyperalgesia a prop:Disease .
+
+disease:Hyperemia a prop:Disease .
+
+disease:Hyperkinesis a prop:Disease .
+
+disease:Hyperplasia a prop:Disease .
+
 disease:Hypocalcemia a prop:Disease .
+
+disease:Leukemia a prop:Disease .
+
+disease:Long_QT_Syndrome a prop:Disease .
+
+disease:Magnesium_Deficiency a prop:Disease .
 
 disease:Major_Depressive_Disorder a prop:Disease .
 
+disease:Melanoma a prop:Disease .
+
+disease:Migraine_Disorders a prop:Disease .
+
+disease:Movement_Disorders a prop:Disease .
+
+disease:Multiple_Myeloma a prop:Disease .
+
+disease:Necrosis a prop:Disease .
+
+disease:Neoplasms a prop:Disease .
+
+disease:Neural_Tube_Defects a prop:Disease .
+
+disease:Parasomnias a prop:Disease .
+
+disease:Peptic_Ulcer a prop:Disease .
+
+disease:Periodontitis a prop:Disease .
+
+disease:Peripheral_Nervous_System_Diseases a prop:Disease .
+
+disease:Polycystic_Ovary_Syndrome a prop:Disease .
+
+disease:Prenatal_Injuries a prop:Disease .
+
+disease:Protein_Deficiency a prop:Disease .
+
+disease:Pulpitis a prop:Disease .
+
+disease:Sinus_Arrest__Cardiac a prop:Disease .
+
 disease:Splenic_Diseases a prop:Disease .
+
+disease:Stomach_Ulcer a prop:Disease .
+
+disease:Substance_Withdrawal_Syndrome a prop:Disease .
+
+disease:Tachycardia__Ectopic_Atrial a prop:Disease .
 
 disease:Tachycardia__Supraventricular a prop:Disease .
 
 disease:Tachycardia__Ventricular a prop:Disease .
+
+disease:Teratozoospermia a prop:Disease .
+
+disease:Testicular_Diseases a prop:Disease .
+
+disease:Torsades_de_Pointes a prop:Disease .
+
+disease:Vasospasm__Intracranial a prop:Disease .
+
+disease:Ventricular_Dysfunction__Left a prop:Disease .
+
+disease:Weight_Loss a prop:Disease .
 
 nutrient:Potassium a prop:Nutrient ;
     prop:treats disease:Acute_Kidney_Injury,
@@ -20845,239 +22067,85 @@ nutrient:Potassium a prop:Nutrient ;
         disease:Renal_Insufficiency,
         disease:Renal_Insufficiency__Chronic .
 
-disease:Anemia__Iron_Deficiency a prop:Disease .
-
-disease:Cell_Transformation__Neoplastic a prop:Disease .
-
-disease:Cholestasis a prop:Disease .
-
-disease:Craniofacial_Abnormalities a prop:Disease .
-
-disease:Developmental_Disabilities a prop:Disease .
-
-disease:Disease_Progression a prop:Disease .
-
-disease:Esophageal_Neoplasms a prop:Disease .
-
-disease:Hemochromatosis a prop:Disease .
-
-disease:Peripheral_Nervous_System_Diseases a prop:Disease .
-
-disease:Tremor a prop:Disease .
-
-disease:Cardiotoxicity a prop:Disease .
-
-disease:Dysgeusia a prop:Disease .
-
-disease:Heart_Defects__Congenital a prop:Disease .
-
-disease:Hyperalgesia a prop:Disease .
-
-disease:Acrodermatitis a prop:Disease .
-
-disease:Anemia__Hypochromic a prop:Disease .
-
-disease:Asthma a prop:Disease .
-
-disease:Atrial_Fibrillation a prop:Disease .
-
-disease:Bone_Diseases a prop:Disease .
-
-disease:Bradycardia a prop:Disease .
-
-disease:Brain_Injuries a prop:Disease .
-
-disease:COVID_19 a prop:Disease .
-
-disease:Carcinoma__Ehrlich_Tumor a prop:Disease .
-
-disease:Carcinoma__Squamous_Cell a prop:Disease .
-
-disease:Colorectal_Neoplasms a prop:Disease .
-
-disease:Constipation a prop:Disease .
-
-disease:Copper_Metabolism_Disorders a prop:Disease .
-
-disease:Coronary_Vasospasm a prop:Disease .
-
-disease:Diabetic_Cardiomyopathies a prop:Disease .
-
-disease:Disease_Models__Animal a prop:Disease .
-
-disease:Disease_Susceptibility a prop:Disease .
-
-disease:Drug_Overdose a prop:Disease .
-
-disease:Esophageal_Squamous_Cell_Carcinoma a prop:Disease .
-
-disease:Fasciculation a prop:Disease .
-
-disease:Fever a prop:Disease .
-
-disease:Glioma a prop:Disease .
-
-disease:Gout a prop:Disease .
-
-disease:Hepatic_Encephalopathy a prop:Disease .
-
-disease:Hyperemia a prop:Disease .
-
-disease:Hyperkinesis a prop:Disease .
-
-disease:Hyperplasia a prop:Disease .
-
-disease:Immune_System_Diseases a prop:Disease .
-
-disease:Iron_Overload a prop:Disease .
-
-disease:Leukemia a prop:Disease .
-
-disease:Long_QT_Syndrome a prop:Disease .
-
-disease:Magnesium_Deficiency a prop:Disease .
-
-disease:Melanoma a prop:Disease .
-
-disease:Migraine_Disorders a prop:Disease .
-
-disease:Movement_Disorders a prop:Disease .
-
-disease:Multiple_Myeloma a prop:Disease .
-
-disease:Necrosis a prop:Disease .
-
-disease:Neoplasms a prop:Disease .
-
-disease:Neural_Tube_Defects a prop:Disease .
-
-disease:Paralysis a prop:Disease .
-
-disease:Parasomnias a prop:Disease .
-
-disease:Peptic_Ulcer a prop:Disease .
-
-disease:Periodontitis a prop:Disease .
-
-disease:Polycystic_Ovary_Syndrome a prop:Disease .
-
-disease:Prenatal_Injuries a prop:Disease .
-
-disease:Protein_Deficiency a prop:Disease .
-
-disease:Pulpitis a prop:Disease .
-
-disease:Sinus_Arrest__Cardiac a prop:Disease .
-
-disease:Stomach_Ulcer a prop:Disease .
-
-disease:Substance_Withdrawal_Syndrome a prop:Disease .
-
-disease:Tachycardia__Ectopic_Atrial a prop:Disease .
-
-disease:Teratozoospermia a prop:Disease .
-
-disease:Testicular_Diseases a prop:Disease .
-
-disease:Torsades_de_Pointes a prop:Disease .
-
-disease:Vasospasm__Intracranial a prop:Disease .
-
-disease:Ventricular_Dysfunction__Left a prop:Disease .
-
-disease:Weight_Loss a prop:Disease .
-
-disease:Hyperkalemia a prop:Disease .
-
 disease:Hypokalemia a prop:Disease .
+
+disease:Hypoparathyroidism a prop:Disease .
 
 disease:Muscle_Cramp a prop:Disease .
 
 disease:Muscular_Diseases a prop:Disease .
 
-disease:Nerve_Degeneration a prop:Disease .
-
-disease:Rhabdomyolysis a prop:Disease .
-
-disease:Hypokalemic_Periodic_Paralysis a prop:Disease .
-
-disease:Acute_Coronary_Syndrome a prop:Disease .
-
-disease:Hypercalcemia a prop:Disease .
-
-disease:Hypoparathyroidism a prop:Disease .
-
 disease:Nerve_Compression_Syndromes a prop:Disease .
+
+disease:Nerve_Degeneration a prop:Disease .
 
 disease:Neurologic_Manifestations a prop:Disease .
 
+disease:Paralysis a prop:Disease .
+
 disease:Polyradiculopathy a prop:Disease .
+
+disease:Rhabdomyolysis a prop:Disease .
 
 disease:Rickets a prop:Disease .
 
+disease:Tremor a prop:Disease .
+
 disease:Urinary_Bladder_Diseases a prop:Disease .
-
-disease:Hyperparathyroidism__Secondary a prop:Disease .
-
-disease:Nephrocalcinosis a prop:Disease .
-
-disease:Inflammation a prop:Disease .
-
-disease:Chemical_and_Drug_Induced_Liver_Injury a prop:Disease .
-
-disease:Prostatic_Neoplasms a prop:Disease .
-
-disease:Colonic_Neoplasms a prop:Disease .
-
-disease:Liver_Cirrhosis a prop:Disease .
 
 disease:Arteriosclerosis a prop:Disease .
 
 disease:Coronary_Disease a prop:Disease .
 
+disease:Hypokalemic_Periodic_Paralysis a prop:Disease .
+
 disease:Ischemic_Stroke a prop:Disease .
+
+disease:Nephrocalcinosis a prop:Disease .
 
 disease:Stroke a prop:Disease .
 
-disease:Arthralgia a prop:Disease .
+disease:Colonic_Neoplasms a prop:Disease .
+
+disease:Liver_Cirrhosis a prop:Disease .
+
+disease:Chemical_and_Drug_Induced_Liver_Injury a prop:Disease .
+
+disease:Gastrointestinal_Diseases a prop:Disease .
+
+disease:Inflammation a prop:Disease .
+
+disease:Intestinal_Diseases a prop:Disease .
+
+disease:Prostatic_Neoplasms a prop:Disease .
+
+disease:Autistic_Disorder a prop:Disease .
 
 disease:Lung_Injury a prop:Disease .
 
 disease:Pain a prop:Disease .
 
+disease:Anemia a prop:Disease .
+
+disease:Arthralgia a prop:Disease .
+
 disease:Muscle_Weakness a prop:Disease .
 
-disease:Autistic_Disorder a prop:Disease .
-
-disease:Gastrointestinal_Diseases a prop:Disease .
-
-disease:Intestinal_Diseases a prop:Disease .
-
-disease:Colitis a prop:Disease .
+disease:Hepatolenticular_Degeneration a prop:Disease .
 
 disease:Hypomagnesemia_primary a prop:Disease .
 
-disease:Anemia a prop:Disease .
-
-disease:Hepatolenticular_Degeneration a prop:Disease .
+disease:Colitis a prop:Disease .
 
 disease:Diabetic_Ketoacidosis a prop:Disease .
 
 disease:Weight_Gain a prop:Disease .
 
+disease:Diarrhea a prop:Disease .
+
 disease:Infant_Death a prop:Disease .
 
 disease:Cardiomyopathies a prop:Disease .
-
-disease:Diarrhea a prop:Disease .
-
-disease:Seizures a prop:Disease .
-
-disease:Diabetes_Mellitus__Type_2 a prop:Disease .
-
-disease:Insulin_Resistance a prop:Disease .
-
-disease:Hyperglycemia a prop:Disease .
 
 disease:Osteoporosis a prop:Disease .
 
@@ -21087,53 +22155,61 @@ disease:Nephrolithiasis a prop:Disease .
 
 disease:Nephrotic_Syndrome a prop:Disease .
 
+disease:Diabetes_Mellitus__Type_2 a prop:Disease .
+
+disease:Insulin_Resistance a prop:Disease .
+
+disease:Seizures a prop:Disease .
+
+disease:Hyperglycemia a prop:Disease .
+
 disease:Hyperlipidemias a prop:Disease .
+
+disease:Non_alcoholic_Fatty_Liver_Disease a prop:Disease .
 
 disease:Edema a prop:Disease .
 
 disease:Proteinuria a prop:Disease .
 
-disease:Diabetes_Mellitus a prop:Disease .
+disease:Liver_Diseases a prop:Disease .
 
-disease:Non_alcoholic_Fatty_Liver_Disease a prop:Disease .
+disease:Kidney_Calculi a prop:Disease .
+
+disease:Kidney_Diseases__Cystic a prop:Disease .
 
 disease:Tachycardia a prop:Disease .
 
 disease:Ventricular_Fibrillation a prop:Disease .
 
+disease:Diabetes_Mellitus a prop:Disease .
+
 disease:Heart_Failure a prop:Disease .
-
-disease:Kidney_Diseases__Cystic a prop:Disease .
-
-disease:Heart_Diseases a prop:Disease .
-
-disease:Liver_Diseases a prop:Disease .
 
 disease:Atherosclerosis a prop:Disease .
 
-disease:Kidney_Calculi a prop:Disease .
+disease:Heart_Diseases a prop:Disease .
 
 disease:Hypotension a prop:Disease .
+
+disease:Myocardial_Infarction a prop:Disease .
 
 disease:Drug_Related_Side_Effects_and_Adverse_Reactions a prop:Disease .
 
 disease:Water_Electrolyte_Imbalance a prop:Disease .
 
-disease:Myocardial_Infarction a prop:Disease .
+disease:Hypertension a prop:Disease .
 
 disease:Arrhythmias__Cardiac a prop:Disease .
 
-disease:Hypertension a prop:Disease .
+disease:Kidney_Failure__Chronic a prop:Disease .
 
 disease:Renal_Insufficiency__Chronic a prop:Disease .
 
-disease:Kidney_Failure__Chronic a prop:Disease .
-
 disease:Renal_Insufficiency a prop:Disease .
 
-disease:Cardiovascular_Diseases a prop:Disease .
-
 disease:Acute_Kidney_Injury a prop:Disease .
+
+disease:Cardiovascular_Diseases a prop:Disease .
 
 disease:Kidney_Diseases a prop:Disease .
 
